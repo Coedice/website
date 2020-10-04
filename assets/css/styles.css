@@ -1,0 +1,171 @@
+* {
+	color: white;
+	font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#title {
+	font-size: 300%;
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+	margin: 20px 0 20px 0;
+	font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+p, li:not(nav) {
+	font-size: 1.2em;
+}
+
+body {
+	background-color: #1c1c1c;
+}
+
+#main {
+	width: 70%;
+	margin: 0 auto 180px auto;
+}
+
+nav {
+	border-style: solid;
+	border-width: 1px 0 1px 0;
+	padding: 0;
+}
+
+nav > ul {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+nav > ul > li {
+	list-style: none;
+	display: inline-block;
+}
+
+nav > ul > li > a {
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	white-space: nowrap;
+	padding: 0 20px;
+}
+
+#currentPage {
+	color: #898989;
+}
+
+input {
+	color: black;
+}
+
+.projectImage {
+	width: 160px;
+	height: 160px;
+}
+
+.appleBadge {
+	display: block;
+	padding: 20px;
+	width: 120px;
+}
+
+code {
+	font-family: Courier, Menlo, monospace;
+}
+
+#projectsList > table > tbody > tr > td > p {
+	padding: 10px;
+}
+
+#face {
+	display: block;
+	width: 45%;
+	border-radius: 20px;
+	margin: 0 auto 0 auto;
+}
+
+#qrTable {
+	margin-top: 20px;
+}
+
+#qrDisplay {
+	display: block;
+	width: 300px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480pt) {
+	p, li:not(nav) {
+		font-size: 1.5em;
+		margin: 0 5px 0 5px
+	}
+
+	h2 {
+		font-size: 2em;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	#main {
+		width: 100%;
+	}
+
+	#title {
+		font-size: 2.7em;
+		text-align: center;
+	}
+
+	nav > ul > li > a {
+		font-size: 1.2em;
+		padding: 0 5px;
+	}
+
+	nav {
+		margin-bottom: 20px;
+	}
+
+	.projectImage {
+		width: 60%;
+		height: auto;
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+
+	.appleBadge {
+		display: none;
+	}
+
+	#projectsList > table > tbody > tr > td {
+		display: block;
+	}
+
+	#qrDisplay {
+		display: block;
+		width: 100%;
+	}
+
+	#qrTable > tbody > tr > td {
+		display: block;
+	}
+
+	#qrOptions {
+		width: 100%;
+	}
+
+	#qrOptions > tbody > tr > td {
+		width: 100%;
+	}
+
+	#qrOptions > tbody > tr > td > select {
+		width: 100%;
+	}
+
+	#qrOptions > tbody > tr > td > input {
+		width: 100%;
+	}
+}

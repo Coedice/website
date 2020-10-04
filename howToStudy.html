@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46750199-4"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-46750199-4');
+		</script>
+
+		<!-- Standard Metadata-->
+		<title>3 Essential, Science-Backed Study Tips</title>
+		<meta name="description" content="How to motivate yourself to study, stay concentrated, prioritise wisely, and become a better student.">
+		<meta name="keywords" content="Gavin Douch,iOS developer,StudyStreaks,Recall,Monash Zeitgeist,Dozenal Time app,Independent developer">
+		<meta name="language" content="english">
+		<meta name="author" content="Gavin Douch">
+		<meta name="copyright" content="Gavin Douch">
+		<meta charset="UTF-8">
+
+		<!-- CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/howToStudy.css">
+
+		<!-- Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/siteIcons/apple-touch/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/siteIcons/apple-touch/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/siteIcons/apple-touch/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/siteIcons/apple-touch/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/siteIcons/apple-touch/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/siteIcons/apple-touch/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/siteIcons/apple-touch/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/siteIcons/apple-touch/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/siteIcons/apple-touch/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/images/siteIcons/android/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/siteIcons/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/images/siteIcons/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/siteIcons/favicon/favicon-16x16.png">
+		<link rel="manifest" href="assets/images/siteIcons/android/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="assets/images/icons/microsoft/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Open Graph Metadata -->
+		<meta property="og:title" content="3 Essential, Science-Backed Study Tips" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://gavindou.ch/howToStudy" />
+		<meta property="og:description" content="How to motivate yourself to study, stay concentrated, prioritise wisely, and become a better student." />
+		<meta property="og:image" content="http://gavindou.ch/assets/images/studyStreaksAppIcon.png" />
+
+		<!-- Dublin Core Metadata -->
+		<meta name="DC.identifier" content="http://gavindou.ch/howToStudy" />
+		<meta name="DC.creator" lang="en" content="Gavin Douch" />
+		<meta name="DC.format" lang="en" content="text/html" />
+		<meta name="DC.language" content="en" />
+		<meta name="DC.subject" content="Learning" />
+		<meta name="DC.subject" content="Studying" />
+		<meta name="DC.subject" content="Concentration" />
+		<meta name="DC.subject" content="Motivation" />
+		<meta name="DC.subject" content="Study tracking" />
+		<meta name="DC.audience" content="Students" />
+		<meta name="DC.audience" content="Teachers" />
+
+		<!-- Scripts -->
+		<script src="assets/scripts/priority.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+		<h1>3 Essential, Science-Backed Study Tips</h1>
+		<p>How to motivate yourself to study, stay concentrated, prioritise wisely, and become a better student.</p>
+		<div class="blueField" id="prioritise">
+			<h2>Prioritise properly</h2>
+			<p>There&apos;s a simple formula to figure out exactly how much you should aim to study for each subject. Start off by answering the questions below.</p>
+			<p>How often do you currently study?</p>
+			<ul id="choiceButtons">
+				<li><a href="javascript:void(0);" style="background-color: #d34d43" onclick="choiceButtonTapped(0);updateSubjectData()">Never</a></li>
+				<li><a href="javascript:void(0);" style="background-color: #a85e77" onclick="choiceButtonTapped(1);updateSubjectData()">Rarely</a></li>
+				<li><a href="javascript:void(0);" style="background-color: #4383d1" onclick="choiceButtonTapped(2);updateSubjectData()">Sometimes</a></li>
+				<li><a href="javascript:void(0);" style="background-color: #0d96fa" onclick="choiceButtonTapped(3);updateSubjectData()">Often</a></li>
+			</ul>
+			<form>
+				<p style="text-align: center;margin-top: 0;font-size: small;">Weekly goal: <input type="text" id="weeklyGlobalGoalTextField" placeholder="0" onchange="manualWeekGoalChoice()"> hours.</p>
+			</form>
+			<p>Name your classes and roughly rate their priorities:</p>
+			<form>
+				<table id="subjectsTable">
+					<tr>
+						<th><p>Name</p></th>
+						<th><p>Priority</p></th>
+						<th></th>
+						<th><p>Weekly goal</p></th>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Subject name"></td>
+						<td><input type="range" min="0" max="100" value="0" onChange="updateSubjectData()"></td>
+						<td><p class="allocationLabel">0.00&percnt;</p></td>
+						<td class="durationItem"><p class="durationLabel">0h 0m</p></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Subject name"></td>
+						<td><input type="range" min="0" max="100" value="0" onChange="updateSubjectData()"></td>
+						<td><p class="allocationLabel">0.00&percnt;</p></td>
+						<td class="durationItem"><p class="durationLabel">0h 0m</p></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Subject name"></td>
+						<td><input type="range" min="0" max="100" value="0" onChange="updateSubjectData()"></td>
+						<td><p class="allocationLabel">0.00&percnt;</p></td>
+						<td class="durationItem"><p class="durationLabel">0h 0m</p></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Subject name"></td>
+						<td><input type="range" min="0" max="100" value="0" onChange="updateSubjectData()"></td>
+						<td><p class="allocationLabel">0.00&percnt;</p></td>
+						<td class="durationItem"><p class="durationLabel">0h 0m</p></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Subject name"></td>
+						<td><input type="range" min="0" max="100" value="0" onChange="updateSubjectData()"></td>
+						<td><p class="allocationLabel">0.00&percnt;</p></td>
+						<td class="durationItem"><p class="durationLabel">0h 0m</p></td>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="Subject name"></td>
+						<td><input type="range" min="0" max="100" value="0" onChange="updateSubjectData()"></td>
+						<td><p class="allocationLabel">0.00&percnt;</p></td>
+						<td class="durationItem"><p class="durationLabel">0h 0m</p></td>
+					</tr>
+				</table>
+			</form>
+			<p>Using the formula <span style="font-family: monospace;">(Priority/Sum of all priorities)&times;Overall weekly goal</span>, you get the week goal for that subject. These values are calculated for you above.</p>
+			<p>You can use these times to help plan your study optimally, to make sure you aren&apos;t spending your time in the wrong places. The numbers may not be an exact science, but even a rough estimate is better than no estimate at all.</p>
+		</div>
+		<div class="redField" id="breaks">
+			<h2>When to Take Breaks</h2>
+			<p>The average person can study for about 25 minutes before losing concentration, but fortunately, it only takes about five minutes to reset that concentration.</p>
+			<table id="breaksTable">
+				<tr>
+					<td><p>Concentration over time without breaks.</p><img src="assets/images/concentrationCurveNoBreak.png" alt="Concentration curve with no breaks"></td>
+					<td><p>Concentration over time with breaks.</p><img src="assets/images/concentrationCurveBreak.png" alt="Concentration curve with breaks"></td>
+				</tr>
+			</table>
+			<p>It&apos;s clear then, that working in blocks of 25 minutes, with 5 minute breaks is a great strategy for staying concentrated.</p>
+		</div>
+		<div class="blueField" id="streaks">
+			<h2>How to motivate yourself</h2>
+			<p>The human brain is naturally loss averse, that is, we hate to lose progress, especially when it took hard work to get that progress. You can take advantage of this by setting up a streak for your studies, every week you reach your study goal, you add one to your streak counter, if you miss a week, back to zero.</p>
+			<table style="margin: 0 auto 0 auto">
+				<tr>
+					<td><a href="javascript:void(0);" style="background-color: #0d96fa;" class="hitMissButtons" onclick="hit()">Hit</a></td>
+					<td><p id="streakLabel">0 weeks</p></td>
+					<td><a href="javascript:void(0);" style="background-color: #d34d43;" class="hitMissButtons" onclick="miss()">Miss</a></td>
+				</tr>
+			</table>
+			<p>I recommend that you do this based on weeks rather than days, because it&apos;s very likely that your days aren&apos;t regular enough that it&apos;s practical for you to reach a study goal every day. Doing it based on weeks means that if something comes up unexpectedly one day, you can pick up the slack the next.</p>
+		</div>
+		<div class="redField" id="studyStreaks">
+			<h2>Put it into action</h2>
+			<p>Without an actionable step, it&apos;s unlikely you&apos;ll be able to follow these tips and to keep yourself accountable. Linked below is the free app StudyStreaks, which will help you to do all of the things above and more.</p>
+			<table id="studyStreaks">
+				<tr>
+					<td>
+						<a href="https://apps.apple.com/au/app/studystreaks/id1478096728?ls=1">
+							<h3>StudyStreaks</h3>
+							<img class="projectImage" src="assets/images/studyStreaksAppIcon.png" alt="StudyStreaks app Icon">
+							<img class="appleBadge" src="assets/images/appStoreBanners/downloadBlack.svg" alt="Download app on the iOS App Store">
+						</a>
+					</td>
+					<td>
+						<p>A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.<br></p>
+					</td>
+				</tr>
+			</table>
+			<div class="fb-share-button" data-href="http://gavindou.ch/howToStudy" data-layout="button" data-size="large">
+				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share on Facebook</a>
+			</div>
+			<a href="http://gavindou.ch/howToStudy" class="twitter-share-button" data-show-count="false">Tweet</a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</body>
+</html>
