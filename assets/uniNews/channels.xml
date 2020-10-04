@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Types: regular, app, affiliate -->
+<!-- Highest channel ID: 53 -->
+<!-- Highest university ID: 0 -->
+<universities>
+	<university name="Monash University" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" id="0">
+		<channel name="UniNews" url="https://gavindou.ch/assets/uniNews/internalFeeds/uniNews_english.rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="app" id="0" />
+		<channel name="Affiliate links" url="https://gavindou.ch/assets/uniNews/internalFeeds/affiliate_english.rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="affiliate" id="1" />
+		<channel name="Faculty of Arts" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1513673" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="2" />
+		<channel name="Arts &amp; Social Sciences" url="https://www.monash.edu.my/_webservices/news/rss?site=1051497" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="3" />
+		<channel name="Biomedical Sciences" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=370504" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="4" />
+		<channel name="Business &amp; Economics" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=878321" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="5" />
+		<channel name="Central Clinical School" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=976213" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="6" />
+		<channel name="Clinical Sci at Monash Health" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=791009" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="7" />
+		<channel name="CTP" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1542483" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="17" />
+		<channel name="Eastern Health Clinical School" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=994030" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="8" />
+		<channel name="Education" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=112528" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="9" />
+		<channel name="Engineering" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=556807" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="10" />
+		<channel name="Esperanto" url="https://esperantomagazine.com/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/esperanto.png" type="regular" id="11" />
+		<channel name="IITB Research Academy" url="http://www.iitbmonash.org/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/iitb.png" type="regular" id="12" />
+		<channel name="Faculty of IT" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=466676" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="13" />
+		<channel name="John Monash Science School" url="https://jmss.vic.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/jmss.png" type="regular" id="14" />
+		<channel name="Law" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=112506" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="15" />
+		<channel name="Lens - Business &amp; Economy" url="https://lens.monash.edu/@business-economy/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="16" />
+		<channel name="Lens - Education" url="https://lens.monash.edu/@education/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="17" />
+		<channel name="Lens - Featured" url="https://lens.monash.edu/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="18" />
+		<channel name="Lens - Medicine &amp; Health" url="https://lens.monash.edu/@medicine-health/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="19" />
+		<channel name="Lens - Politics &amp; Society" url="https://lens.monash.edu/@politics-society/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="20" />
+		<channel name="Lens - Science" url="https://lens.monash.edu/@science/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="21" />
+		<channel name="Lens - Technology" url="https://lens.monash.edu/@technology/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/lens.png" type="regular" id="22" />
+		<channel name="Library Blog" url="https://libraryblog.monash.edu/?feed=rss2" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="23" />
+		<channel name="LLCL" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543615" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="24" />
+		<channel name="Lot's Wife" url="https://lotswife.com.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/lotsWife.png" type="regular" id="25" />
+		<channel name="MADA" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1058030" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="26" />
+		<channel name="Malaysia" url="https://www.monash.edu.my/_webservices/news/rss?site=515433" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="27" />
+		<channel name="Mannix News" url="https://www.mannix.monash.edu/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mannix.png" type="regular" id="28" />
+		<channel name="Medicine" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1061353" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="29" />
+		<channel name="Medicine, Nursing, Health Sci" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=370504" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="30" />
+		<channel name="MFJ" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543501" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="31" />
+		<channel name="MGA" url="https://mga.monash.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mga.png" type="regular" id="32" />
+		<channel name="MISC" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1542550" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="33" />
+		<channel name="MLIVE" url="https://www.monash.edu/mlive/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mlive.png" type="regular" id="34" />
+		<channel name="Mojo News" url="https://www.mojonews.com.au/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/mojo.png" type="regular" id="35" />
+		<channel name="Monash College" url="https://www.monashcollege.edu.au/_web_services/news/rss?site=641658" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="36" />
+		<channel name="Monash Motorsport" url="https://www.monashmotorsport.com/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mms.png" type="regular" id="37" />
+		<channel name="Monash Official" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=2728" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="38" />
+		<channel name="MONSU Peninsula News" url="https://www.monsupeninsula.org.au/news/rss/6013/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monsuPeninsula.png" type="regular" id="39" />
+		<channel name="MSA News" url="https://msa.monash.edu/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/msa.png" type="regular" id="40" />
+		<channel name="Music" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543664" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="41" />
+		<channel name="my.monash Blog" url="http://mymonashupdates.blogspot.com/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="42" />
+		<channel name="Nursing &amp; Midwifery" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=989298" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="43" />
+		<channel name="Pharmacy &amp; Pharmaceutical Sci" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=102139" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="44" />
+		<channel name="Precious Plastics" url="https://www.preciousplasticmonash.com/news-1?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/preciousPlastics.png" type="regular" id="45" />
+		<channel name="Primary &amp; Allied Health Care" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1060703" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="46" />
+		<channel name="Psychological Sciences" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=201273" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="47" />
+		<channel name="Public Health &amp; Preventive Med" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=926533" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="48" />
+		<channel name="Reddit - r/Monash" url="https://www.reddit.com/r/Monash/new/.rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/reddit.png" type="regular" id="49" />
+		<channel name="Rural Health" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1013623" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="50" />
+		<channel name="Faculty of Science" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=59838" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="51" />
+		<channel name="SOPHIS" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543849" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="52" />
+		<channel name="SOSS" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543545" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="53" />
+	</university>
+	<university name="University of Melbourne" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" id="1">
+		<channel name="3010" url="https://mag.alumni.unimelb.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" type="regular" id="54" />
+		<channel name="Apollo Music Society" url="http://www.apollohms.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/apollo.png" type="regular" id="55" />
+		<channel name="Christian Union" url="https://medium.com/feed/cissa-unimelb" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cissa.png" type="regular" id="56" />
+		<channel name="CISSA" url="https://www.melbourne.cu.org.au/blog?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cu.png" type="regular" id="56" />
+		<channel name="COSDU" url="http://cosdu.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cosdu.png" type="regular" id="57" />
+		<channel name="ESSA - All" url="http://economicstudents.com/all/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="58" />
+		<channel name="ESSA - Economic History" url="http://economicstudents.com/category/economic-history/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="59" />
+		<channel name="ESSA - National" url="http://economicstudents.com/category/national/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="60" />
+		<channel name="ESSA - Pop Eco" url="http://economicstudents.com/category/pop-eco/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="61" />
+		<channel name="ESSA - World" url="http://economicstudents.com/category/world/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="62" />
+		<channel name="Farrago - Art" url="http://farragomagazine.com/art/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="63" />
+		<channel name="Farrago - Campus News Brefing" url="http://farragomagazine.com/tag/campus-news-briefing/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="64" />
+		<channel name="Farrago - Columns" url="http://farragomagazine.com/columns/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="65" />
+		<channel name="Farrago - Creative" url="http://farragomagazine.com/creative/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="66" />
+		<channel name="Farrago - Culture" url="http://farragomagazine.com/culture/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="67" />
+		<channel name="Farrago - Editorial" url="http://farragomagazine.com/tag/editorial/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="68" />
+		<channel name="Farrago - Letters" url="http://farragomagazine.com/tag/letters/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="69" />
+		<channel name="Farrago - News" url="http://farragomagazine.com/campus/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="70" />
+		<channel name="Farrago - OB Reports" url="http://farragomagazine.com/tag/ob-reports/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="71" />
+		<channel name="Farrago - Poetry" url="http://farragomagazine.com/tag/poetry/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="72" />
+		<channel name="Farrago - Prose" url="http://farragomagazine.com/tag/prose/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="73" />
+		<channel name="Indonesian Students Association" url="https://ppia-unimelb.org/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/ppia.png" type="regular" id="74" />
+		<channel name="Labor Club" url="https://laborclubvoice.home.blog/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/alp.png" type="regular" id="75" />
+		<channel name="Thai Students Association" url="http://tsa-unimelb.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/tsa.png" type="regular" id="76" />
+		<channel name="MUBSO" url="https://www.mubso.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/mubso.png" type="regular" id="77" />
+		<channel name="Newsroom" url="https://about.unimelb.edu.au/newsroom/feed" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" type="regular" id="78" />
+		<channel name="Postgraduate Environment Network" url="https://postgraduateenvironmentnetwork.wordpress.com/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/pen.png" type="regular" id="79" />
+		<channel name="Reddit - r/unimelb" url="https://www.reddit.com/r/unimelb/.rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/reddit.png" type="regular" id="80" />
+	</university>
+</universities>

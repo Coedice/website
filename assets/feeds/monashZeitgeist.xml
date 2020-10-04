@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Monash Zeitgeist</title>
+		<link>http://gavindou.ch</link>
+		<description>Monash student news aggregator.</description>
+		<item>
+			<title>Monash Zeitgeist version 1.1: Calendar update</title>
+			<link>https://apps.apple.com/au/app/monash-zeitgeist/id1492213861</link>
+			<pubDate>Fri, 21 Feb 2020 15:00:00 +1100</pubDate>
+		</item>
+	</channel>
+</rss>
