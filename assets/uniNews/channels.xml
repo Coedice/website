@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- Types: regular, default, app, affiliate -->
 <universities>
-	<university name="Monash" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" color="#0F6DAC" id="1">
+	<university name="Monash" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" color="#0F6DAC" id="0">
+		<channel name="MLIVE" url="https://www.monash.edu/mlive/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mlive.png" color="#000000" type="regular" id="0" />
 		<channel name="Affiliate links" url="https://gavindou.ch/assets/uniNews/internalFeeds/affiliate_english.rss" type="affiliate" id="1" />
 		<channel name="Mojo News" url="https://www.mojonews.com.au/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/mojo.png" color="#41C4C4" type="default" id="2" />
 		<channel name="Lot's Wife" url="https://lotswife.com.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/lotsWife.png" color="#EA8400" type="regular" id="3" />
@@ -56,9 +57,5 @@
 		<channel name="Monash Motorsport" url="https://www.monashmotorsport.com/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mms.png" color="#085288" type="regular" id="52" />
 		<channel name="Precious Plastics" url="https://www.preciousplasticmonash.com/news-1?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/preciousPlastics.png" color="#B8D7E2" type="regular" id="53" />
 		<channel name="MGA" url="https://mga.monash.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mga.png" color="#5ADDAB" type="regular" id="54" />
-		<channel name="MLIVE" url="https://www.monash.edu/mlive/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mlive.png" color="#000000" type="regular" id="55" />
-	</university>
-	<university name="Oxford" logo="" color="" id="2">
-		
 	</university>
 </universities>
