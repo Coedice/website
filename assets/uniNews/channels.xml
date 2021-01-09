@@ -2,7 +2,7 @@
 <!-- Types: regular, default, app, affiliate -->
 <universities>
 	<university name="Monash" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" id="0">
-		<channel name="Affiliate links" url="https://gavindou.ch/assets/uniNews/internalFeeds/affiliate_english.rss" type="affiliate" id="0" />
+		<channel name="Affiliate links" url="https://gavindou.ch/assets/uniNews/internalFeeds/affiliate_english.rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="affiliate" id="0" />
 		<channel name="MLIVE" url="https://www.monash.edu/mlive/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/mlive.png" type="regular" id="1" />
 		<channel name="Mojo News" url="https://www.mojonews.com.au/feed/rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/mojo.png" type="default" id="2" />
 		<channel name="Lot's Wife" url="https://lotswife.com.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/lotsWife.png" type="regular" id="3" />
