@@ -60,7 +60,7 @@
 		<channel name="SOPHIS" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543849" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="52" />
 		<channel name="SOSS" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543545" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="53" />
 	</university>
-	<university name="University of Melbourne" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" id="0">
+	<university name="University of Melbourne" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" id="1">
 		<channel name="3010" url="https://mag.alumni.unimelb.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="54" />
 		<channel name="Apollo Music Society" url="http://www.apollohms.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="55" />
 		<channel name="Christian Union" url="https://www.melbourne.cu.org.au/blog?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="56" />
