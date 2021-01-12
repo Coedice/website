@@ -60,33 +60,33 @@
 		<channel name="SOPHIS" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543849" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="52" />
 		<channel name="SOSS" url="https://www.monash.edu/monash-mango/_web_services/news/rss?site=1543545" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" type="regular" id="53" />
 	</university>
-	<university name="University of Melbourne" logo="https://gavindou.ch/assets/uniNews/logos/monash/monash.png" id="1">
-		<channel name="3010" url="https://mag.alumni.unimelb.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="54" />
-		<channel name="Apollo Music Society" url="http://www.apollohms.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="55" />
-		<channel name="Christian Union" url="https://www.melbourne.cu.org.au/blog?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="56" />
-		<channel name="COSDU" url="http://cosdu.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="57" />
-		<channel name="ESSA - All" url="http://economicstudents.com/all/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="58" />
-		<channel name="ESSA - Economic History" url="http://economicstudents.com/category/economic-history/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="59" />
-		<channel name="ESSA - National" url="http://economicstudents.com/category/national/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="60" />
-		<channel name="ESSA - Pop Eco" url="http://economicstudents.com/category/pop-eco/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="61" />
-		<channel name="ESSA - World" url="http://economicstudents.com/category/world/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="62" />
-		<channel name="Farrago Art" url="http://farragomagazine.com/art/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="63" />
-		<channel name="Farrago Campus News Brefing" url="http://farragomagazine.com/tag/campus-news-briefing/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="64" />
-		<channel name="Farrago Columns" url="http://farragomagazine.com/columns/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="65" />
-		<channel name="Farrago Creative" url="http://farragomagazine.com/creative/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="66" />
-		<channel name="Farrago Culture" url="http://farragomagazine.com/culture/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="67" />
-		<channel name="Farrago Editorial" url="http://farragomagazine.com/tag/editorial/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="68" />
-		<channel name="Farrago Letters" url="http://farragomagazine.com/tag/letters/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="69" />
-		<channel name="Farrago News" url="http://farragomagazine.com/campus/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="70" />
-		<channel name="Farrago OB Reports" url="http://farragomagazine.com/tag/ob-reports/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="71" />
-		<channel name="Farrago Poetry" url="http://farragomagazine.com/tag/poetry/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="72" />
-		<channel name="Farrago Prose" url="http://farragomagazine.com/tag/prose/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="73" />
-		<channel name="Indonesian Students Association" url="https://ppia-unimelb.org/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="74" />
-		<channel name="Labor Club" url="https://laborclubvoice.home.blog/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="75" />
-		<channel name="melbourne university thai students association" url="http://tsa-unimelb.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="76" />
-		<channel name="MUBSO" url="https://www.mubso.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="77" />
-		<channel name="Newsroom" url="https://about.unimelb.edu.au/newsroom/feed" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="78" />
-		<channel name="Postgraduate Environment Network" url="https://postgraduateenvironmentnetwork.wordpress.com/feed/" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="79" />
-		<channel name="Reddit - r/unimelb" url="https://www.reddit.com/r/unimelb/.rss" logo="https://gavindou.ch/assets/uniNews/logos/monash/monashZeitgeist.png" type="regular" id="80" />
+	<university name="University of Melbourne" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" id="1">
+		<channel name="3010" url="https://mag.alumni.unimelb.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" type="regular" id="54" />
+		<channel name="Apollo Music Society" url="http://www.apollohms.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/apollo.png" type="regular" id="55" />
+		<channel name="Christian Union" url="https://www.melbourne.cu.org.au/blog?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cu.png" type="regular" id="56" />
+		<channel name="COSDU" url="http://cosdu.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cosdu.png" type="regular" id="57" />
+		<channel name="ESSA - All" url="http://economicstudents.com/all/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="58" />
+		<channel name="ESSA - Economic History" url="http://economicstudents.com/category/economic-history/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="59" />
+		<channel name="ESSA - National" url="http://economicstudents.com/category/national/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="60" />
+		<channel name="ESSA - Pop Eco" url="http://economicstudents.com/category/pop-eco/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="61" />
+		<channel name="ESSA - World" url="http://economicstudents.com/category/world/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="62" />
+		<channel name="Farrago - Art" url="http://farragomagazine.com/art/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="63" />
+		<channel name="Farrago - Campus News Brefing" url="http://farragomagazine.com/tag/campus-news-briefing/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="64" />
+		<channel name="Farrago - Columns" url="http://farragomagazine.com/columns/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="65" />
+		<channel name="Farrago - Creative" url="http://farragomagazine.com/creative/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="66" />
+		<channel name="Farrago - Culture" url="http://farragomagazine.com/culture/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="67" />
+		<channel name="Farrago - Editorial" url="http://farragomagazine.com/tag/editorial/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="68" />
+		<channel name="Farrago - Letters" url="http://farragomagazine.com/tag/letters/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="69" />
+		<channel name="Farrago - News" url="http://farragomagazine.com/campus/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="70" />
+		<channel name="Farrago - OB Reports" url="http://farragomagazine.com/tag/ob-reports/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="71" />
+		<channel name="Farrago - Poetry" url="http://farragomagazine.com/tag/poetry/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="72" />
+		<channel name="Farrago - Prose" url="http://farragomagazine.com/tag/prose/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/farrago.png" type="regular" id="73" />
+		<channel name="Indonesian Students Association" url="https://ppia-unimelb.org/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/ppia.png" type="regular" id="74" />
+		<channel name="Labor Club" url="https://laborclubvoice.home.blog/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/alp.png" type="regular" id="75" />
+		<channel name="Thai Students Association" url="http://tsa-unimelb.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/tsa.png" type="regular" id="76" />
+		<channel name="MUBSO" url="https://www.mubso.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/mubso.png" type="regular" id="77" />
+		<channel name="Newsroom" url="https://about.unimelb.edu.au/newsroom/feed" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" type="regular" id="78" />
+		<channel name="Postgraduate Environment Network" url="https://postgraduateenvironmentnetwork.wordpress.com/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/pen.png" type="regular" id="79" />
+		<channel name="Reddit - r/unimelb" url="https://www.reddit.com/r/unimelb/.rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/reddit.png" type="regular" id="80" />
 	</university>
 </universities>
