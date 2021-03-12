@@ -1,140 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- Standard Metadata-->
-		<title>Gavin Douch</title>
-		<meta name="description" content="Independent iOS developer">
-		<meta name="keywords" content="Gavin Douch,iOS developer,StudyStreaks,Recall,Monash Zeitgeist,Dozenal Time app,Independent developer">
-		<meta name="language" content="english">
-		<meta name="author" content="Gavin Douch">
-		<meta name="copyright" content="Gavin Douch">
-		<meta charset="UTF-8">
-
-		<!-- CSS -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/css/styles.css">
-
-		<!-- Icons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/siteIcons/apple-touch/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/siteIcons/apple-touch/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/siteIcons/apple-touch/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/siteIcons/apple-touch/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/siteIcons/apple-touch/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/siteIcons/apple-touch/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/siteIcons/apple-touch/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/siteIcons/apple-touch/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/siteIcons/apple-touch/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="assets/images/siteIcons/android/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/siteIcons/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="assets/images/siteIcons/favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/siteIcons/favicon/favicon-16x16.png">
-		<link rel="manifest" href="assets/images/siteIcons/android/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="assets/images/icons/microsoft/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-	</head>
-	<body>
-		<div id="main">
-			<a id="title" href="https://gavindou.ch">Gavin Douch</a>
-			<nav>
-				<ul>
-					<li><a href="https://gavindou.ch" id="currentPage">Projects</a></li>
-					<li><a href="https://gavindou.ch/about">About</a></li>
-					<li><a href="https://gavindou.ch/contact">Contact</a></li>
-				</ul>
-			</nav>
-			<div id="projectsList">
-				<a href="https://apps.apple.com/au/app/studystreaks/id1478096728">
-					<h2 id="StudyStreaks">StudyStreaks</h2>
+---
+title: Projects
+layout: default
+nav: 0
+projects:
+-
+  name: StudyStreaks
+  link: https://apps.apple.com/au/app/studystreaks/id1478096728
+  image: studyStreaksAppIcon.png
+  text: A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
+  app: true
+  faq: studyStreaksFAQ
+  privacyPolicy: studyStreaksPrivacyPolicy
+-
+  name: Monash Zeitgeist
+  link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
+  image: monashZeitgeistAppIcon.png
+  text: A news aggregator for Monash University students.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
+  app: true
+  faq: monashZeitgeistFAQ
+  privacyPolicy: monashZeitgeistPrivacyPolicy
+-
+  name: Recall
+  link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
+  image: recallAppIcon.png
+  text: Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the <a href="https://en.wikipedia.org/wiki/Leitner_system">Leitner system</a>, Recall shows you flashcards less often when you get them right, and more often when you get them wrong.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
+  app: true
+  faq: recallFAQ
+  privacyPolicy: recallPrivacyPolicy
+-
+  name: Dozenal Time
+  link: /assets/docs/DozenalTime.app.zip
+  image: dozenalTimeApp.png
+  text: This app is a clock that lives in the Mac menu bar and shows the time in dozenal. Learn how dozenal works <a href="https://www.youtube.com/watch?v=U6xJfP7-HCc">here</a>.
+  app: false
+-
+  name: QR Code Generator
+  link: QRCodeGenerator
+  image: defaultQrCode.png
+  text: A highly customisable QR code generator.
+  app: false
+---
+<div id="projectsList">
+	{% for project in page.projects %}
+	<a href="{{ project.link }}">
+		<h2 id="{{ project.name }}">{{ project.name }}</h2>
+	</a>
+	<table>
+		<tr>
+			<td>
+				<a href="{{ project.link }}">
+					<img class="projectImage" src="assets/images/{{ project.image }}" alt="{{ project.name }}">
+					{% if project.app %}
+					<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store">
+					{% endif %}
 				</a>
-				<table>
-					<tr>
-						<td>
-							<a href="https://apps.apple.com/au/app/studystreaks/id1478096728">
-								<img class="projectImage" src="assets/images/studyStreaksAppIcon.png" alt="StudyStreaks app Icon">
-								<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download app on the iOS App Store">
-							</a>
-						</td>
-						<td>
-							<p>A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.<br>Pre-order it for free on the App Store, for iPhone, iPad, and iPod touch devices.<br>
-								<a href="https://gavindou.ch/studyStreaksFAQ">FAQ</a><br>
-								<a href="https://gavindou.ch/studyStreaksPrivacyPolicy">Privacy Policy</a>
-							</p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<a href="https://apps.apple.com/us/app/monash-zeitgeist/id1492213861">
-					<h2 id="Monash">Monash Zeitgeist</h2>
-				</a>
-				<table>
-					<tr>
-						<td>
-							<a href="https://apps.apple.com/us/app/monash-zeitgeist/id1492213861">
-								<img class="projectImage" src="assets/images/monashZeitgeistAppIcon.png" alt="Monash Zeitgeist app Icon">
-								<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download app on the iOS App Store">
-							</a>
-						</td>
-						<td>
-							<p>A news aggregator for Monash University students.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.<br>
-								<a href="https://gavindou.ch/monashZeitgeistFAQ">FAQ</a><br>
-								<a href="https://gavindou.ch/monashZeitgeistPrivacyPolicy">Privacy Policy</a>
-							</p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<a href="https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101">
-					<h2 id="Recall">Recall</h2>
-				</a>
-				<table>
-					<tr>
-						<td>
-							<a href="https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101">
-								<img class="projectImage" src="assets/images/recallAppIcon.png" alt="Recall app Icon">
-								<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download app on the iOS App Store">
-							</a>
-						</td>
-						<td>
-							<p>Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the <a href="https://en.wikipedia.org/wiki/Leitner_system">Leitner system</a>, Recall shows you flashcards less often when you get them right, and more often when you get them wrong.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.<br>
-							<a href="https://gavindou.ch/recallFAQ">FAQ</a><br>
-							<a href="https://gavindou.ch/recallPrivacyPolicy">Privacy Policy</a></p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<a href="assets/docs/DozenalTime.app.zip">
-					<h2 id="DozenalTime">Dozenal Time</h2>
-				</a>
-				<table>
-					<tr>
-						<td>
-							<a href="assets/docs/DozenalTime.app.zip">
-								<img class="projectImage" src="assets/images/dozenalTimeApp.png" alt="Dozenal Time app icon">
-							</a>
-						</td>
-						<td>
-							<p>This app is a clock that lives in the Mac menu bar and shows the time in dozenal. Learn how dozenal works <a href="https://www.youtube.com/watch?v=U6xJfP7-HCc">here</a>.</p>
-						</td>
-					</tr>
-				</table>
-				<hr>
-				<a href="https://gavindou.ch/QRCodeGenerator">
-					<h2 id="QRCodeGenerator">QR Code Generator</h2>
-				</a>
-				<table>
-					<tr>
-						<td>
-							<a href="https://gavindou.ch/QRCodeGenerator">
-								<img class="projectImage" src="assets/images/defaultQrCode.png" alt="QR Code Generator icon">
-							</a>
-						</td>
-						<td>
-							<p>A highly customisable QR code generator.</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</body>
-</html>
+			</td>
+			<td>
+				<p>{{ project.text }}
+					{% if project.app %}
+					<br>
+					<a href="{{ project.faq }}">FAQ</a><br>
+					<a href="{{ project.privacyPolicy }}">Privacy Policy</a>
+					{% endif %}
+				</p>
+			</td>
+		</tr>
+	</table>
+	<hr>
+	{% endfor %}
+</div>

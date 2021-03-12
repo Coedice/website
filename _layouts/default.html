@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Standard Metadata-->
+		<title>Gavin Douch</title>
+		<meta name="description" content="Independent iOS developer">
+		<meta name="keywords" content="Gavin Douch,iOS developer,StudyStreaks,Recall,Monash Zeitgeist,Dozenal Time app,Independent developer">
+		<meta name="language" content="english">
+		<meta name="author" content="Gavin Douch">
+		<meta name="copyright" content="Gavin Douch">
+		<meta charset="UTF-8">
+
+		<!-- CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
+
+		{% include icons.html %}
+	</head>
+	<body>
+		<div id="main">
+			<a id="title" href="{{ '/' | relative_url }}">Gavin Douch</a>
+			{% include nav.html %}
+			{{ content }}
+		</div>
+	</body>
+</html>
