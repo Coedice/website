@@ -63,7 +63,8 @@
 	<university name="University of Melbourne" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" id="1">
 		<channel name="3010" url="https://mag.alumni.unimelb.edu.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/unimelb.png" type="regular" id="54" />
 		<channel name="Apollo Music Society" url="http://www.apollohms.org.au/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/apollo.png" type="regular" id="55" />
-		<channel name="Christian Union" url="https://www.melbourne.cu.org.au/blog?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cu.png" type="regular" id="56" />
+		<channel name="Christian Union" url="https://medium.com/feed/cissa-unimelb" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cissa.png" type="regular" id="56" />
+		<channel name="CISSA" url="https://www.melbourne.cu.org.au/blog?format=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cu.png" type="regular" id="56" />
 		<channel name="COSDU" url="http://cosdu.blogspot.com/feeds/posts/default?alt=rss" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/cosdu.png" type="regular" id="57" />
 		<channel name="ESSA - All" url="http://economicstudents.com/all/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="58" />
 		<channel name="ESSA - Economic History" url="http://economicstudents.com/category/economic-history/feed/" logo="https://gavindou.ch/assets/uniNews/logos/unimelb/essa.png" type="regular" id="59" />
