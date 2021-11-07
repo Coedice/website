@@ -1,3 +1,5 @@
+---
+---
 * {
 	color: white;
 	font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -30,24 +32,24 @@ body {
 }
 
 nav > ul {
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-}
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 
-nav > ul > li {
+  > li {
 	list-style: none;
 	display: inline-block;
-}
 
-nav > ul > li > a {
-	font-size: 1.5em;
-	text-align: center;
-	text-decoration: none;
-	font-weight: 600;
-	white-space: nowrap;
-	padding: 0 20px;
-	color: #898989;
+	> a {
+	  font-size: 1.5em;
+	  text-align: center;
+	  text-decoration: none;
+	  font-weight: 600;
+	  white-space: nowrap;
+	  padding: 0 20px;
+	  color: #898989;
+	}
+  }
 }
 
 #currentPage {
@@ -115,13 +117,13 @@ code {
 		text-align: center;
 	}
 
-	nav > ul > li > a {
+	nav {
+	  margin-bottom: 20px;
+
+	  > ul > li > a {
 		font-size: 1.2em;
 		padding: 0 5px;
-	}
-
-	nav {
-		margin-bottom: 20px;
+	  }
 	}
 
 	.projectImage {
@@ -150,17 +152,17 @@ code {
 
 	#qrOptions {
 		width: 100%;
-	}
 
-	#qrOptions > tbody > tr > td {
+	  > tbody > tr > td {
 		width: 100%;
-	}
 
-	#qrOptions > tbody > tr > td > select {
-		width: 100%;
-	}
+		> select {
+		  width: 100%;
+		}
 
-	#qrOptions > tbody > tr > td > input {
-		width: 100%;
+		> input {
+		  width: 100%;
+		}
+	  }
 	}
 }
