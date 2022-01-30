@@ -1,6 +1,6 @@
 ---
 email: mailto:gavindouch@gmail.com
-description: Concepts in computer science
+description: Concepts in computer science.
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10,15 +10,15 @@ description: Concepts in computer science
 		<description>{{ page.description }}</description>
 		<link>{{ '/' | absolute_url }}</link>
 		<language>en-au</language>
-		<copyright>Copyright © {% include year.html %} Gavin Douch</copyright>
+		<copyright>Copyright © {{ site.time | date: '%Y' }} Gavin Douch</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 30 Jan 2022 00:00:00 +1100</pubDate>
 		<webMaster>{{ page.email }}</webMaster>
 		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title }}</title>
-				<link>{{ post.url | relative_url }}</link>
-				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
+				<link>{{ post.url | absolute_url }}</link>
+				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' -}}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid>{{ post.title }}</guid>
 			</item>
