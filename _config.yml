@@ -10,6 +10,10 @@ collections:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: /blog/feed.atom
 
 # SCSS
 sass:
