@@ -12,6 +12,9 @@
 		{% if page.use_math %}
 			{% include mathjax_support.html %}
 		{% endif %}
+		{% if page.use_qr %}
+			<script src="{{ 'assets/scripts/qrCode.js' | relative_url }}"></script>
+		{% endif %}
 	</head>
 	<body>
 		<div id="main">
