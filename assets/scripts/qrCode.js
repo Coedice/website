@@ -1,1 +1,60 @@
-function autoUpdate(){document.getElementById("qrDisplay").src="assets/images/load.gif";let foreColour=document.getElementById("foreColour").value;let backgroundColor=document.getElementById("backgroundColour").value;let input=document.getElementById("input").value;let typePicker=document.getElementById("outputTypePicker").selectedIndex;var dataOutput;if(typePicker=="0"){document.getElementById("input").placeholder="example.com";dataOutput=input;if(input==""){dataOutput="gavindou.ch"}else if(dataOutput.indexOf("http://")==-1&&dataOutput.indexOf("https://")==-1){dataOutput="https://"+dataOutput}}else if(typePicker=="1"){if(input==""){dataOutput="tel:+xx xxx xxxx"}else{document.getElementById("input").placeholder="+xx xxx xxxx";dataOutput="tel:"+input}}else if(typePicker=="2"){if(input==""){dataOutput="mailto:person@example.com"}else{document.getElementById("input").placeholder="person@example.com";dataOutput="mailto:"+input}}else if(typePicker=="3"){if(input==""){dataOutput="Text"}else{document.getElementById("input").placeholder="Text";dataOutput=input}}var size=document.getElementById("size").value;if(size==""){size="300"}let fileTypePicker=document.getElementById("fileType").selectedIndex;var fileType;if(fileTypePicker=="0"){fileType="png";document.getElementById("size").placeholder="Size (px)"}else if(fileTypePicker=="1"){fileType="jpg";document.getElementById("size").placeholder="Size (px)"}else if(fileTypePicker=="2"){fileType="svg";document.getElementById("size").placeholder="Size (Logical units)"}let link="https://api.qrserver.com/v1/create-qr-code/?color="+encodeURIComponent(foreColour.slice(1))+"&bgcolor="+encodeURIComponent(backgroundColor.slice(1))+"&data="+encodeURIComponent(dataOutput)+"&margin=2&size="+encodeURIComponent(size)+"x"+encodeURIComponent(size)+"&format="+encodeURIComponent(fileType);document.getElementById("qrDisplay").src=link;document.getElementById("qrDisplayA").href=link}
+let input = document.getElementById("input")
+
+function autoUpdate() {
+	document.getElementById("qrDisplay").src = "assets/images/load.gif";
+	let schema = "";
+
+	switch(document.getElementById("outputTypePicker").selectedIndex) {
+		case 0:
+			input.placeholder = "example.com";
+
+			if (input.value.indexOf("http://") === -1 && input.value.indexOf("https://") === -1) {
+				schema = "https://";
+			}
+			else {
+				schema = ""
+			}
+
+			break;
+		case 1:
+			input.placeholder = "+xx xxx xxxx";
+			schema = "tel:";
+			break;
+		case 2:
+			input.placeholder = "person@example.com";
+			schema = "mailto:";
+			break;
+		case 3:
+			input.placeholder = "Text";
+			schema = "";
+	}
+
+	let size = document.getElementById("size");
+
+	if (size.value === "") {
+		size.value = "300";
+	}
+
+	let fileExtension;
+
+	switch (document.getElementById("fileType").selectedIndex) {
+		case 0:
+			fileExtension = "png";
+			size.placeholder = "Size (px)";
+			break;
+		case 1:
+			fileExtension = "jpg";
+			size.placeholder = "Size (px)";
+			break;
+		case 2:
+			fileExtension = "svg";
+			size.placeholder = "Size (logical units)";
+	}
+
+	let dataOutput = input.value === "" ? schema + input.placeholder : schema + input.value;
+	let foreColour = document.getElementById("foreColour").value.slice(1);
+	let backgroundColor = document.getElementById("backgroundColour").value.slice(1);
+	let link = `https://api.qrserver.com/v1/create-qr-code/?color=${encodeURIComponent(foreColour)}&bgcolor=${encodeURIComponent(backgroundColor)}&data=${encodeURIComponent(dataOutput)}&margin=2&size=${encodeURIComponent(size.value)}x${encodeURIComponent(size.value)}&format=${encodeURIComponent(fileExtension)}`;
+	document.getElementById("qrDisplay").src = link;
+	document.getElementById("qrDisplayA").href = link;
+}
