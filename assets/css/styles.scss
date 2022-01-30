@@ -80,8 +80,13 @@ code {
 	font-family: Courier, Menlo, monospace;
 }
 
-#projectsList > table > tbody > tr > td > p {
+#projectsList > table > tbody > tr > td {
+  vertical-align: top;
+
+  > p {
 	padding: 10px;
+	margin-top: 0;
+  }
 }
 
 #face {
