@@ -7,19 +7,33 @@ nav: 2
     <tr>
         <td>
             <a href="{{ '/blog/feed.rss' | absolute_url }}">
-                <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS" width="30">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS" width="30">
+                        </td>
+                        <td>
+                            Subscribe with RSS
+                        </td>
+                    </tr>
+                </table>
             </a>
         </td>
-        <td>
-            Subscribe with RSS
-        </td>
+    </tr>
+    <tr>
         <td>
             <a href="{{ '/blog/feed.atom' | absolute_url }}">
-                <img src="{{ '/assets/images/atomIcon.png' | absolute_url }}" alt="Atom" width="30">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{{ '/assets/images/atomIcon.png' | absolute_url }}" alt="Atom" width="30">
+                        </td>
+                        <td>
+                            Subscribe with Atom
+                        </td>
+                    </tr>
+                </table>
             </a>
-        </td>
-        <td>
-            Subscribe with Atom
         </td>
     </tr>
 </table>
