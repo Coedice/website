@@ -3,9 +3,26 @@ title: Blog
 layout: default
 nav: 2
 ---
-<a href="{{ '/blog/feed.rss' | absolute_url }}">
-    <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS">
-</a>
+<table>
+    <tr>
+        <td>
+            <a href="{{ '/blog/feed.rss' | absolute_url }}">
+                <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS" width="30">
+            </a>
+        </td>
+        <td>
+            Subscribe with RSS
+        </td>
+        <td>
+            <a href="{{ '/blog/feed.atom' | absolute_url }}">
+                <img src="{{ '/assets/images/atomIcon.png' | absolute_url }}" alt="Atom" width="30">
+            </a>
+        </td>
+        <td>
+            Subscribe with Atom
+        </td>
+    </tr>
+</table>
 {% for post in site.posts %}
 <div>
     <h3>
