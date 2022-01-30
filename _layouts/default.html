@@ -9,6 +9,9 @@
 		<meta name="theme-color" content="#1c1c1c">
 		<link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
 		{% include icons.html %}
+		{% if page.use_math %}
+			{% include mathjax_support.html %}
+		{% endif %}
 	</head>
 	<body>
 		<div id="main">

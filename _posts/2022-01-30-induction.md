@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Proof by Induction
+use_math: true
 ---
 Proof by induction allows us to prove things about infinite series. It is a necessary skill for computer programmers to prove that some code or algorithm does what it is supposed to do.
 
@@ -13,24 +14,30 @@ In mathematical induction terms, checking that each domino is close enough to th
 Knocking over the first domino is called the basis or base step, and this means proving that the first statement is true.
 
 Here’s an example:
-We want to prove that the sum of every positive integer from $$\begin{aligned}1\end{aligned}$$ to some number $$\begin{aligned}x\end{aligned}$$ is equal to $$\begin{aligned}x(x+1)/2\end{aligned}$$
-$$\begin{aligned}1 + 2 + 3 + … + x = x(x+1)/2\end{aligned}$$
-We will do that by showing that each domino is close enough to the next domino to knock it over (that is, the inductive hypothesis),
-We will assume that $$\begin{aligned}1 + 2 + 3 + …\end{aligned}$$ all the way to $$\begin{aligned}k\end{aligned}$$ equals $$\begin{aligned}k(k+1)/2$$. If this is true, this means domino $$\begin{aligned}k\end{aligned}$$ has fallen.
+We want to prove that the sum of every positive integer from $1$ to some number $x$ is equal to $x(x+1)/2$.
 
-We will use this assumption to see if domino $$\begin{aligned}k\end{aligned}$$ is close enough to domino $$\begin{aligned}k + 1\end{aligned}$$ to knock it down.
-$$\begin{aligned}1 + 2 + 3 + … + k + (k + 1)\end{aligned}$$
-$$\begin{aligned}= k(k + 1)/2 + k+1\end{aligned}$$			(using the inductive hypothesis)
-$$\begin{aligned}=(k(k + 1) + 2k + 2)/2\end{aligned}$$		(simplifying)
-$$\begin{aligned}=(k(k + 1) + 2(k + 1))/2\end{aligned}$$		(simplifying)
-$$\begin{aligned}=(k + 2)(k + 1)/2\end{aligned}$$			(simplifying)
-This matches what we are trying to prove for domino $$\begin{aligned}k+1$$, because it matches our original statement, but where we have substituted $$\begin{aligned}x\end{aligned}$$ for $$\begin{aligned}k+1$$.
-Because we did this all using a general domino $$\begin{aligned}k$$, we have really proved that for every domino, it is close enough to the next domino to knock it down.
+$1 + 2 + 3 + … + x = x(x+1)/2$
+
+We will do that by showing that each domino is close enough to the next domino to knock it over (that is, the inductive hypothesis),
+We will assume that $1 + 2 + 3 + …$ all the way to $k$ equals $k(k+1)/2$. If this is true, this means domino $k$ has fallen.
+
+We will use this assumption to see if domino $k$ is close enough to domino $k + 1$ to knock it down.
+
+$1 + 2 + 3 + … + k + (k + 1)$\
+$= k(k + 1)/2 + k+1$			(using the inductive hypothesis)\
+$=(k(k + 1) + 2k + 2)/2$		(simplifying)\
+$=(k(k + 1) + 2(k + 1))/2$		(simplifying)\
+$=(k + 2)(k + 1)/2$			(simplifying)
+
+This matches what we are trying to prove for domino $k+1$, because it matches our original statement, but where we have substituted $x$ for $k+1$.
+Because we did this all using a general domino $k$, we have really proved that for every domino, it is close enough to the next domino to knock it down.
 
 Next we want to knock over the first domino (which is the basis step):
-$$\begin{aligned}1 = 1(1+1)/2\end{aligned}$$
-$$\begin{aligned}1 = 1\end{aligned}$$
+
+$1 = 1(1+1)/2$\
+$1 = 1$
+
 That is clearly true.
 
 We have knocked over the first domino, and we know all the dominos are close enough to each other to knock down the whole line, so we know that they will all fall.
-And we have proven by the principle of mathematical induction that the sum of every positive integer from $$\begin{aligned}1\end{aligned}$$ to some number $$\begin{aligned}x\end{aligned}$$ is equal to $$\begin{aligned}x(x+1)/2$$.
+And we have proven by the principle of mathematical induction that the sum of every positive integer from $1$ to some number $x$ is equal to $x(x+1)/2$.
