@@ -27,8 +27,8 @@ body {
 }
 
 #footer {
-  text-align: center;
-  margin: 70px 0 50px 0;
+	text-align: center;
+	margin: 70px 0 50px 0;
 }
 
 #main {
@@ -37,24 +37,24 @@ body {
 }
 
 nav > ul {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
 
-  > li {
-	list-style: none;
-	display: inline-block;
+	> li {
+		list-style: none;
+		display: inline-block;
 
-	> a {
-	  font-size: 1.5em;
-	  text-align: center;
-	  text-decoration: none;
-	  font-weight: 600;
-	  white-space: nowrap;
-	  padding: 0 20px;
-	  color: #898989;
+		> a {
+			font-size: 1.5em;
+			text-align: center;
+			text-decoration: none;
+			font-weight: 600;
+			white-space: nowrap;
+			padding: 0 20px;
+			color: #898989;
+		}
 	}
-  }
 }
 
 #currentPage {
@@ -81,17 +81,17 @@ code {
 }
 
 #projectsList > table > tbody > tr > td {
-  vertical-align: top;
+	vertical-align: top;
 
-  > p {
-	padding: 10px;
-	margin-top: 0;
-  }
+	> p {
+		padding: 10px;
+		margin-top: 0;
+	}
 }
 
 #face {
 	display: block;
-	width: 45%;
+	width: 25%;
 	border-radius: 20px;
 	margin: 0 auto 0 auto;
 }
@@ -107,6 +107,13 @@ code {
 
 /* Mobile */
 @media only screen and (max-width: 480pt) {
+	#face {
+		display: block;
+		width: 45%;
+		border-radius: 20px;
+		margin: 0 auto 0 auto;
+	}
+
 	p, li:not(nav) {
 		font-size: 1.5em;
 		margin: 0 5px 0 5px
@@ -128,12 +135,12 @@ code {
 	}
 
 	nav {
-	  margin-bottom: 20px;
+		margin-bottom: 20px;
 
-	  > ul > li > a {
-		font-size: 1.2em;
-		padding: 0 5px;
-	  }
+		> ul > li > a {
+			font-size: 1.2em;
+			padding: 0 5px;
+		}
 	}
 
 	.projectImage {
@@ -163,16 +170,16 @@ code {
 	#qrOptions {
 		width: 100%;
 
-	  > tbody > tr > td {
-		width: 100%;
+		> tbody > tr > td {
+			width: 100%;
 
-		> select {
-		  width: 100%;
-		}
+			> select {
+				width: 100%;
+			}
 
-		> input {
-		  width: 100%;
+			> input {
+				width: 100%;
+			}
 		}
-	  }
 	}
 }

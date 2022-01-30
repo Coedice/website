@@ -3,8 +3,9 @@ title: About
 layout: default
 nav: 1
 ---
-I'm an independent app creator from Melbourne, Australia.
-
-My apps are StudyStreaks, Recall, and Monash Zeitgesit.
 ![Photo of Gavin Douch](assets/images/gavinDouch.jpg){:id="face"}
-[Email me](mailto:gavindouch@gmail.com)
+I'm an independent developer from Melbourne, Australia.
+
+I am involved with technology community groups [WIRED Monash](https://wired.org.au) (President), and the Australian Computing Students' Association (President and Founder).
+
+Want to talk or have some feedback on one of my projects? [Please get in touch](mailto:gavindouch@gmail.com).
