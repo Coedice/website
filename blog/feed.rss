@@ -10,7 +10,7 @@ description: Concepts in computer science
 		<description>{{ page.description }}</description>
 		<link>{{ '/' | absolute_url }}</link>
 		<language>en-au</language>
-		<copyright>{% include copyright.html %}</copyright>
+		<copyright>Copyright © {% include year.html %} Gavin Douch</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 30 Jan 2022 00:00:00 +1100</pubDate>
 		<webMaster>{{ page.email }}</webMaster>
