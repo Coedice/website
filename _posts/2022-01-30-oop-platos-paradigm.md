@@ -18,12 +18,13 @@ The physical objects in the theory of forms are analogous to code objects, as th
 
 ## What about Subclasses?
 Subclasses can be thought of as relating to a Form that is more specific than another form.
-For example, here are some descriptions for the Forms of chairs and stools:  • Chair: “A device for sitting, with a platform to sit on, and some positive integer number of legs.“
-• Stool: “A device for sitting, with a platform to sit on, and one leg.“
+For example, here are some descriptions for the Forms of chairs and stools:
+- Chair: “A device for sitting, with a platform to sit on, and some positive integer number of legs.“
+- Stool: “A device for sitting, with a platform to sit on, and one leg.“
 
 In the OOP sense, we would say that stool is a subclass of chair, in the theory of forms sense, we would say that physical object is imitating the Forms of chair and stool.
 
 ## How Does This Help Me Code?
-Coding with this analogy in mind, we can ensure that our classes truely represent idealised and non-physical progenitors of objects, and that objects are only implemented and stateful offspring from classes. Classes should basically define the Form of the thing you are describing. Using the analogy above, if you are not checking in the initialiser of the stool class whether a positive integer number of legs has been passed, you have not actually specified the Form of a stool.
+Coding with this analogy in mind, we can ensure that our classes truly represent idealised and non-physical progenitors of objects, and that objects are only implemented and stateful offspring from classes. Classes should basically define the Form of the thing you are describing. Using the analogy above, if you are not checking in the initialiser of the stool class whether a positive integer number of legs has been passed, you have not actually specified the Form of a stool.
 
 Of course, most classes in real code don’t have anything to do with real-world things like chairs and stools, but nevertheless, the exercise of thinking about the true essence of what you are describing will result in better OOP code.
