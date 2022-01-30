@@ -2,6 +2,11 @@ timezone: Australia/Melbourne
 
 permalink: /:title
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
