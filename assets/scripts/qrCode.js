@@ -1,7 +1,6 @@
-let input = document.getElementById("input")
-
 function autoUpdate() {
 	document.getElementById("qrDisplay").src = "assets/images/load.gif";
+	let input = document.getElementById("input")
 	let schema = "";
 
 	switch(document.getElementById("outputTypePicker").selectedIndex) {
