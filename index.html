@@ -6,7 +6,7 @@ projects:
 -
   name: StudyStreaks
   link: https://apps.apple.com/au/app/studystreaks/id1478096728
-  image: studyStreaksAppIcon.png
+  image: studyStreaks.png
   text: A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
   app: true
   faq: studyStreaksFAQ
@@ -14,7 +14,7 @@ projects:
 -
   name: Monash Zeitgeist
   link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
-  image: monashZeitgeistAppIcon.png
+  image: monashZeitgeist.png
   text: A news aggregator for Monash University students.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
   app: true
   faq: monashZeitgeistFAQ
@@ -22,7 +22,7 @@ projects:
 -
   name: Recall
   link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
-  image: recallAppIcon.png
+  image: recall.png
   text: Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the <a href="https://en.wikipedia.org/wiki/Leitner_system">Leitner system</a>, Recall shows you flashcards less often when you get them right, and more often when you get them wrong.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
   app: true
   faq: recallFAQ
@@ -36,13 +36,13 @@ projects:
 -
   name: Dozenal Time
   link: /assets/docs/DozenalTime.app.zip
-  image: dozenalTimeApp.png
+  image: dozenalTime.png
   text: This app is a clock that lives in the Mac menu bar and shows the time in dozenal. Learn how dozenal works <a href="https://www.youtube.com/watch?v=U6xJfP7-HCc">here</a>.
   app: false
 -
   name: QR Code Generator
-  link: QRCodeGenerator
-  image: defaultQrCode.png
+  link: qrCode
+  image: qrCode.png
   text: A highly customisable QR code generator.
   app: false
 ---
@@ -55,7 +55,7 @@ projects:
 			<tr>
 				<td>
 					<a href="{{ project.link }}">
-						<img class="projectImage" src="assets/images/{{ project.image }}" alt="{{ project.name }}">
+						<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}">
 						{% if project.app %}
 							<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store">
 						{% endif %}
