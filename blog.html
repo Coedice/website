@@ -3,6 +3,9 @@ title: Blog
 layout: default
 nav: 2
 ---
+<a href="{{ '/blog/feed.rss' | absolute_url }}">
+    <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS">
+</a>
 {% for post in site.posts %}
 <div>
     <h3>
