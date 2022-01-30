@@ -34,4 +34,4 @@ Recall premium allows you to:
 - Choose between more fonts
 
 ## Still have questions?
-Contact me [here]({{ 'contact' | relative_url }}).
+Contact me [here]({{ 'about' | relative_url }}).

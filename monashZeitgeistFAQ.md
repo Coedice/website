@@ -12,4 +12,4 @@ Unfortunately Monash Zeitgeist is not available on Android. It is, however, comp
 Monash Zeitgeist is compatible with iOS 13.0 and later.
 
 ## Still have questions?
-Contact me [here]({{ 'contact' | relative_url }}).
+Contact me [here]({{ 'about' | relative_url }}).
