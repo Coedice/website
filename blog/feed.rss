@@ -18,7 +18,7 @@ description: Concepts in computer science
 			<item>
 				<title>{{ post.title }}</title>
 				<link>{{ post.url | relative_url }}</link>
-				<description>{{ post.excerpt }}</description>
+				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid>{{ post.title }}</guid>
 			</item>
