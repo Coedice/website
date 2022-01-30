@@ -24,10 +24,10 @@ We will assume that $1 + 2 + 3 + …$ all the way to $k$ equals $k(k+1)/2$. If t
 We will use this assumption to see if domino $k$ is close enough to domino $k + 1$ to knock it down.
 
 $1 + 2 + 3 + … + k + (k + 1)$\
-$= k(k + 1)/2 + k+1$			(using the inductive hypothesis)\
-$=(k(k + 1) + 2k + 2)/2$		(simplifying)\
-$=(k(k + 1) + 2(k + 1))/2$		(simplifying)\
-$=(k + 2)(k + 1)/2$			(simplifying)
+$= k(k + 1)/2 + k+1\,\,\,\,\,\,\,\,$             (using the inductive hypothesis)\
+$=(k(k + 1) + 2k + 2)/2\,\,\,\,\,\,\,\,$         (simplifying)\
+$=(k(k + 1) + 2(k + 1))/2\,\,\,\,\,\,\,\,$       (simplifying)\
+$=(k + 1)(k + 2)/2\,\,\,\,\,\,\,\,$              (simplifying)
 
 This matches what we are trying to prove for domino $k+1$, because it matches our original statement, but where we have substituted $x$ for $k+1$.
 Because we did this all using a general domino $k$, we have really proved that for every domino, it is close enough to the next domino to knock it down.
