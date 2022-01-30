@@ -12,14 +12,15 @@ description: Concepts in computer science
 		<language>en-au</language>
 		<copyright>{% include copyright.html %}</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-		<pubDate>Sun, 30 Jan 2021 00:00:00 +0000</pubDate>
+		<pubDate>Sun, 30 Jan 2022 00:00:00 +1100</pubDate>
 		<webMaster>{{ page.email }}</webMaster>
 		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title }}</title>
-				<link>{{ '/' | absolute_url }}</link>
+				<link>{{ post.url }}</link>
 				<description>{{ post.excerpt }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+				<guid>{{ post.title }}</guid>
 			</item>
 		{% endfor %}
 	</channel>
