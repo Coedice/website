@@ -25,4 +25,4 @@ To launch and add a duration (of unspecified subject), use:\
 <code>"studystreaks://addTime?s=&lt;duration to add in seconds&gt;"</code>
 
 ## Still have questions?
-Contact me [here]({{ 'contact' | relative_url }}).
+Contact me [here]({{ 'about' | relative_url }}).
