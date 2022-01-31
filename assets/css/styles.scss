@@ -34,6 +34,7 @@ body {
 #main {
 	width: 70%;
 	margin: 0 auto 180px auto;
+  	position: relative;
 }
 
 nav > ul {
@@ -65,43 +66,14 @@ input {
 	color: black;
 }
 
-.projectImage {
-	width: 160px;
-	height: 160px;
-}
-
-.appleBadge {
-	display: block;
-	padding: 20px;
-	width: 120px;
-}
-
 code {
 	font-family: Courier, Menlo, monospace;
-}
-
-#projectsList > table > tbody > tr > td {
-	vertical-align: top;
-
-	> p {
-		padding: 10px;
-		margin-top: 0;
-	}
 }
 
 #face {
 	display: block;
 	width: 25%;
 	border-radius: 20px;
-}
-
-#qrTable {
-	margin-top: 20px;
-}
-
-#qrDisplay {
-	display: block;
-	width: 300px;
 }
 
 /* Mobile */
@@ -138,46 +110,6 @@ code {
 		> ul > li > a {
 			font-size: 1.2em;
 			padding: 0 5px;
-		}
-	}
-
-	.projectImage {
-		width: 60%;
-		height: auto;
-		display: block;
-		margin: 0 auto 20px auto;
-	}
-
-	.appleBadge {
-		display: none;
-	}
-
-	#projectsList > table > tbody > tr > td {
-		display: block;
-	}
-
-	#qrDisplay {
-		display: block;
-		width: 100%;
-	}
-
-	#qrTable > tbody > tr > td {
-		display: block;
-	}
-
-	#qrOptions {
-		width: 100%;
-
-		> tbody > tr > td {
-			width: 100%;
-
-			> select {
-				width: 100%;
-			}
-
-			> input {
-				width: 100%;
-			}
 		}
 	}
 }

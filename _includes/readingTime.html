@@ -1,0 +1,9 @@
+{%- capture words -%}
+	{{- content | number_of_words | minus: 180 -}}
+{%- endcapture -%}
+{%- unless words contains '-' -%}
+	{%- capture minutes -%}
+		{{- words | plus: 150 | divided_by: 150 -}}
+	{%- endcapture -%}
+	{{ minutes }} minute{%- if minutes != 1 -%}s{%- endif -%}
+{%- endunless -%}
