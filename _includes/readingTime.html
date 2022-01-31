@@ -5,5 +5,5 @@
 	{%- capture minutes -%}
 		{{- words | plus: 150 | divided_by: 150 -}}
 	{%- endcapture -%}
-	{{ minutes }} minute{%- if minutes != 1 -%}s{%- endif -%}
+	{{ minutes }} minute{%- if minutes != "1" -%}s{%- endif -%}
 {%- endunless -%}
