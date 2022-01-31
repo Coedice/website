@@ -1,53 +1,9 @@
 ---
 title: Projects
 layout: default
-nav: 0
-projects:
--
-  name: StudyStreaks
-  link: https://apps.apple.com/au/app/studystreaks/id1478096728
-  image: studyStreaks.png
-  text: A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
-  app: true
-  faq: studyStreaksFAQ
-  privacyPolicy: studyStreaksPrivacyPolicy
--
-  name: Monash Zeitgeist
-  link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
-  image: monashZeitgeist.png
-  text: A news aggregator for Monash University students.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
-  app: true
-  faq: monashZeitgeistFAQ
-  privacyPolicy: monashZeitgeistPrivacyPolicy
--
-  name: Recall
-  link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
-  image: recall.png
-  text: Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the <a href="https://en.wikipedia.org/wiki/Leitner_system">Leitner system</a>, Recall shows you flashcards less often when you get them right, and more often when you get them wrong.<br>Download it for free on the App Store, for iPhone, iPad, and iPod touch devices.
-  app: true
-  faq: recallFAQ
-  privacyPolicy: recallPrivacyPolicy
--
-  name: Code Smells
-  link: https://code-smells.com
-  image: codeSmells.png
-  text: A guide to characteristics that may indicate deeper programming flaws.
-  app: false
--
-  name: Dozenal Time
-  link: /assets/docs/DozenalTime.app.zip
-  image: dozenalTime.png
-  text: This app is a clock that lives in the Mac menu bar and shows the time in dozenal. Learn how dozenal works <a href="https://www.youtube.com/watch?v=U6xJfP7-HCc">here</a>.
-  app: false
--
-  name: QR Code Generator
-  link: qrCode
-  image: qrCode.png
-  text: A highly customisable live QR code generator.
-  app: false
 ---
 <div id="projectsList">
-	{% for project in page.projects %}
+	{%- for project in site.data.projects.projects -%}
 		<a href="{{ project.link }}">
 			<h2 id="{{ project.name }}">{{ project.name }}</h2>
 		</a>
@@ -56,21 +12,21 @@ projects:
 				<td>
 					<a href="{{ project.link }}">
 						<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}">
-						{% if project.app %}
+						{%- if project.app -%}
 							<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store">
-						{% endif %}
+						{%- endif -%}
 					</a>
 				</td>
 				<td>
-					<p>{{ project.text }}
-						{% if project.app %}
+					<p>{{ project.description }}
+						{%- if project.app -%}
 							<br>
 							<a href="{{ project.faq }}">FAQ</a><br>
 							<a href="{{ project.privacyPolicy }}">Privacy Policy</a>
-						{% endif %}
+						{%- endif -%}
 					</p>
 				</td>
 			</tr>
 		</table>
-	{% endfor %}
+	{%- endfor -%}
 </div>

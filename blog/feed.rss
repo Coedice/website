@@ -14,7 +14,7 @@ description: Concepts in computer science.
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 30 Jan 2022 00:00:00 +1100</pubDate>
 		<webMaster>{{ page.email }}</webMaster>
-		{% for post in site.posts %}
+		{%- for post in site.posts -%}
 			<item>
 				<title>{{ post.title }}</title>
 				<link>{{ post.url | absolute_url }}</link>
@@ -22,6 +22,6 @@ description: Concepts in computer science.
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid>{{ post.title }}</guid>
 			</item>
-		{% endfor %}
+		{%- endfor -%}
 	</channel>
 </rss>

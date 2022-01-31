@@ -2,27 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		{% seo %}
+		{%- seo -%}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="language" content="english">
 		<meta name="copyright" content="Gavin Douch">
 		<meta name="theme-color" content="#1c1c1c">
 		<link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ 'blog/feed.rss' | absolute_url }}">
-		{% feed_meta %}
+		{%- feed_meta -%}
 		{% include icons.html %}
-		{% if page.use_math %}
+		{%- if page.use_math -%}
 			{% include mathjax_support.html %}
-		{% endif %}
-		{% if page.use_qr %}
+		{%- endif -%}
+		{%- if page.use_qr -%}
 			<script src="{{ 'assets/scripts/qrCode.js' | relative_url }}"></script>
-		{% endif %}
+		{%- endif -%}
 	</head>
 	<body>
 		<div id="main">
 			<a id="title" href="{{ '/' | relative_url }}">Gavin Douch</a>
 			{% include nav.html %}
-			{{ content }}
+			{{- content -}}
 		</div>
 		<p id="footer">{% include copyright.html %}</p>
 	</body>

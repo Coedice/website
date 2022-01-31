@@ -1,10 +1,7 @@
 <nav>
 	<ul>
-		{% assign sorted_pages = site.pages | sort:"nav" %}
-		{% for node in sorted_pages %}
-			{% if node.nav >= 0 %}
-				<li><a href="{{ node.url | relative_url }}"{% if page.url == node.url %} id="currentPage"{% endif %}>{{node.title}}</a></li>
-			{% endif %}
-		{% endfor %}
+		{%- for navigation_page in site.data.navigation.pages -%}
+			<li><a href="{{ navigation_page.url | relative_url }}"{% if page.url == navigation_page.url %} id="currentPage"{% endif %}>{{navigation_page.title}}</a></li>
+		{%- endfor -%}
 	</ul>
 </nav>
