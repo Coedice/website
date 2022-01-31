@@ -1,0 +1,33 @@
+---
+---
+#qrTable {
+	margin-top: 20px;
+}
+
+#qrDisplay {
+	display: block;
+	width: 300px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480pt) {
+	#qrTable > tbody > tr > td {
+		display: block;
+	}
+
+	#qrOptions {
+		width: 100%;
+
+		> tbody > tr > td {
+			width: 100%;
+
+			> select {
+				width: 100%;
+			}
+
+			> input {
+				width: 100%;
+			}
+		}
+	}
+}

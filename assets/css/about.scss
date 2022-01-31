@@ -1,0 +1,16 @@
+---
+---
+#face {
+  display: block;
+  width: 25%;
+  border-radius: 20px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480pt) {
+  #face {
+	display: block;
+	width: 45%;
+	margin: 0 auto 0 auto;
+  }
+}
