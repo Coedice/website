@@ -11,6 +11,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-minifier
 
 feed:
   path: /blog/feed.atom
