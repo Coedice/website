@@ -1,7 +1,6 @@
 ---
 title: About
 layout: default
-nav: 1
 ---
 ![Photo of Gavin Douch](assets/images/gavinDouch.jpg){:id="face"}
 I'm an independent developer from Melbourne, Australia.

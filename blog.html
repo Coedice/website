@@ -1,7 +1,6 @@
 ---
 title: Blog
 layout: default
-nav: 2
 ---
 <table>
     <tr>
@@ -12,9 +11,7 @@ nav: 2
                         <td>
                             <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS" width="30">
                         </td>
-                        <td>
-                            Subscribe with RSS
-                        </td>
+                        <td>Subscribe with RSS</td>
                     </tr>
                 </table>
             </a>
@@ -26,20 +23,18 @@ nav: 2
                         <td>
                             <img src="{{ '/assets/images/atomIcon.png' | absolute_url }}" alt="Atom" width="30">
                         </td>
-                        <td>
-                            Subscribe with Atom
-                        </td>
+                        <td>Subscribe with Atom</td>
                     </tr>
                 </table>
             </a>
         </td>
     </tr>
 </table>
-{% for post in site.posts %}
+{%- for post in site.posts -%}
 <div>
     <h3>
         <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
     </h3>
     {{ post.excerpt }}
 </div>
-{% endfor %}
+{%- endfor -%}
