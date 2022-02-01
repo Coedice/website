@@ -1,115 +1,115 @@
 ---
 ---
 * {
-	color: white;
-	font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #title {
-	font-size: 300%;
-	font-weight: normal;
-	text-decoration: none;
-	display: block;
-	margin: 20px 0 20px 0;
-	font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 300%;
+  font-weight: normal;
+  text-decoration: none;
+  display: block;
+  margin: 20px 0 20px 0;
+  font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2 {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 p, li:not(nav) {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 body {
-	background-color: #1c1c1c;
+  background-color: #1c1c1c;
 }
 
 #footer {
-	text-align: center;
-	margin: 70px 0 50px 0;
+  text-align: center;
+  margin: 70px 0 50px 0;
 }
 
 #main {
-	width: 70%;
-	margin: 0 auto 180px auto;
-  	position: relative;
+  width: 70%;
+  margin: 0 auto 180px auto;
+    position: relative;
 }
 
 nav > ul {
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
 
-	> li {
-		list-style: none;
-		display: inline-block;
+  > li {
+    list-style: none;
+    display: inline-block;
 
-		> a {
-			font-size: 1.5em;
-			text-align: center;
-			text-decoration: none;
-			font-weight: 600;
-			white-space: nowrap;
-			padding: 0 20px;
-			color: #898989;
-		}
-	}
+    > a {
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 0 20px;
+      color: #898989;
+    }
+  }
 }
 
 #currentPage {
-	color: white;
+  color: white;
 }
 
 input {
-	color: black;
+  color: black;
 }
 
 code {
-	font-family: Courier, Menlo, monospace;
+  font-family: Courier, Menlo, monospace;
 }
 
 #face {
-	display: block;
-	width: 25%;
-	border-radius: 20px;
+  display: block;
+  width: 25%;
+  border-radius: 20px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 480pt) {
-	#face {
-		display: block;
-		width: 45%;
-		margin: 0 auto 0 auto;
-	}
+  #face {
+    display: block;
+    width: 45%;
+    margin: 0 auto 0 auto;
+  }
 
-	p, li:not(nav) {
-		font-size: 1.5em;
-		margin: 0 5px 0 5px
-	}
+  p, li:not(nav) {
+    font-size: 1.5em;
+    margin: 0 5px 0 5px
+  }
 
-	h2 {
-		font-size: 2em;
-		text-align: center;
-		margin-bottom: 10px;
-	}
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-	#main {
-		width: 100%;
-	}
+  #main {
+    width: 100%;
+  }
 
-	#title {
-		font-size: 2.7em;
-		text-align: center;
-	}
+  #title {
+    font-size: 2.7em;
+    text-align: center;
+  }
 
-	nav {
-		margin-bottom: 20px;
+  nav {
+    margin-bottom: 20px;
 
-		> ul > li > a {
-			font-size: 1.2em;
-			padding: 0 5px;
-		}
-	}
+    > ul > li > a {
+      font-size: 1.2em;
+      padding: 0 5px;
+    }
+  }
 }
