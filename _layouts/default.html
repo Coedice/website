@@ -14,7 +14,7 @@
 		{%- if page.title == "About" -%}
 			<link rel="stylesheet" href="{{ 'assets/css/about.css' | relative_url }}">
 		{%- endif -%}
-		{%- if page.layout == "post" -%}
+		{%- if page.layout == "post" or page.title == "Blog" -%}
 			<link rel="stylesheet" href="{{ 'assets/css/blog.css' | relative_url }}">
 		{%- endif -%}
 		{%- if page.title == "QR Code Generator" -%}

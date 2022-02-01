@@ -2,39 +2,11 @@
 title: Blog
 layout: default
 ---
-<table>
-    <tr>
-        <td>
-            <a href="{{ '/blog/feed.rss' | absolute_url }}">
-                <table>
-                    <tr>
-                        <td>
-                            <img src="{{ '/assets/images/rssIcon.png' | absolute_url }}" alt="RSS" width="30">
-                        </td>
-                        <td>Subscribe with RSS</td>
-                    </tr>
-                </table>
-            </a>
-        </td>
-        <td>
-            <a href="{{ '/blog/feed.atom' | absolute_url }}">
-                <table>
-                    <tr>
-                        <td>
-                            <img src="{{ '/assets/images/atomIcon.png' | absolute_url }}" alt="Atom" width="30">
-                        </td>
-                        <td>Subscribe with Atom</td>
-                    </tr>
-                </table>
-            </a>
-        </td>
-    </tr>
-</table>
+{% include subscribe.html %}
 {%- for post in site.posts -%}
-<div>
-    <h3>
-        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-    </h3>
-    {{ post.excerpt }}
-</div>
+    <a href="{{ post.url | absolute_url }}" class="postSummary">
+        <span>{{ post.date | date_to_string }}</span>
+        <h3>{{ post.title }}</h3>
+        {{ post.excerpt }}
+    </a>
 {%- endfor -%}
