@@ -58,7 +58,6 @@ a.postSummary:hover {
 
 div#subscriptionButtons {
   > a {
-    margin-right: 10px;
     text-decoration: none;
 
     > img {
@@ -72,5 +71,9 @@ div#subscriptionButtons {
     span:hover {
       text-decoration: underline;
     }
+  }
+
+  > a:not(:last-child) {
+    margin-right: 10px;
   }
 }
