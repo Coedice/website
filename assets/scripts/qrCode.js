@@ -47,9 +47,9 @@ function autoUpdate() {
 
 	let dataOutput = dataInput.value === "" ? schema + dataInput.placeholder : schema + dataInput.value;
 	let foreColour = document.getElementById("foreColour").value.slice(1);
-	let size = sizeInput.value === "" ? "300" : sizeInput.val
+	let size = sizeInput.value === "" ? "300" : sizeInput.value
 	let backgroundColor = document.getElementById("backgroundColour").value.slice(1);
-	let link = `https://api.qrserver.com/v1/create-qr-code/?color=${encodeURIComponent(foreColour)}&bgcolor=${encodeURIComponent(backgroundColor)}&data=${encodeURIComponent(dataOutput)}&margin=2&size=${encodeURIComponent(sizeInput.value)}x${encodeURIComponent(sizeInput.value)}&format=${encodeURIComponent(fileExtension)}`;
+	let link = `https://api.qrserver.com/v1/create-qr-code/?color=${encodeURIComponent(foreColour)}&bgcolor=${encodeURIComponent(backgroundColor)}&data=${encodeURIComponent(dataOutput)}&margin=2&size=${encodeURIComponent(size)}x${encodeURIComponent(size)}&format=${encodeURIComponent(fileExtension)}`;
 	document.getElementById("qrDisplay").src = link;
 	document.getElementById("qrDisplayA").href = link;
 }
