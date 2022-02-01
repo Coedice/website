@@ -35,6 +35,7 @@ body {
   position: relative;
   bottom: 60px;
   text-align: center;
+  height: 60px;
 }
 
 #main {
@@ -97,7 +98,8 @@ code {
   }
 
   #main {
-    width: 100%;
+    width: 90%;
+    padding-bottom: 90px;
   }
 
   #title {
@@ -112,5 +114,9 @@ code {
       font-size: 1.2em;
       padding: 0 5px;
     }
+  }
+
+  #footer {
+    font-size: small;
   }
 }
