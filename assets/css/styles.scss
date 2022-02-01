@@ -10,7 +10,7 @@
   font-weight: normal;
   text-decoration: none;
   display: block;
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
   font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -22,19 +22,28 @@ p, li:not(nav) {
   font-size: 1.2em;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background-color: #1c1c1c;
 }
 
 #footer {
+  position: relative;
+  bottom: 60px;
   text-align: center;
-  margin: 70px 0 50px 0;
 }
 
 #main {
   width: 70%;
-  margin: 0 auto 180px auto;
-    position: relative;
+  padding-bottom: 60px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  min-height: calc(100% - 60px - 20px);
+  padding-top: 20px;
 }
 
 nav > ul {
@@ -74,20 +83,8 @@ code {
   font-family: Courier, Menlo, monospace;
 }
 
-#face {
-  display: block;
-  width: 25%;
-  border-radius: 20px;
-}
-
 /* Mobile */
 @media only screen and (max-width: 480pt) {
-  #face {
-    display: block;
-    width: 45%;
-    margin: 0 auto 0 auto;
-  }
-
   p, li:not(nav) {
     font-size: 1.5em;
     margin: 0 5px 0 5px
