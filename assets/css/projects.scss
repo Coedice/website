@@ -3,6 +3,7 @@
 .projectImage {
   width: 160px;
   height: 160px;
+  margin-right: 10px;
 }
 
 .appleBadge {
@@ -15,8 +16,7 @@
   vertical-align: top;
 
   > p {
-	padding: 10px;
-	margin-top: 0;
+	margin: 0;
   }
 }
 
@@ -39,7 +39,9 @@
 	display: none;
   }
 
-  #projectsList > table > tbody > tr > td {
-	display: block;
+  #projectsList {
+	> table > tbody > tr > td {
+	  display: block;
+	}
   }
 }

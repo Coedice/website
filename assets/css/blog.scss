@@ -59,6 +59,7 @@ a.postSummary:hover {
 div#subscriptionButtons {
   > a {
     text-decoration: none;
+    white-space: nowrap;
 
     > img {
       width: 30px;
