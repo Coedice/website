@@ -5,13 +5,11 @@ layout: default
 <h1 id="blogTitle">{{ page.title }}</h1>
 <p id="postMeta">{{ page.date | date_to_string }} | {% include readingTime.html %}</p>
 {{ content }}
-{%- if page.previous != nil -%}
-	<p class="postArrow leftArrow">
+<div id="postArrow">
+	{%- if page.previous != nil -%}
 		<a href="{{ page.previous.url }}">&lt; Previous </a>
-	</p>
-{%- endif -%}
-{%- if page.next != nil -%}
-	<p class="postArrow rightArrow">
+	{%- endif -%}
+	{%- if page.next != nil -%}
 		<a href="{{ page.next.url }}">Next &gt;</a>
-	</p>
-{%- endif -%}
+	{%- endif -%}
+</div>

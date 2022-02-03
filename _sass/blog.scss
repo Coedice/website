@@ -1,13 +1,15 @@
-p.postArrow {
-  position: absolute;
-}
+div#postArrow {
+  > a {
+    position: absolute;
+  }
 
-p.leftArrow {
-  left: 0;
-}
+  > a:nth-child(1) {
+    left: 0;
+  }
 
-p.rightArrow {
-  right: 0;
+  > a:nth-child(2) {
+    right: 0;
+  }
 }
 
 h1#blogTitle {
