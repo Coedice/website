@@ -1,5 +1,4 @@
 function autoUpdate() {
-	document.getElementById("qrDisplay").src = "assets/images/load.gif";
 	let dataInput = document.getElementById("input")
 	let schema = "";
 
@@ -34,11 +33,11 @@ function autoUpdate() {
 	switch (document.getElementById("fileType").selectedIndex) {
 		case 0:
 			fileExtension = "png";
-			sizeInput.placeholder = "Size (px)";
+			sizeInput.placeholder = "Image size (px)";
 			break;
 		case 1:
 			fileExtension = "jpg";
-			sizeInput.placeholder = "Size (px)";
+			sizeInput.placeholder = "Image size (px)";
 			break;
 		case 2:
 			fileExtension = "svg";
@@ -50,6 +49,8 @@ function autoUpdate() {
 	let size = sizeInput.value === "" ? "300" : sizeInput.value
 	let backgroundColor = document.getElementById("backgroundColour").value.slice(1);
 	let link = `https://api.qrserver.com/v1/create-qr-code/?color=${encodeURIComponent(foreColour)}&bgcolor=${encodeURIComponent(backgroundColor)}&data=${encodeURIComponent(dataOutput)}&margin=2&size=${encodeURIComponent(size)}x${encodeURIComponent(size)}&format=${encodeURIComponent(fileExtension)}`;
-	document.getElementById("qrDisplay").src = link;
-	document.getElementById("qrDisplayA").href = link;
+	document.getElementById("qrDisplay").firstElementChild.href = link;
+	document.getElementById("qrCodeImage").src = link;
 }
+
+window.onload = autoUpdate

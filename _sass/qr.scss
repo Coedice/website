@@ -1,8 +1,10 @@
 table#qrTable {
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-img#qrDisplay {
+img#qrCodeImage {
   display: block;
   width: 300px;
 }
@@ -13,7 +15,7 @@ img#qrDisplay {
     display: block;
   }
 
-  table#qrOptions {
+  td#qrOptions {
     width: 100%;
 
     > tbody > tr > td {

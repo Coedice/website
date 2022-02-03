@@ -2,65 +2,37 @@
 title: QR Code Generator
 layout: default
 ---
-<div align="center">
-	<table id="qrTable">
-		<tr>
-			<td>
-				<table id="qrOptions">
-					<tr>
-						<td>
-							<select title="Pick the type of output" id="outputTypePicker" oninput="autoUpdate()">
-								<optgroup label="Output type">
-									<option>Website</option>
-									<option>Phone Number</option>
-									<option>Email Address</option>
-									<option>Text</option>
-								</optgroup>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<select title="Pick the output file type" id="fileType" oninput="autoUpdate()">
-								<optgroup label="File type">
-									<option>PNG</option>
-									<option>JPG</option>
-									<option>SVG</option>
-								</optgroup>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="url" id="input" oninput="autoUpdate()" placeholder="example.com" autocorrect="off" autocapitalize="off" />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<table>
-								<tr>
-									<td>
-										<input title="Foreground colour" type="color" id="foreColour" oninput="autoUpdate()"  value="#000000" />
-									</td>
-									<td>
-										<input title="Background colour"  type="color" id="backgroundColour" oninput="autoUpdate()"  value="#FFFFFF" />
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="number" id="size" oninput="autoUpdate()" placeholder="Size (px)">
-						</td>
-					</tr>
-				</table>
-			</td>
-			<td>
-				<a id="qrDisplayA" href="" download>
-					<img id="qrDisplay" src="assets/images/load.gif" onload="autoUpdate()" alt="QR code" />
-				</a>
-			</td>
-		</tr>
-	</table>
-</div>
+<table id="qrTable">
+	<tr>
+		<td id="qrOptions">
+			<select title="Pick the type of output" id="outputTypePicker" oninput="autoUpdate()">
+				<optgroup label="Output type">
+					<option>Website</option>
+					<option>Phone Number</option>
+					<option>Email Address</option>
+					<option>Text</option>
+				</optgroup>
+			</select>
+			<br>
+			<input type="url" id="input" oninput="autoUpdate()" placeholder="example.com" autocorrect="off" autocapitalize="off">
+			<br>
+			<input title="Foreground colour" type="color" id="foreColour" oninput="autoUpdate()" value="#000000">
+			<input title="Background colour" type="color" id="backgroundColour" oninput="autoUpdate()" value="#FFFFFF">
+			<br>
+			<select title="Pick the output file type" id="fileType" oninput="autoUpdate()">
+				<optgroup label="File type">
+					<option>PNG</option>
+					<option>JPG</option>
+					<option>SVG</option>
+				</optgroup>
+			</select>
+			<br>
+			<input type="number" id="size" oninput="autoUpdate()" placeholder="Size (px)">
+		</td>
+		<td id="qrDisplay">
+			<a href="" download>
+				<img id="qrCodeImage" src="assets/images/defaultQrCode.png" alt="QR code">
+			</a>
+		</td>
+	</tr>
+</table>
