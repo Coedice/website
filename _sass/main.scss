@@ -3,7 +3,7 @@
   font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#title {
+a#title {
   font-size: 300%;
   font-weight: normal;
   text-decoration: none;
@@ -29,14 +29,14 @@ body {
   background-color: #1c1c1c;
 }
 
-#footer {
+p#footer {
   position: relative;
   bottom: 60px;
   text-align: center;
   height: 60px;
 }
 
-#main {
+div#main {
   width: 70%;
   padding-bottom: 60px;
   margin: 0 auto 0 auto;
@@ -70,7 +70,7 @@ nav > ul {
   }
 }
 
-#currentPage {
+a#currentPage {
   color: white;
 }
 
@@ -95,12 +95,12 @@ code {
     margin-bottom: 10px;
   }
 
-  #main {
+  div#main {
     width: 90%;
     padding-bottom: 90px;
   }
 
-  #title {
+  a#title {
     font-size: 2.7em;
     text-align: center;
   }
@@ -114,7 +114,7 @@ code {
     }
   }
 
-  #footer {
+  p#footer {
     font-size: small;
   }
 }
