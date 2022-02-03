@@ -1,19 +1,19 @@
-#qrTable {
+table#qrTable {
   margin-top: 20px;
 }
 
-#qrDisplay {
+img#qrDisplay {
   display: block;
   width: 300px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 480pt) {
-  #qrTable > tbody > tr > td {
+  table#qrTable > tbody > tr > td {
     display: block;
   }
 
-  #qrOptions {
+  table#qrOptions {
     width: 100%;
 
     > tbody > tr > td {

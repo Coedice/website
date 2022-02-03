@@ -1,16 +1,16 @@
-.projectImage {
+img.projectImage {
   width: 160px;
   height: 160px;
   margin-right: 10px;
 }
 
-.appleBadge {
+img.appleBadge {
   display: block;
   padding: 20px;
   width: 120px;
 }
 
-#projectsList > table > tbody > tr > td {
+div#projectsList > table > tbody > tr > td {
   vertical-align: top;
 
   > p {
@@ -18,26 +18,20 @@
   }
 }
 
-#face {
-  display: block;
-  width: 25%;
-  border-radius: 20px;
-}
-
 /* Mobile */
 @media only screen and (max-width: 480pt) {
-  .projectImage {
+  img.projectImage {
 	width: 60%;
 	height: auto;
 	display: block;
 	margin: 0 auto 20px auto;
   }
 
-  .appleBadge {
+  img.appleBadge {
 	display: none;
   }
 
-  #projectsList {
+  div#projectsList {
 	> table > tbody > tr > td {
 	  display: block;
 	}
