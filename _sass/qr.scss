@@ -17,17 +17,14 @@ img#qrCodeImage {
 
   td#qrOptions {
     width: 100%;
+    display: block;
 
-    > tbody > tr > td {
+    > select {
       width: 100%;
+    }
 
-      > select {
-        width: 100%;
-      }
-
-      > input {
-        width: 100%;
-      }
+    > input {
+      width: 100%;
     }
   }
 }
