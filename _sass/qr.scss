@@ -23,7 +23,7 @@ img#qrCodeImage {
       width: 100%;
     }
 
-    > input {
+    > input:not([type="color"]) {
       width: 100%;
     }
   }
