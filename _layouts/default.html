@@ -14,6 +14,7 @@
 		{%- if page.use_math -%}
 			{% include mathjax_support.html %}
 		{%- endif -%}
+		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
 		{%- if page.title == "QR Code Generator" -%}
 			<script src="{{ 'assets/scripts/qrCode.js' | relative_url }}"></script>
 		{%- endif -%}
@@ -24,6 +25,6 @@
 			{% include nav.html %}
 			{{- content -}}
 		</div>
-		<p id="footer">{% include copyright.html %}</p>
+		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Gavin Douch</p>
 	</body>
 </html>
