@@ -3,7 +3,7 @@ layout: default
 ---
 {% include subscribe.html %}
 <h1 id="blogTitle">{{ page.title }}</h1>
-<p id="postMeta">{{ page.date | date_to_string }} | {% include readingTime.html %}</p>
+<p id="postMeta"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> Published: {{ page.date | date_to_string }}, reading time: {% include readingTime.html %}</p>
 {{ content }}
 <div id="postArrow">
 	{%- if page.previous != nil -%}
