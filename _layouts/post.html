@@ -3,13 +3,13 @@ layout: default
 ---
 {% include subscribe.html %}
 <h1 id="blogTitle">{{ page.title }}</h1>
-<p id="postMeta"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> Published: {{ page.date | date_to_string }}, reading time: {% include readingTime.html %}</p>
+<p id="postMeta"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> {{ page.date | date_to_string }}, reading time: {% include readingTime.html %}</p>
 {{ content }}
 <div id="postArrow">
 	{%- if page.previous != nil -%}
-		<a href="{{ page.previous.url }}">&lt; Previous </a>
+		<a href="{{ page.previous.url }}" id="leftPostArrow"><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron"></a>
 	{%- endif -%}
 	{%- if page.next != nil -%}
-		<a href="{{ page.next.url }}">Next &gt;</a>
+		<a href="{{ page.next.url }}" id="rightPostArrow"><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron"></a>
 	{%- endif -%}
 </div>

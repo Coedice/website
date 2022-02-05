@@ -1,14 +1,23 @@
 div#postArrow {
   > a {
-    position: absolute;
+    position: fixed;
+    top: 50%;
+
+    > img {
+      width: 50px;
+    }
   }
 
-  > a:nth-child(1) {
-    left: 0;
+  > a#leftPostArrow {
+    left: 10px;
   }
 
-  > a:nth-child(2) {
-    right: 0;
+  > a#rightPostArrow {
+    right: 10px;
+    
+    > img {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -20,6 +29,7 @@ p#postMeta {
   color: #aaaaaa;
   font-size: 1em;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 span.tagList {
@@ -112,5 +122,12 @@ div#subscriptionButtons {
 
   > a:not(:last-child) {
     margin-right: 10px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480pt) {
+  div#postArrow {
+    display: none;
   }
 }
