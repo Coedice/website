@@ -5,8 +5,8 @@ layout: default
 {% include subscribe.html %}
 {%- for post in site.posts -%}
     <a href="{{ post.url | absolute_url }}" class="postSummary">
-        <span>{{ post.date | date_to_string }}</span>
         <h3>{{ post.title }}</h3>
+        <span><span class="tagList">{% for tag in site.tags %}{% if post.tags contains tag[0] %} <span class="tagLabel {{ tag[0] }}">{{ tag[0] }}</span>{% endif %}{% endfor %}</span> Published: {{ post.date | date_to_string }}</span>
         {{ post.excerpt }}
     </a>
 {%- endfor -%}

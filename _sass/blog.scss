@@ -17,43 +17,75 @@ h1#blogTitle {
 }
 
 p#postMeta {
-  font-style: italic;
   color: #aaaaaa;
   font-size: 1em;
   margin-top: 0;
 }
 
-a.postSummary {
-  > p {
-    margin-top: 0;
+span.tagList {
+  span.tagLabel {
+    border-radius: 5px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: normal;
   }
 
-  > h3 {
+  span.tagLabel:not(:last-child) {
+    margin-right: 2px;
+  }
+
+  span.programming {
+    background-color: purple;
+  }
+
+  span.compsci {
+    background-color: green;
+  }
+
+  span.design {
+    background-color: #0059ff;
+  }
+}
+
+a.postSummary {
+  > p {
     margin-bottom: 0;
   }
 
-  text-decoration: none;
+  > h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 
   > h3:hover {
     text-decoration: underline;
   }
 
   > span {
-    font-style: italic;
     color: #aaaaaa;
     font-size: 1em;
-    position: absolute;
-    right: 10px;
+    margin-bottom: 10px;
+    display: block;
   }
 
+  background-color: #111111;
+  border-radius: 20px;
+  text-decoration: none;
   display: block;
-  padding-left: 10px;
-  border-left: gray solid 2px;
+  padding: 20px;
+  border: transparent solid 0.5px;
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+a.postSummary:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 a.postSummary:hover {
   background-color: #2a2a2a;
-  border-left: white solid 2px;
+  border: white solid 0.5px;
 }
 
 div#subscriptionButtons {
