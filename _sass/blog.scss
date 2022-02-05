@@ -31,8 +31,12 @@ span.tagList {
     font-style: normal;
   }
 
-  span.tagLabel:not(:last-child) {
+  span.tagLabel {
     margin-right: 2px;
+  }
+
+  span.tagLabel:last-child {
+    margin-right: 4px;
   }
 
   span.programming {
@@ -108,12 +112,5 @@ div#subscriptionButtons {
 
   > a:not(:last-child) {
     margin-right: 10px;
-  }
-}
-
-/* Mobile */
-@media only screen and (max-width: 480pt) {
-  a.postSummary > span {
-    display: none;
   }
 }
