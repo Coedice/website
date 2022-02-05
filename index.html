@@ -11,7 +11,7 @@ layout: default
 			<tr>
 				<td>
 					<a href="{{ project.link }}">
-						<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}">
+						<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}{% if project.app %} app{% endif %} icon">
 						{%- if project.app -%}
 							<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store">
 						{%- endif -%}
