@@ -52,5 +52,3 @@ function autoUpdate() {
 	document.getElementById("qrDisplay").firstElementChild.href = link;
 	document.getElementById("qrCodeImage").src = link;
 }
-
-window.onload = autoUpdate
