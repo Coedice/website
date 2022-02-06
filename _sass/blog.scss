@@ -33,33 +33,45 @@ p#postMeta {
 }
 
 span.tagList {
-  span.tagLabel {
+  .tagLabel {
     border-radius: 5px;
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
     font-style: normal;
-  }
-
-  span.tagLabel {
     margin-right: 2px;
+    text-decoration: none;
   }
 
-  span.tagLabel:last-child {
+  .tagLabel:last-child {
     margin-right: 4px;
   }
 
-  span.programming {
+  .tagLabel:hover {
+    cursor: pointer;
+  }
+
+  .none {
+    background-color: white;
+    color: black;
+  }
+
+  .programming {
     background-color: purple;
   }
 
-  span.compsci {
+  .compsci {
     background-color: green;
   }
 
-  span.design {
+  .design {
     background-color: #0059ff;
   }
+}
+
+#tagFilterList {
+  margin-top: 10px;
+  display: none;
 }
 
 a.postSummary {
