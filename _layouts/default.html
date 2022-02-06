@@ -11,9 +11,6 @@
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ 'blog/feed.rss' | absolute_url }}">
 		{%- feed_meta -%}
 		{% include icons.html %}
-		{%- if page.use_math -%}
-			{% include mathjax_support.html %}
-		{%- endif -%}
 		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
 		{%- if page.title == "QR Code Generator" -%}
 			<script src="{{ 'assets/scripts/qrCode.js' | relative_url }}"></script>
@@ -27,6 +24,9 @@
 			<a id="title" href="{{ '/' | relative_url }}">Gavin Douch</a>
 			{% include nav.html %}
 			{{- content -}}
+			{%- if page.use_math -%}
+				{% include mathjax_support.html %}
+			{%- endif -%}
 		</div>
 		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Gavin Douch</p>
 	</body>
