@@ -4,7 +4,7 @@ layout: default
 ---
 {% include subscribe.html %}
 <span class="tagList" id="tagFilterList">
-    Filter by tag: <a onclick="filter('none');" class="tagLabel none" style="font-weight: bold;">none</a>
+    Filter by tag: <a onclick="filter('none');" class="tagLabel none">none</a>
     {%- for tag in site.tags -%}
         <a onclick="filter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</a>
     {%- endfor -%}
