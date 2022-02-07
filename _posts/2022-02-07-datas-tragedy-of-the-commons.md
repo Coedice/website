@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Tragedy of the Data Commons
+title: Data's Tragedy of the Commons
 tags: programming compsci
 ---
 Memory and storage virtualisation have created a problem in a world where computers have many processes competing for
