@@ -16,14 +16,14 @@ function filter(tag) {
 		postSummary.style.display = found ? "block" : "none";
 	}
 
-	// Make tag labels bold
+	// Colour tag labels' borders
 	let filterTagsList = document.getElementsByClassName("tagLabel");
 
 	for (let filterTagLabel of filterTagsList) {
-		filterTagLabel.style.fontWeight = "normal";
+		filterTagLabel.style.border = "transparent solid 1px"
 
 		if (filterTagLabel.classList.contains(tag)) {
-			filterTagLabel.style.fontWeight = "bold";
+			filterTagLabel.style.border = "white solid 1px"
 		}
 	}
 }
