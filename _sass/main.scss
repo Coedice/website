@@ -62,10 +62,10 @@ nav > ul {
       white-space: nowrap;
       padding: 0 20px;
       color: #898989;
-    }
 
-    > a:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

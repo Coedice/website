@@ -6,17 +6,16 @@ div#postArrow {
     > img {
       width: 50px;
     }
-  }
+    &:first-child {
+      left: 10px;
+    }
 
-  > a#leftPostArrow {
-    left: 10px;
-  }
+    &:last-child {
+      right: 10px;
 
-  > a#rightPostArrow {
-    right: 10px;
-    
-    > img {
-      transform: rotate(180deg);
+      > img {
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -41,15 +40,15 @@ span.tagList {
     font-style: normal;
     margin-right: 2px;
     text-decoration: none;
-    border: transparent solid 1px
-  }
+    border: transparent solid 1px;
 
-  .tagLabel:last-child {
-    margin-right: 4px;
-  }
+    &:last-child {
+      margin-right: 4px;
+    }
 
-  .tagLabel:hover {
-    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .none {
@@ -83,10 +82,10 @@ a.postSummary {
   > h3 {
     margin-top: 0;
     margin-bottom: 10px;
-  }
 
-  > h3:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   > span {
@@ -106,13 +105,15 @@ a.postSummary {
   margin-top: 20px;
 }
 
-a.postSummary:not(:last-child) {
-  margin-bottom: 20px;
-}
+a.postSummary {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
-a.postSummary:hover {
-  background-color: #2a2a2a;
-  border: white solid 0.5px;
+  &:hover {
+    background-color: #2a2a2a;
+    border: white solid 0.5px;
+  }
 }
 
 div#subscriptionButtons {
@@ -131,10 +132,10 @@ div#subscriptionButtons {
     span:hover {
       text-decoration: underline;
     }
-  }
 
-  > a:not(:last-child) {
-    margin-right: 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
