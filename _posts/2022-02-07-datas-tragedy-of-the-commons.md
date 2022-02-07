@@ -18,15 +18,15 @@ The lake in this metaphor is a *commons*, a resource that does not belong to any
 A tragedy of the commons is the abuse of this commons based on the uncoordinated self-interest of each party.
 
 ## Memory and Storage
-Many popular apps like Facebook are large memory hogs because they face no repercussions for taking up an excessive amount
-of resources. In fact, by taking up all this memory, they can run slightly faster. Facebook doesn't care that these resources are are
-then taken away from other processes, Facebook only needs to make sure Facebook is fast.
+Many popular apps are large memory hogs because they face no repercussions for taking up an excessive amount
+of resources. In fact, by taking up all this memory, they can run slightly faster. There is no reason for these apps to
+care that these resources are taken away from other processes or slow down the device overall.
 
 This is why we have a tragedy of the commons in memory and storage. With so many companies cluttering devices with their
 own data, this shared commons is degraded.
 
 ## What to Do about It
-I can think of two solutions two this problem:
+I can think of two solutions to this problem:
 
 Include a section on app stores about memory use reasonableness. This names and shames apps that are using too much
 memory than makes sense for it to use for what it does.
@@ -34,4 +34,4 @@ memory than makes sense for it to use for what it does.
 Reject app submissions to app stores if their memory use isn't reasonable. This may seem heavy-handed, but app stores
 often reject app submissions because they don't follow the expected design language of the platform. They do
 that in order to increase users' experience using their device. I believe that restricting app submissions for memory hogs
-would also improve the user experience, and so for the same reason, should be added to app store submissions tests.
+would also improve the user experience, and so for the same reason, should be added to app store acceptance requirements.
