@@ -1,9 +1,8 @@
 ---
 layout: compress
-email: gavindouch@gmail.com
+email: gavindouch@gmail.com (Gavin Douch)
 description: Concepts in computer science.
 ---
-
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 	<channel>
@@ -11,16 +10,17 @@ description: Concepts in computer science.
 		<description>{{ page.description }}</description>
 		<link>{{ '/' | absolute_url }}</link>
 		<language>en-au</language>
-		<copyright>Copyright © {{ site.time | date: '%Y' }} Gavin Douch</copyright>
+		<copyright>Copyright {{ site.time | date: '%Y' }}, Gavin Douch</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-		<pubDate>Sun, 30 Jan 2022 00:00:00 +1100</pubDate>
-		<managingEditor>{{ page.email }} (Gavin Douch)</managingEditor>
-		<webMaster>{{ page.email }} (Gavin Douch)</webMaster>
+		<pubDate>{{ site.posts.first.date | date_to_rfc822 }}</pubDate>
+		<managingEditor>{{ page.email }}</managingEditor>
+		<webMaster>{{ page.email }}</webMaster>
 		<category>Technology</category>
 		{%- for post in site.posts -%}
 			<item>
 				<title>{{ post.title }}</title>
 				<link>{{ post.url | absolute_url }}</link>
+				<author>{{ page.email }}</author>
 				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid>{{ post.url | absolute_url }}</guid>
