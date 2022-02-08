@@ -1,5 +1,6 @@
 ---
-email: mailto:gavindouch@gmail.com
+layout: compress
+email: gavindouch@gmail.com
 description: Concepts in computer science.
 ---
 
@@ -13,14 +14,19 @@ description: Concepts in computer science.
 		<copyright>Copyright © {{ site.time | date: '%Y' }} Gavin Douch</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>Sun, 30 Jan 2022 00:00:00 +1100</pubDate>
-		<webMaster>{{ page.email }}</webMaster>
+		<managingEditor>{{ page.email }} (Gavin Douch)</managingEditor>
+		<webMaster>{{ page.email }} (Gavin Douch)</webMaster>
+		<category>Technology</category>
 		{%- for post in site.posts -%}
 			<item>
 				<title>{{ post.title }}</title>
 				<link>{{ post.url | absolute_url }}</link>
-				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' -}}</description>
+				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-				<guid>{{ post.title }}</guid>
+				<guid>{{ post.url | absolute_url }}</guid>
+				{%- for tag in post.tags -%}
+					<category>{{ tag }}</category>
+				{%- endfor -%}
 			</item>
 		{%- endfor -%}
 	</channel>
