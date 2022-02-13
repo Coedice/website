@@ -4,24 +4,25 @@ email: gavindouch@gmail.com (Gavin Douch)
 description: Concepts in computer science.
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Gavin Douch Blog</title>
-		<description>{{ page.description }}</description>
+		<description>{{ page.description | xml_escape }}</description>
 		<link>{{ '/' | absolute_url }}</link>
+		<atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />
 		<language>en-au</language>
 		<copyright>Copyright {{ site.time | date: '%Y' }}, Gavin Douch</copyright>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<pubDate>{{ site.posts.first.date | date_to_rfc822 }}</pubDate>
-		<managingEditor>{{ page.email }}</managingEditor>
+		<managingEditor>{{ page.email | xml_escape }}</managingEditor>
 		<webMaster>{{ page.email }}</webMaster>
 		<category>Technology</category>
 		{%- for post in site.posts -%}
 			<item>
-				<title>{{ post.title }}</title>
+				<title>{{ post.title | xml_escape }}</title>
 				<link>{{ post.url | absolute_url }}</link>
 				<author>{{ page.email }}</author>
-				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</description>
+				<description>{{ post.excerpt | remove: '<p>' | remove: '</p>' | xml_escape }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<guid>{{ post.url | absolute_url }}</guid>
 				{%- for tag in post.tags -%}
