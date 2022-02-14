@@ -12,8 +12,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-feed:
-  path: /blog/feed.atom
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
 
 # SCSS
 sass:
