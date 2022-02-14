@@ -10,6 +10,7 @@ collections:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-coffeescript
 
 compress_html:
   clippings: all
