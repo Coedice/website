@@ -10,9 +10,8 @@ vulnerability, it is recommended to send the report to
 [gavindouch@gmail.com](mailto:gavindouch@gmail.com)
 (and obviously not to discuss the issue anywhere else).
 
-Vulnerabilities are expected to be discussed _only_ on that
-email thread, and not in public, until the official announcement on the
-Git mailing list on the release date.
+Vulnerabilities are expected to be discussed _only_ in that
+email thread, and not in public, until the patch is released.
 
 Examples for details to include:
 - Ideally a short description (or a script) to demonstrate an
@@ -24,3 +23,7 @@ Examples for details to include:
   involved in the discovery, if any.
 - Whether the vulnerability has already been disclosed.
 - How long an embargo would be required to be safe.
+
+# Discovery credit
+Discovered vulnerabilities will be acknowledged in this repo
+once they are patched, along with credit to their discoverer(s).
