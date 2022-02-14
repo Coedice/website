@@ -1,9 +1,9 @@
 # Security Policy
 
 ## Reporting a vulnerability
-Please send a detailed mail to
+Please email
 [gavindouch@gmail.com](mailto:gavindouch@gmail.com) to report
-vulnerabilities in Git.
+vulnerabilities.
 
 Even when unsure whether the bug in question is an exploitable
 vulnerability, it is recommended to send the report to
@@ -14,7 +14,8 @@ Vulnerabilities are expected to be discussed _only_ in that
 email thread, and not in public, until the patch is released.
 
 Examples for details to include:
-- Ideally a short description (or a script) to demonstrate an
+- A description of the vulnerability
+- Ideally a script (or a description) to demonstrate an
   exploit.
 - The affected platforms and scenarios (the vulnerability might
   only affect setups with case-sensitive file systems, for
