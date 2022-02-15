@@ -8,7 +8,7 @@
 
 # Tech stack
 - Hosting: [Github Pages](https://pages.github.com)
-- Static site generator: [Jekyll](https://github.com/jekyll/jekyll)
+- Static site generator: [Jekyll](htthttps://jekyllrb.com)
 - Styles: [Sass](https://sass-lang.com/documentation/syntax)
 - Scripts: [CoffeeScript](https://coffeescript.org)
 - Markdown (superset) parser: [kramdown](https://kramdown.gettalong.org)
