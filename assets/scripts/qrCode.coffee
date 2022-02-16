@@ -68,7 +68,6 @@ window.autoUpdate = () ->
 			(response) =>
 				response.json().then(
 					(data) =>
-						console.log("https://1pt.co/#{data.short}")
 						updatePage(foreColour, backgroundColor, "https://1pt.co/#{data.short}", size, fileExtension)
 				)
 		)
@@ -76,7 +75,7 @@ window.autoUpdate = () ->
 			(err) =>
 				console.error(err)
 		)
-	else
+	else if not inputTypeName == "Website" or isValidHttpUrl(dataOutput) # Not shortened website
 		updatePage(foreColour, backgroundColor, dataOutput, size, fileExtension)
 
 updatePage = (foreColour, backgroundColor, dataOutput, size, fileExtension) ->
