@@ -14,6 +14,8 @@ layout: default
 				</optgroup>
 			</select>
 			<br>
+			<label for="shortenUrl" id="shortenUrlLabel">Shorten URL: </label><input type="checkbox" id="shortenUrl" oninput="autoUpdate()">
+			<br>
 			<input type="url" id="input" oninput="autoUpdate()" placeholder="example.com" autocapitalize="off">
 			<br>
 			<input title="Foreground colour" type="color" id="foreColour" oninput="autoUpdate()" value="#000000">
