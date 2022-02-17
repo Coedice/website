@@ -75,7 +75,14 @@ window.autoUpdate = () ->
 			(err) =>
 				console.error(err)
 		)
-	else if not inputTypeName == "Website" or isValidHttpUrl(dataOutput) # Not shortened website
+	else
+		validInput = false
+		validInput = validInput or inputTypeName == "Website" and isValidHttpUrl(dataOutput)
+		validInput = validInput or inputTypeName == "Phone Number"
+		validInput = validInput or inputTypeName == "Email Address" and dataOutput.indexOf("@") != -1 and dataOutput.indexOf(".") != -1
+		validInput = validInput or inputTypeName == "Text"
+
+	if validInput
 		updatePage(foreColour, backgroundColor, dataOutput, size, fileExtension)
 
 updatePage = (foreColour, backgroundColor, dataOutput, size, fileExtension) ->
@@ -91,7 +98,7 @@ updatePage = (foreColour, backgroundColor, dataOutput, size, fileExtension) ->
 
 isValidHttpUrl = (string) ->
 	try
-		url = new URL(string);
+		url = new URL(string)
 	catch
 		return false
 
