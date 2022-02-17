@@ -78,8 +78,16 @@ input {
   color: black;
 }
 
-code {
-  font-family: Courier, Menlo, monospace;
+.highlighter-rouge {
+  > .highlight {
+    padding: 20px;
+    overflow: scroll;
+    border-radius: 20px;
+  }
+
+  * {
+    font-family: Courier, Menlo, monospace;
+  }
 }
 
 /* Mobile */
