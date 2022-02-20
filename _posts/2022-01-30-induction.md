@@ -15,30 +15,30 @@ In mathematical induction terms, checking that each domino is close enough to th
 Knocking over the first domino is called the basis or base step, and this means proving that the first statement is true.
 
 Here’s an example:
-We want to prove that the sum of every positive integer from $1$ to some number $x$ is equal to $x(x+1)/2$.
+We want to prove that the sum of every positive integer from $1$ to some number $x, x \in \mathbb{Z}^{+}$ is equal to $\frac{x(x+1)}{2}$.
 
-$1 + 2 + 3 + … + x = x(x+1)/2$
+$1 + 2 + 3 + \ldots + x = \frac{x(x+1)}{2}$
 
 We will do that by showing that each domino is close enough to the next domino to knock it over (that is, the inductive hypothesis),
-We will assume that $1 + 2 + 3 + …$ all the way to $k$ equals $k(k+1)/2$. If this is true, this means domino $k$ has fallen.
+We will assume that $1 + 2 + 3 + \ldots + k = \frac{k(k+1)}{2}$. If this is true, this means domino $k$ has fallen.
 
 We will use this assumption to see if domino $k$ is close enough to domino $k + 1$ to knock it down.
 
-$1 + 2 + 3 + … + k + (k + 1)$\
-$= k(k + 1)/2 + k+1\,\,\,\,\,\,\,\,$             (using the inductive hypothesis)\
-$=(k(k + 1) + 2k + 2)/2\,\,\,\,\,\,\,\,$         (simplifying)\
-$=(k(k + 1) + 2(k + 1))/2\,\,\,\,\,\,\,\,$       (simplifying)\
-$=(k + 1)(k + 2)/2\,\,\,\,\,\,\,\,$              (simplifying)
+$1 + 2 + 3 + \ldots + k + (k + 1)$\
+$= \frac{k(k + 1)}{2} + (k + 1)\quad$ (using the inductive hypothesis)\
+$=\frac{k(k + 1) + 2(k + 1)}{2}\quad$ (simplifying)\
+$=\frac{(k + 2)(k + 1)}{2}\quad$ (simplifying)
 
 This matches what we are trying to prove for domino $k+1$, because it matches our original statement, but where we have substituted $x$ for $k+1$.
 Because we did this all using a general domino $k$, we have really proved that for every domino, it is close enough to the next domino to knock it down.
 
 Next we want to knock over the first domino (which is the basis step):
 
-$1 = 1(1+1)/2$\
-$1 = 1$
+$1 + 2 + 3 + \ldots + x = \frac{x(x+1)}{2}$\
+$1 = \frac{1(1+1)}{2}\quad$ (substituting $x = 1$)\
+$1 = 1\quad$ (simplifying)
 
 That is clearly true.
 
 We have knocked over the first domino, and we know all the dominos are close enough to each other to knock down the whole line, so we know that they will all fall.
-And we have proven by the principle of mathematical induction that the sum of every positive integer from $1$ to some number $x$ is equal to $x(x+1)/2$.
+And we have proven by the principle of mathematical induction that the sum of every positive integer from $1$ to some number $x$ is equal to $\frac{x(x+1)}{2}$.
