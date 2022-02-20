@@ -2,10 +2,12 @@ div#postArrow {
   > a {
     position: fixed;
     top: 50%;
+    opacity: 50%;
 
     > img {
       width: 50px;
     }
+
     &:first-child {
       left: 10px;
     }
@@ -16,6 +18,10 @@ div#postArrow {
       > img {
         transform: rotate(180deg);
       }
+    }
+
+    &:hover {
+      opacity: 100%;
     }
   }
 }
