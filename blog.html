@@ -23,6 +23,6 @@ layout: default
             </span>
             {{ post.date | date_to_string }}
         </span>
-        {{ post.excerpt }}
+        {{ post.excerpt | strip_html }}
     </a>
 {% endfor %}
