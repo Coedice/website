@@ -27,9 +27,9 @@ We will use this assumption to see if domino $k$ is close enough to domino $k + 
 $1 + 2 + 3 + \ldots + k + (k + 1)$\
 $= \frac{k(k + 1)}{2} + (k + 1)\quad$ (using the inductive hypothesis)\
 $=\frac{k(k + 1) + 2(k + 1)}{2}\quad$ (simplifying)\
-$=\frac{(k + 2)(k + 1)}{2}\quad$ (simplifying)
+$=\frac{(k + 1)(k + 2)}{2}\quad$ (simplifying)
 
-This matches what we are trying to prove for domino $k+1$, because it matches our original statement, but where we have substituted $x$ for $k+1$.
+This matches what we are trying to prove for domino $k+1$, because it matches the statement we would like to prove ($1 + 2 + 3 + \ldots + x = \frac{x(x+1)}{2}$), but where we have substituted $x$ for $k+1$.
 Because we did this all using a general domino $k$, we have really proved that for every domino, it is close enough to the next domino to knock it down.
 
 Next we want to knock over the first domino (which is the basis step):
