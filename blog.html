@@ -5,24 +5,24 @@ layout: default
 {% include subscribe.html %}
 <span class="tagList" id="tagFilterList">
     Filter by tag: <a onclick="filter('none');" class="tagLabel none">none</a>
-    {%- for tag in site.tags -%}
+    {% for tag in site.tags %}
         <a onclick="filter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</a>
-    {%- endfor -%}
+    {% endfor %}
 </span>
 <script>document.getElementById("tagFilterList").style.display = "inline-block";</script>
-{%- for post in site.posts -%}
+{% for post in site.posts %}
     <a href="{{ post.url | absolute_url }}" class="postSummary">
         <h3>{{ post.title }}</h3>
         <span>
             <span class="tagList">
-                {%- for tag in site.tags -%}
-                    {%- if post.tags contains tag[0] -%}
+                {% for tag in site.tags %}
+                    {% if post.tags contains tag[0] %}
                         <span class="tagLabel {{ tag[0] }}">{{ tag[0] }}</span>
-                    {%- endif -%}
-                {%- endfor -%}
+                    {% endif %}
+                {% endfor %}
             </span>
-            {{- post.date | date_to_string -}}
+            {{ post.date | date_to_string }}
         </span>
         {{ post.excerpt }}
     </a>
-{%- endfor -%}
+{% endfor %}
