@@ -4,7 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{%- if jekyll.environment == "production" -%}
+		{% if jekyll.environment == "production" %}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46750199-4"></script>
 			<script>
@@ -14,9 +14,9 @@ layout: compress
 
 				gtag('config', 'UA-46750199-4');
 			</script>
-		{%- endif -%}
+		{% endif %}
 		<meta charset="UTF-8">
-		{%- seo -%}
+		{% seo %}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="language" content="english">
 		<meta name="copyright" content="Gavin Douch">
@@ -25,23 +25,23 @@ layout: compress
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/blog/feed.rss' | relative_url }}">
 		<link type="application/atom+xml" rel="alternate" href="{{ '/blog/feed.atom' | relative_url }}" title="{{ site.data.feed.title }}">
 		{% include icons.html %}
-		{%- if page.use_math -%}
+		{% if page.use_math %}
 			<meta name="turbolinks-visit-control" content="reload">
 			{% include mathjax_support.html %}
-		{%- endif -%}
+		{% endif %}
 		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
-		{%- if page.title == "QR Code Generator" -%}
+		{% if page.title == "QR Code Generator" %}
 			<script src="{{ '/assets/scripts/qrCode.js' | relative_url }}"></script>
-		{%- endif -%}
-		{%- if page.title == "Blog" -%}
+		{% endif %}
+		{% if page.title == "Blog" %}
 			<script src="{{ '/assets/scripts/tagFilter.js' | relative_url }}"></script>
-		{%- endif -%}
+		{% endif %}
 	</head>
 	<body>
 		<div id="main">
 			<a id="title" href="{{ '/' | relative_url }}">Gavin Douch</a>
 			{% include nav.html %}
-			{{- content -}}
+			{{ content }}
 		</div>
 		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Gavin Douch</p>
 	</body>
