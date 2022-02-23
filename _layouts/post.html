@@ -6,6 +6,6 @@ layout: default
 <p id="postMeta"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> {{ page.date | date_to_string }} | {% include readingTime.html %}</p>
 {{ content }}
 <div id="postArrow">
-	<a href="{{ page.next.url }}"{% if page.next == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron"></a>
-	<a href="{{ page.previous.url }}"{% if page.previous == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron"></a>
+	<a href="{{ page.next.url | relative_url }}"{% if page.next == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron"></a>
+	<a href="{{ page.previous.url | relative_url }}"{% if page.previous == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron"></a>
 </div>

@@ -21,9 +21,9 @@ layout: compress
 		<meta name="language" content="english">
 		<meta name="copyright" content="Gavin Douch">
 		<meta name="theme-color" content="#1c1c1c">
-		<link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ 'blog/feed.rss' | absolute_url }}">
-		<link type="application/atom+xml" rel="alternate" href="{{ 'blog/feed.atom' | absolute_url }}" title="{{ site.data.feed.title }}">
+		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/blog/feed.rss' | relative_url }}">
+		<link type="application/atom+xml" rel="alternate" href="{{ '/blog/feed.atom' | relative_url }}" title="{{ site.data.feed.title }}">
 		{% include icons.html %}
 		{%- if page.use_math -%}
 			<meta name="turbolinks-visit-control" content="reload">
@@ -31,10 +31,10 @@ layout: compress
 		{%- endif -%}
 		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
 		{%- if page.title == "QR Code Generator" -%}
-			<script src="{{ 'assets/scripts/qrCode.js' | relative_url }}"></script>
+			<script src="{{ '/assets/scripts/qrCode.js' | relative_url }}"></script>
 		{%- endif -%}
 		{%- if page.title == "Blog" -%}
-			<script src="{{ 'assets/scripts/tagFilter.js' | relative_url }}"></script>
+			<script src="{{ '/assets/scripts/tagFilter.js' | relative_url }}"></script>
 		{%- endif -%}
 	</head>
 	<body>
