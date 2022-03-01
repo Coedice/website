@@ -80,14 +80,24 @@
 
 /* Mobile */
 @media only screen and (max-width: 480pt) {
-  img.projectImage {
-	width: 60%;
-	height: auto;
-	display: block;
-	margin: 0 auto 20px auto;
-  }
+  #projectsList > div {
+	a#iconBox {
+	  float: none;
 
-  img.appleBadge {
-	display: none;
+	  img.projectImage {
+		width: 60%;
+		height: auto;
+		display: block;
+		margin: 0 auto 20px auto;
+	  }
+
+	  img.appleBadge {
+		display: none;
+	  }
+	}
+
+	.appLinks {
+	  position: static;
+	}
   }
 }
