@@ -4,12 +4,12 @@ layout: default
 ---
 {% include subscribe.html %}
 <span class="tagList" id="tagFilterList">
-    Filter by tag: <a onclick="filter('none');" class="tagLabel none">none</a>
+    Filter by tag: <a onclick="blogTagFilter('none');" class="tagLabel none">none</a>
     {% for tag in site.tags %}
-        <a onclick="filter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</a>
+        <a onclick="blogTagFilter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</a>
     {% endfor %}
 </span>
-<script>document.getElementById("tagFilterList").style.display = "inline-block";</script>
+<script></script>
 {% for post in site.posts %}
     <a href="{{ post.url | absolute_url }}" class="postSummary">
         <h3>{{ post.title }}</h3>
