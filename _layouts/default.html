@@ -31,12 +31,9 @@ layout: compress
 		{% if page.use_math %}
 			{% include mathjax_support.html %}
 		{% endif %}
-		{% if page.title == "QR Code Generator" %}
-			<script src="{{ '/assets/scripts/qrCode.js' | relative_url }}"></script>
-		{% endif %}
-		{% if page.title == "Blog" %}
-			<script src="{{ '/assets/scripts/blog.js' | relative_url }}"></script>
-		{% endif %}
+		{% for scriptFileName in page.scripts %}
+			<script src="{{ '/assets/scripts/' | append: scriptFileName | relative_url }}"></script>
+		{% endfor %}
 	</head>
 	<body>
 		<div id="main">
