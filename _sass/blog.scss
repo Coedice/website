@@ -84,6 +84,22 @@ span.tagList {
   display: none;
 }
 
+#searchSection {
+  margin-top: 10px;
+  display: none;
+}
+
+#noResults {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.searchHighlight {
+  text-decoration: underline;
+  display: inline;
+}
+
 a.postSummary {
   > p {
     margin-bottom: 0;

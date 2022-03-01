@@ -1,6 +1,35 @@
 ---
 ---
-window.blogTagFilter = (searchTag) -> # Filter by tag
+window.blogSearchFilter = () ->
+	searchPhrase = document.getElementById("searchBar").value
+	postSummaries = document.getElementsByClassName("postSummary")
+	noResultsTag = document.getElementById("noResults")
+	foundMatch = false
+
+	for postSummary in postSummaries
+		postTitleTag = postSummary.getElementsByTagName("h3")[0]
+
+		# Hide unmatched blog posts
+		postTitle = postTitleTag.innerText
+		searchMatched = postTitle.toLowerCase().indexOf(searchPhrase.toLowerCase()) > -1
+		foundMatch = foundMatch or searchMatched
+		postSummary.style.display = if searchMatched then "block" else "none"
+
+		# Highlight matched text
+		postTitleTag.innerHTML = postTitle
+
+		if searchPhrase.length > 0
+			postTitleTag.innerHTML = postTitleTag.innerHTML.replace(
+				new RegExp(searchPhrase, "gi"),
+				_ = (matchedText) ->
+					return "<span class=\"searchHighlight\">#{matchedText}</span>"
+			)
+
+	# Set no match p tag display
+	noResultsTag.style.display = if foundMatch then "none" else "block"
+
+
+window.blogTagFilter = (searchTag) ->
 	postSummaries = document.getElementsByClassName("postSummary")
 
 	for postSummary in postSummaries
@@ -44,6 +73,7 @@ postDateRelativeTimeMessage = (postDate) ->
 
 window.onload = () ->
 	document.getElementById("tagFilterList").style.display = "inline-block" # Display tag list for JS-enabled users
+	document.getElementById("searchSection").style.display = "inline-block" # Display search section for JS-enabled users
 
 	for timeDifferenceSpan in document.getElementsByClassName("relativePostTime")
 		postDate = new Date(timeDifferenceSpan.innerText)
