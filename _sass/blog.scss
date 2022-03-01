@@ -80,6 +80,10 @@ span.tagList {
   display: none;
 }
 
+.relativePostTime {
+  display: none;
+}
+
 a.postSummary {
   > p {
     margin-bottom: 0;
@@ -94,11 +98,14 @@ a.postSummary {
     }
   }
 
-  > span {
-    color: #aaaaaa;
-    font-size: 1em;
+  > .postMetaLine {
     margin-bottom: 10px;
     display: block;
+
+    &, .relativePostTime {
+      color: #aaaaaa;
+      font-size: 1em;
+    }
   }
 
   background-color: #111111;
