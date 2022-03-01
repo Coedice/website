@@ -62,13 +62,17 @@ postDateRelativeTimeMessage = (postDate) ->
 	if daysDifference == 0
 		message = "posted today"
 	else if daysDifference < 7
-		message = "#{daysDifference} days ago"
+		message = daysDifference
+		message += if daysDifference == 1 then " day ago" else " days ago"
 	else if daysDifference < 31
-		message = "#{daysDifference//7} weeks ago"
+		message = daysDifference//7
+		message += if message == 1 then " week ago" else " weeks ago"
 	else if daysDifference < 365
-		message = "#{daysDifference//30.417} months ago"
+		message = daysDifference//30.417
+		message += if message == 1 then " month ago" else " months ago"
 	else
-		message = "#{daysDifference//365.24} years ago"
+		message = daysDifference//365.24
+		message += if message == 1 then " year ago" else " years ago"
 
 	return message
 
