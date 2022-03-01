@@ -18,7 +18,6 @@
 - Sitemap generator: [Jekyll Sitemap Generator Plugin](https://github.com/jekyll/jekyll-sitemap)
 - HTML minifier: [Compress HTML in Jekyll](http://jch.penibelst.de)
 - LaTeX rendering: [MathJax](https://www.mathjax.org)
-- Fast page navigation: [Turbolinks](https://github.com/turbolinks/turbolinks)
 
 # Security
 Visit the [security policy](https://github.com/Coedice/website/security/policy) for more information about responsible disclosures.
