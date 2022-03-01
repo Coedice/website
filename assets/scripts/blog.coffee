@@ -73,7 +73,7 @@ postDateRelativeTimeMessage = (postDate) ->
 
 window.onload = () ->
 	document.getElementById("tagFilterList").style.display = "inline-block" # Display tag list for JS-enabled users
-	document.getElementById("searchSection").style.display = "inline-block" # Display search section for JS-enabled users
+	document.getElementById("searchSection").style.display = "block" # Display search section for JS-enabled users
 
 	for timeDifferenceSpan in document.getElementsByClassName("relativePostTime")
 		postDate = new Date(timeDifferenceSpan.innerText)
