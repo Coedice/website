@@ -1,6 +1,7 @@
 ---
 ---
 window.blogSearchFilter = () ->
+	blogTagFilter("none") # Remove tag filters
 	searchPhrase = document.getElementById("searchBar").value
 	postSummaries = document.getElementsByClassName("postSummary")
 	noResultsTag = document.getElementById("noResults")
@@ -15,10 +16,11 @@ window.blogSearchFilter = () ->
 		foundMatch = foundMatch or searchMatched
 		postSummary.style.display = if searchMatched then "block" else "none"
 
-		# Highlight matched text
+		# Remove any existing highlight spans
 		postTitleTag.innerHTML = postTitle
 
 		if searchPhrase.length > 0
+			# Add spans around matched text
 			postTitleTag.innerHTML = postTitleTag.innerHTML.replace(
 				new RegExp(searchPhrase, "gi"),
 				_ = (matchedText) ->
