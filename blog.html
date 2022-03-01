@@ -4,9 +4,10 @@ layout: default
 scripts:
   - blog.js
 ---
-<label id="searchSection">
-    Search: <input id="searchBar" type="text" oninput="blogSearchFilter()">
-</label>
+<div id="searchSection">
+    <input type="text" id="searchBar" placeholder="Search" autofocus autocomplete="off" oninput="blogSearchFilter()">
+    <img src="/assets/images/search.png" alt="Search">
+</div>
 <br>
 <span class="tagList" id="tagFilterList">
     Filter by tag: <a onclick="blogTagFilter('none');" class="tagLabel none">none</a>

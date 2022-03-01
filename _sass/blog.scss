@@ -85,8 +85,53 @@ span.tagList {
 }
 
 #searchSection {
+  $height: 50px;
   margin-top: 10px;
   display: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #111111;
+  position: relative;
+
+  &, * {
+    padding: 0;
+    height: $height;
+  }
+
+  &, #searchBar {
+    border-radius: 20px;
+  }
+
+  #searchBar {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    font-size: $height * 0.5;
+    vertical-align: center;
+    border: 0;
+    color: white;
+    box-sizing: border-box;
+    padding-right: $height;
+    padding-left: $height * 0.3;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    $margin: 10px;
+    margin: $margin;
+    width: $height - 2 * $margin;
+    height: $height - 2 * $margin;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
 }
 
 #noResults {
@@ -197,5 +242,9 @@ div#subscriptionButtons {
         }
       }
     }
+  }
+
+  #searchSection {
+    width: 100%;
   }
 }
