@@ -13,7 +13,7 @@ layout: default
 {% for post in site.posts %}
     <a href="{{ post.url | absolute_url }}" class="postSummary">
         <h3>{{ post.title }}</h3>
-        <span>
+        <div class="postMetaLine">
             <span class="tagList">
                 {% for tag in site.tags %}
                     {% if post.tags contains tag[0] %}
@@ -21,8 +21,8 @@ layout: default
                     {% endif %}
                 {% endfor %}
             </span>
-            {{ post.date | date_to_string }}
-        </span>
+            {{ post.date | date_to_string }}<span class="relativePostTime">{{ post.date | date_to_xmlschema }}</span>
+        </div>
         {{ post.excerpt | strip_html }}
     </a>
 {% endfor %}
