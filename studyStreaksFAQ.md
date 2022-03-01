@@ -18,11 +18,15 @@ On the last page in the app, tap the "Export Data" button to export your data in
 The app figures out how long to study each week for each of your subjects based on the priority that you set for them. This weekly goal for each subject is further broken down to a daily goal. The objective is reach your daily goals by the end of each day, to keep your study streak.
 
 ## URI schemes for developers
-To simply launch the app use:\
-<code>studystreaks://</code>
+To simply launch the app use:
+~~~
+studystreaks://
+~~~
 
-To launch and add a duration (of unspecified subject), use:\
-<code>"studystreaks://addTime?s=&lt;duration to add in seconds&gt;"</code>
+To launch and add a duration (of unspecified subject), use:
+~~~
+studystreaks://addTime?s=<duration to add in seconds>
+~~~
 
 ## Still have questions?
 Contact me [here]({{ '/about' | relative_url }}).
