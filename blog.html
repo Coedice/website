@@ -5,13 +5,16 @@ scripts:
   - blog.js
 ---
 {% include subscribe.html %}
+<label id="searchSection">
+    Search: <input id="searchBar" type="text" oninput="blogSearchFilter()">
+</label>
+<br>
 <span class="tagList" id="tagFilterList">
     Filter by tag: <a onclick="blogTagFilter('none');" class="tagLabel none">none</a>
     {% for tag in site.tags %}
         <a onclick="blogTagFilter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</a>
     {% endfor %}
 </span>
-<script></script>
 {% for post in site.posts %}
     <a href="{{ post.url | absolute_url }}" class="postSummary">
         <h3>{{ post.title }}</h3>
@@ -28,3 +31,4 @@ scripts:
         {{ post.excerpt | strip_html }}
     </a>
 {% endfor %}
+<p id="noResults">No results found.</p>
