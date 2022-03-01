@@ -4,7 +4,6 @@ layout: default
 scripts:
   - blog.js
 ---
-{% include subscribe.html %}
 <label id="searchSection">
     Search: <input id="searchBar" type="text" oninput="blogSearchFilter()">
 </label>
@@ -32,3 +31,4 @@ scripts:
     </a>
 {% endfor %}
 <p id="noResults">No results found.</p>
+{% include subscribe.html %}
