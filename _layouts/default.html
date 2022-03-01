@@ -29,10 +29,8 @@ layout: compress
 
 		<!-- JavaScript -->
 		{% if page.use_math %}
-			<meta name="turbolinks-visit-control" content="reload">
 			{% include mathjax_support.html %}
 		{% endif %}
-		<script src="{{ '/assets/scripts/turbolinks.js' | relative_url }}"></script>
 		{% if page.title == "QR Code Generator" %}
 			<script src="{{ '/assets/scripts/qrCode.js' | relative_url }}"></script>
 		{% endif %}
