@@ -177,9 +177,7 @@ a.postSummary {
   border: transparent solid 0.5px;
   min-height: 100px;
   margin-top: 20px;
-}
 
-a.postSummary {
   &:not(:last-child) {
     margin-bottom: 20px;
   }
