@@ -1,3 +1,5 @@
+$background-color: #1c1c1c;
+
 * {
   color: white;
   font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -27,7 +29,7 @@ html, body {
 }
 
 body {
-  background-color: #1c1c1c;
+  background-color: $background-color;
 }
 
 p#footer {
@@ -45,33 +47,41 @@ div#main {
   min-height: calc(100% - 60px - 20px);
 }
 
-nav > ul {
-  margin: 0 auto;
-  padding: 0;
+nav {
   text-align: center;
 
-  > li {
-    list-style: none;
+  ul {
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: scroll;
     display: inline-block;
+    font-size: 0; // Prevents gap created by HTML newlines
+    background-color: #898989;
+    border-radius: 10px;
 
-    > a {
-      font-size: 1.5em;
-      text-align: center;
-      text-decoration: none;
-      font-weight: 600;
-      white-space: nowrap;
-      padding: 0 20px;
-      color: #898989;
+    > li {
+      display: inline-block;
+      margin: 0;
 
-      &:hover {
-        text-decoration: underline;
+      > a {
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0 20px;
+        color: $background-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &#currentPage {
+          background-color: white;
+        }
       }
     }
   }
-}
-
-a#currentPage {
-  color: white;
 }
 
 input {
@@ -111,15 +121,6 @@ input {
   a#title {
     font-size: 2.7em;
     text-align: center;
-  }
-
-  nav {
-    margin-bottom: 20px;
-
-    > ul > li > a {
-      font-size: 1.2em;
-      padding: 0 5px;
-    }
   }
 
   p#footer {
