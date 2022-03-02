@@ -1,8 +1,5 @@
 div#intro {
-  display: block;
-
   > img {
-	display: block;
 	float: left;
 	width: 25%;
 	border-radius: 20px;
@@ -28,6 +25,7 @@ div#intro {
 /* Mobile */
 @media only screen and (max-width: 480pt) {
   div#intro > img {
+	display: block;
 	float: none;
 	width: 60%;
 	margin: 0 auto 0 auto;
