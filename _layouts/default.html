@@ -39,6 +39,11 @@ layout: compress
 		<div id="main">
 			<a id="title" href="{{ '/' | relative_url }}">Gavin Douch</a>
 			{% include nav.html %}
+			{% if page.use_math %}
+				<noscript>
+					<p>You do not have JavaScript enabled in your browser, so maths on this page will not render correctly. To fix this, please adjust your settings, or update to the latest version of a modern browser.</p>
+				</noscript>
+			{% endif %}
 			{{ content }}
 		</div>
 		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Gavin Douch</p>
