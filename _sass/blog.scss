@@ -32,7 +32,6 @@ h1#blogTitle {
 
 p#postMeta {
   color: #aaaaaa;
-  font-size: 1em;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -76,7 +75,6 @@ span.tagList {
 }
 
 #tagFilterList {
-  margin-top: 10px;
   display: none;
 }
 
@@ -95,7 +93,6 @@ span.tagList {
   position: relative;
 
   &, * {
-    padding: 0;
     height: $height;
   }
 
@@ -117,20 +114,13 @@ span.tagList {
   }
 
   img {
-    display: block;
     position: absolute;
     right: 0;
     top: 0;
     $margin: 10px;
     margin: $margin;
-    width: $height - 2 * $margin;
     height: $height - 2 * $margin;
-    user-drag: none;
     -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
   }
 }
 
@@ -161,7 +151,6 @@ a.postSummary {
 
   > .postMetaLine {
     margin-bottom: 10px;
-    display: block;
 
     &, .relativePostTime {
       color: #aaaaaa;
@@ -175,12 +164,7 @@ a.postSummary {
   display: block;
   padding: 20px;
   border: transparent solid 0.5px;
-  min-height: 100px;
   margin-top: 20px;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 
   &:hover {
     background-color: #2a2a2a;
