@@ -32,10 +32,15 @@ body {
 }
 
 p#footer {
+  display: flex;
+  margin: auto;
+  align-items:center;
+  justify-content:center;
+  font-size: small;
   position: relative;
   bottom: 60px;
-  text-align: center;
   height: 60px;
+
 }
 
 div#main {
@@ -120,9 +125,5 @@ input {
   a#title {
     font-size: 2.7em;
     text-align: center;
-  }
-
-  p#footer {
-    font-size: small;
   }
 }
