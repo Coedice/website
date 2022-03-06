@@ -1,4 +1,5 @@
 div#intro {
+
   > img {
 	float: left;
 	width: 25%;
@@ -9,6 +10,7 @@ div#intro {
   > h1 {
 	color: lightgray;
 	font-weight: normal;
+	margin-bottom: 0;
 
 	a {
 	  color: white;
@@ -19,6 +21,15 @@ div#intro {
 		text-decoration: underline;
 	  }
 	}
+  }
+}
+
+#biography {
+  overflow: hidden;
+  margin-top: 20px;
+
+  > p {
+	margin-top: 0;
   }
 }
 
