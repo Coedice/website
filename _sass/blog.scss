@@ -62,7 +62,7 @@ span.tagList {
   }
 
   .programming {
-    background-color: purple;
+    background-color: darkred;
   }
 
   .compsci {
@@ -70,6 +70,10 @@ span.tagList {
   }
 
   .design {
+    background-color: purple;
+  }
+
+  .software {
     background-color: #0059ff;
   }
 }
@@ -204,6 +208,12 @@ div#subscriptionButtons {
       margin-right: 10px;
     }
   }
+}
+
+#blogContent img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Mobile */
