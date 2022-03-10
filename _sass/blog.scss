@@ -115,9 +115,14 @@ span.tagList {
     box-sizing: border-box;
     padding-right: $height;
     padding-left: $height * 0.3;
+
+    &:focus + img {
+      opacity: 100%;
+    }
   }
 
   img {
+    opacity: 50%;
     position: absolute;
     right: 0;
     top: 0;
