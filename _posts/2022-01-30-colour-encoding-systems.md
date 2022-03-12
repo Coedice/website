@@ -2,7 +2,7 @@
 layout: post
 title: Colour Encoding Systems
 tags: programming design
-icon: pencils.jpg
+icon: pencils
 ---
 Here is everything you need to know about encoding colour as a programmer.
 

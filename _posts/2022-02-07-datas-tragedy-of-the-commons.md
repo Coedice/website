@@ -2,7 +2,7 @@
 layout: post
 title: Data's Tragedy of the Commons
 tags: programming compsci
-icon: fish.jpg
+icon: fish
 ---
 Memory and storage virtualisation have created a problem in a world where computers have many processes competing for
 limited hardware resources. Since so many users don't know (or are unable to know) how to check which processes are

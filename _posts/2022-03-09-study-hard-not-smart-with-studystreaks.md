@@ -3,7 +3,7 @@ layout: post
 title: Study Smart, Not Hard, with StudyStreaks
 use_math: true
 tags: software
-icon: books.jpg
+icon: books
 ---
 Studying and staying motivated weren't easy before, and now it is harder than ever with
 all the distractions of the home. Therefore, I thought I would walk you through some
