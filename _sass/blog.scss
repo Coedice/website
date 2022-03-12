@@ -40,9 +40,12 @@ h1#blogTitle {
 }
 
 p#postMeta {
-  color: #aaaaaa;
   margin-top: 0;
   margin-bottom: 10px;
+
+  &, time {
+    color: #aaaaaa;
+  }
 }
 
 span.tagList {
