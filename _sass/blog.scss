@@ -145,8 +145,18 @@ span.tagList {
 }
 
 a.postSummary {
+  $imgHeight: 140px;
+
+  > img {
+    float: left;
+    height: $imgHeight;
+    width: $imgHeight;;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+
   > p {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   > h3 {
@@ -167,13 +177,15 @@ a.postSummary {
     }
   }
 
+  $padding: 20px;
   background-color: #111111;
   border-radius: 20px;
   text-decoration: none;
   display: block;
-  padding: 20px;
+  padding: $padding;
   border: transparent solid 0.5px;
-  margin-top: 20px;
+  margin-top: $padding;
+  min-height: $imgHeight;
 
   &:hover {
     background-color: #2a2a2a;
@@ -243,5 +255,11 @@ div#subscriptionButtons {
 
   #searchSection {
     width: 100%;
+  }
+
+  a.postSummary {
+    > img {
+      display: none;
+    }
   }
 }

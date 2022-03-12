@@ -16,7 +16,8 @@ scripts:
     {% endfor %}
 </span>
 {% for post in site.posts %}
-    <a href="{{ post.url | absolute_url }}" class="postSummary">
+    <a href="{{ post.url | relative_url }}" class="postSummary">
+        <img src="/assets/images/blogIcons/{{ post.icon }}" alt="">
         <h3>{{ post.title }}</h3>
         <div class="postMetaLine">
             <span class="tagList">
@@ -28,7 +29,7 @@ scripts:
             </span>
             {{ post.date | date_to_string }}<span class="relativePostTime">{{ post.date | date_to_xmlschema }}</span>
         </div>
-        {{ post.excerpt | strip_html }}
+        <p>{{ post.excerpt | strip_html }}</p>
     </a>
 {% endfor %}
 <p id="noResults">No results found.</p>
