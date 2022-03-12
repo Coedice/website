@@ -2,6 +2,7 @@
 layout: post
 title: We Need a Quantum Query Language Now
 tags: compsci
+icon: motherboard.jpg
 ---
 While quantum computers are still out of arms reach for practical applications, this is an important time to establish a standard format for querying quantum computers over the internet to get classical output. I will call this language Quantum Query Language (QQL).
 
