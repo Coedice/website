@@ -27,7 +27,7 @@ scripts:
                     {% endif %}
                 {% endfor %}
             </span>
-            {{ post.date | date_to_string }}<span class="relativePostTime">{{ post.date | date_to_xmlschema }}</span>
+            {{ post.date | date_to_string }}<time datetime="{{ post.date | date_to_xmlschema }}" class="relativePostTime">{{ post.date | date_to_xmlschema }}</time>
         </div>
         <p>{{ post.excerpt | strip_html }}</p>
     </a>
