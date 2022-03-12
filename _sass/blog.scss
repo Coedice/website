@@ -26,8 +26,17 @@ div#postArrow {
   }
 }
 
+img#blogPostIcon {
+  border-radius: 20px;
+  float: left;
+  margin-right: 20px;
+  width: 72px;
+  margin-top: 20px;
+}
+
 h1#blogTitle {
   margin-bottom: 0;
+  margin-top: 20px;
 }
 
 p#postMeta {
@@ -261,5 +270,9 @@ div#subscriptionButtons {
     > img {
       display: none;
     }
+  }
+
+  img#blogPostIcon {
+    display: none;
   }
 }

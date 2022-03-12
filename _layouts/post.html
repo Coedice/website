@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<img src="/assets/images/blogIcons/{{ page.icon }}.jpg" alt="{{ page.icon }} icon" id="blogPostIcon">
 <h1 id="blogTitle">{{ page.title }}</h1>
 <p id="postMeta"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> {{ page.date | date_to_string }}, {% include readingTime.html %}</p>
 <div id="blogContent">
