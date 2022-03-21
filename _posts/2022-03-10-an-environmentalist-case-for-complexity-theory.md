@@ -2,7 +2,7 @@
 layout: post
 title: An Environmentalist Case for Complexity Theory
 tags: compsci
-icon: leaf
+icon: leaf.jpg
 ---
 Computational complexity theory is not the most popular topic of computer science undergrads, but if speed and memory
 efficiency are not enough to motivate you to learn about it, how about environmentalism?
