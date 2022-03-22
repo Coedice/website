@@ -1,0 +1,47 @@
+experiences:
+  - name: Monash University Faculty of IT
+    role: Student Services Officer
+    location: Clayton, VIC
+    start: Jan 2021
+    description: |-
+      I am involved with [Monash Faculty of IT's](https://www.monash.edu/it) Education Transformation Project,
+      and help to improve the community and academic life for the faculty's students. I also write the weekly faculty
+      newsletter [The Byte](https://www.monash.edu/it/current-students/join-the-community/newsletters/byte),
+      showcasing news, student events, internships, and graduate roles.
+  - name: PriceWaterhouseCoopers (PwC)
+    role: Data Forensics/Risk Analytics IBL
+    location: Southbank, VIC
+    start: Jul 2021
+    end: Dec 2021
+    description: |-
+      At [PwC](https://www.pwc.com.au) I used data analytics and forensics to identify risks and anomalies
+      in client data in order to prevent and detect procedural and human error, as well as to inform decision making with
+      data and visualisations. To do this I employ a range of advanced software products, programming languages, and
+      techniques.
+  - name: WIRED Monash (Faculty of IT Society)
+    role: President
+    location: Clayton, VIC
+    start: Mar 2020
+    end: Mar 2022
+    description: |-
+      As the President of [Monash WIRED](https://wired.org.au), I oversaw all aspects of our club, including event
+      creation, industry involvement, liaising with other groups at Monash, with Monash staff, and with industry.
+      Read more about my time at WIRED in [this blog post](/blog/at-wireds-helm).
+  - name: Australian Computing Students' Association
+    role: Founder and President
+    location: Clayton, VIC
+    url: https://wired.org.au
+    start: Feb 2019
+    end: Mar 2022
+    description: |-
+      I founded the umbrella association of tertiary education IT clubs known as ACSA. This allows for the sharing of
+      events, and all sorts of collaboration and cross-pollination between club leaders
+  - name: Monash Google Developer Student Club
+    role: GDSC Lead
+    location: Clayton, VIC
+    url: https://gdsc.community.dev/monash-university/
+    start: Jun 2021
+    end: Mar 2022
+    description: |-
+      I became the GDSC Lead for Monash University, and combined it into WIRED, in order to run fun and educational
+      Google events for our members.
