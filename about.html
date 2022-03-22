@@ -1,51 +1,32 @@
 ---
 title: About
 layout: default
-
-communityGroups:
-  - name: WIRED Monash (Faculty of Information Technology Society)
-    role: President
-    url: https://wired.org.au
-  - name: Australian Computing Students' Association
-    role: President and Founder
-  - name: Monash University Faculty of IT Education Transformation Working Group
-    role: Student Services Officer
-    url: https://www.monash.edu/it
-  - name: Monash Google DSC
-    role: GDSC Lead
-    url: https://gdsc.community.dev/monash-university/
-
-mediaAppearances:
-  - mediaOrganisation: Shepparton News
-    url: https://www.sheppnews.com.au/news/recall-year-12-graduate-develops-clever-memory-app/
-    title: "Recall: Year-12 graduate develops clever memory app"
-  - mediaOrganisation: Shepparton News
-    url: https://www.sheppnews.com.au/news/an-app-titude-for-programming/
-    title: An app-titude for programming
-  - mediaOrganisation: Lot's Wife
-    url: https://lotswife.com.au/study-advice-from-a-jaffy/
-    title: Study Advice From A Jaffy
-  - mediaOrganisation: WIRED_in
-    url: https://open.spotify.com/episode/0bwv4T6pBwC2nlsbn2yOv0?si=oI2gFWeDSwOTB9EEl5shVQ
-    title: FIT1047 lovers all hate Shakespeare
-  - mediaOrganisation: WIRED_in
-    url: https://open.spotify.com/episode/4fSn8QFnfTCp67LNDXUxKs?si=tdNJVHE3TpuZKeexlKX5Tg
-    title: Rate the FIT - Unit Review
 ---
 <div id="intro">
 	<img src="{{ 'assets/images/gavinDouch.jpg' | relative_url }}" alt="Gavin Douch face">
 	<h1>I am a <a href="{{ '/' | relative_url }}">Software Developer &#x1F4BB;</a><br>and <a href="{{ '/blog' | relative_url }}">Tech Blogger &#x1F58B;</a><br>from <a href="https://en.wikipedia.org/wiki/Melbourne">Melbourne, Australia &#x1F1E6;&#x1F1FA;</a></h1>
 </div>
+<div id="socialIcons">
+	{% for socialIcon in site.data.socialIcons.socialIcons %}
+	<a href="{{ socialIcon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
+		<img src="/assets/images/socialIcons/{{ socialIcon.icon }}" alt="{{ socialIcon.name }} icon">
+	</a>
+	{% endfor %}
+</div>
 <div id="biography">
-	<h2>Community groups</h2>
-	<ul>
-		{% for communityGroup in page.communityGroups %}
-			<li>{{ communityGroup.role }}: {% if communityGroup.url != nil %}<a href="{{ communityGroup.url }}">{% endif %}{{ communityGroup.name }}{% if communityGroup.url != nil %}</a>{% endif %}</li>
-		{% endfor %}
-	</ul>
+	<h2>Experience</h2>
+	{% for experience in site.data.experiences.experiences %}
+		<div class="experienceItem">
+			<h3>{{ experience.name }}</h3>
+			<div class="experienceMetaLine">
+				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | {{ experience.location }}
+			</div>
+			<p>{{ experience.description | markdownify }}</p>
+		</div>
+	{% endfor %}
 	<h2>Media appearances</h2>
 	<ul>
-		{% for mediaAppearance in page.mediaAppearances %}
+		{% for mediaAppearance in site.data.mediaAppearances.mediaAppearances %}
 			<li>{{ mediaAppearance.mediaOrganisation }}: <a href="{{ mediaAppearance.url }}">{{ mediaAppearance.title }}</a></li>
 		{% endfor %}
 	</ul>
