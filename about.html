@@ -40,7 +40,7 @@ mediaAppearances:
 	<h2>Community groups</h2>
 	<ul>
 		{% for communityGroup in page.communityGroups %}
-			<li>{{ communityGroup.role }}: <a href="{{ communityGroup.url }}">{{ communityGroup.name }}</a></li>
+			<li>{{ communityGroup.role }}: {% if communityGroup.url != nil %}<a href="{{ communityGroup.url }}">{% endif %}{{ communityGroup.name }}{% if communityGroup.url != nil %}</a>{% endif %}</li>
 		{% endfor %}
 	</ul>
 	<h2>Media appearances</h2>
