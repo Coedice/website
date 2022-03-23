@@ -7,6 +7,11 @@ window.blogSearchFilter = () ->
 	noResultsTag = document.getElementById("noResults")
 	foundMatch = false
 
+	# Change search icon between magnifying glass and cross
+	searchIcon = document.getElementById("searchSection").getElementsByTagName("img")[0]
+	console.log(searchIcon)
+	searchIcon.src = if searchPhrase.length > 0 then "/assets/images/cross.png" else "/assets/images/search.png"
+
 	for postSummary in postSummaries
 		postTitleTag = postSummary.getElementsByTagName("h3")[0]
 
