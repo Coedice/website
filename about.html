@@ -4,14 +4,14 @@ layout: default
 ---
 <div id="intro">
 	<img src="{{ 'assets/images/gavinDouch.jpg' | relative_url }}" alt="Gavin Douch face">
+	<div id="socialIcons">
+		{% for socialIcon in site.data.socialIcons.socialIcons %}
+		<a href="{{ socialIcon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
+			<img src="/assets/images/socialIcons/{{ socialIcon.icon }}" alt="{{ socialIcon.name }} icon">
+		</a>
+		{% endfor %}
+	</div>
 	<h1>I am a <a href="{{ '/' | relative_url }}">Software Developer &#x1F4BB;</a><br>and <a href="{{ '/blog' | relative_url }}">Tech Blogger &#x1F58B;</a><br>from <a href="https://en.wikipedia.org/wiki/Melbourne">Melbourne, Australia &#x1F1E6;&#x1F1FA;</a></h1>
-</div>
-<div id="socialIcons">
-	{% for socialIcon in site.data.socialIcons.socialIcons %}
-	<a href="{{ socialIcon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
-		<img src="/assets/images/socialIcons/{{ socialIcon.icon }}" alt="{{ socialIcon.name }} icon">
-	</a>
-	{% endfor %}
 </div>
 <div id="biography">
 	<h2>Experience</h2>
