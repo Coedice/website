@@ -1,5 +1,12 @@
 ---
 ---
+window.clearSearchBar = () ->
+	searchInput = document.getElementById("searchSection").getElementsByTagName("input")[0]
+	searchInput.value = ""
+	searchInput.focus()
+	blogSearchFilter()
+
+
 window.blogSearchFilter = () ->
 	blogTagFilter("none") # Remove tag filters
 	searchPhrase = document.getElementById("searchBar").value
@@ -9,9 +16,17 @@ window.blogSearchFilter = () ->
 
 	# Change search icon between magnifying glass and cross
 	searchIcon = document.getElementById("searchSection").getElementsByTagName("img")[0]
-	console.log(searchIcon)
-	searchIcon.src = if searchPhrase.length > 0 then "/assets/images/cross.png" else "/assets/images/search.png"
 
+	if searchPhrase.length > 0
+		searchIcon.src = "/assets/images/cross.png"
+		searchIcon.setAttribute("onclick","clearSearchBar();");
+		searchIcon.style.cursor = "pointer"
+	else
+		searchIcon.src = "/assets/images/search.png"
+		searchIcon.setAttribute("onclick","");
+		searchIcon.style.cursor = "default"
+
+	# Modify post summaries
 	for postSummary in postSummaries
 		postTitleTag = postSummary.getElementsByTagName("h3")[0]
 
