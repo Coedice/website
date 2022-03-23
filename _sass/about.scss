@@ -28,14 +28,14 @@ div#intro {
   clear: both;
   width: 15%;
   margin-top: 10px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-around;
 
    img {
-	 height: 35px;
-	 width: 35px;
+	 width: 90%;
+	 max-width: 35px;
 	 border-radius: 100%;
-
 	 -webkit-filter: invert(100%);
 	 filter: invert(100%);
   }
