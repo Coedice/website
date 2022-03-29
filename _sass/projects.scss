@@ -48,7 +48,7 @@
 	  }
 	}
 
-	a#iconBox {
+	a.iconBox {
 	  float: left;
 
 	  img.projectImage {
@@ -73,7 +73,7 @@
 /* Mobile */
 @media only screen and (max-width: 480pt) {
   #projectsList > div {
-	a#iconBox {
+	a.iconBox {
 	  float: none;
 
 	  img.projectImage {

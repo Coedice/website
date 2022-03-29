@@ -5,7 +5,7 @@ layout: default
 <div id="projectsList">
 	{% for project in site.data.projects.projects %}
 		<div id="{{ project.name | remove: ' ' }}">
-			<a id="iconBox" href="{{ project.link | relative_url }}">
+			<a class="iconBox" href="{{ project.link | relative_url }}">
 				<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}{% if project.app %} app{% endif %} icon">
 				{% if project.app %}
 					<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store">
