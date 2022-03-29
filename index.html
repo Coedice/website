@@ -14,7 +14,7 @@ layout: default
 			<a class="titleLink" href="{{ project.link | relative_url }}">
 				<h2>{{ project.name }}</h2>
 			</a>
-			<p>{{ project.description }}</p>
+			<p>{{ project.description | markdownify }}</p>
 			{% if project.app %}
 				<div class="appLinks">
 					<a href="{{ project.faq | relative_url }}">FAQ</a>
