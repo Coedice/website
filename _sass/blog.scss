@@ -63,9 +63,6 @@ span.tagList {
       margin-right: 4px;
     }
 
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   .none {
@@ -96,6 +93,10 @@ span.tagList {
 
 #tagFilterList {
   display: none;
+
+  .tagLabel:hover {
+    cursor: pointer;
+  }
 }
 
 .relativePostTime {

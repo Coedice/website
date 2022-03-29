@@ -10,9 +10,9 @@ scripts:
 </div>
 <br>
 <span class="tagList" id="tagFilterList">
-    Filter by tag: <a onclick="blogTagFilter('none');" class="tagLabel none">none</a>
+    Filter by tag: <span onclick="blogTagFilter('none');" class="tagLabel none">none</span>
     {% for tag in site.tags %}
-        <a onclick="blogTagFilter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</a>
+        <span onclick="blogTagFilter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</span>
     {% endfor %}
 </span>
 {% for post in site.posts %}
