@@ -11,12 +11,12 @@ layout: default
 		</a>
 		{% endfor %}
 	</div>
-	<h1>I am a <a href="{{ '/' | relative_url }}">Software Developer &#x1F4BB;</a><br>and <a href="{{ '/blog' | relative_url }}">Tech Blogger &#x1F58B;</a><br>from <a href="https://en.wikipedia.org/wiki/Melbourne">Melbourne, Australia &#x1F1E6;&#x1F1FA;</a></h1>
+	<h1>I am a <a href="{{ '/' | relative_url }}" tabindex="0">Software Developer &#x1F4BB;</a><br>and <a href="{{ '/blog' | relative_url }}" tabindex="0">Tech Blogger &#x1F58B;</a><br>from <a href="https://en.wikipedia.org/wiki/Melbourne" tabindex="0">Melbourne, Australia &#x1F1E6;&#x1F1FA;</a></h1>
 </div>
 <div id="biography">
 	<h2>Experience</h2>
 	{% for experience in site.data.experiences.experiences %}
-		<div class="experienceItem">
+		<div class="experienceItem" tabindex="0">
 			<h3>{{ experience.name }}</h3>
 			<div class="experienceMetaLine">
 				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | {{ experience.location }}
@@ -27,8 +27,8 @@ layout: default
 	<h2>Media appearances</h2>
 	<ul>
 		{% for mediaAppearance in site.data.mediaAppearances.mediaAppearances %}
-			<li>{{ mediaAppearance.mediaOrganisation }}: <a href="{{ mediaAppearance.url }}">{{ mediaAppearance.title }}</a></li>
+			<li tabindex="0">{{ mediaAppearance.mediaOrganisation }}: <a href="{{ mediaAppearance.url }}">{{ mediaAppearance.title }}</a></li>
 		{% endfor %}
 	</ul>
-    <p>Want to chat? Have some feedback on one of my projects? <a href="mailto:gavindouch@gmail.com">Please get in touch</a>.</p>
+    <p>Want to chat? Have some feedback on one of my projects? <a href="mailto:gavindouch@gmail.com" tabindex="0">Please get in touch</a>.</p>
 </div>

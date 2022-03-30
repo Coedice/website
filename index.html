@@ -6,19 +6,19 @@ layout: default
 	{% for project in site.data.projects.projects %}
 		<div id="{{ project.name | remove: ' ' }}">
 			<a class="iconBox" href="{{ project.link | relative_url }}">
-				<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}{% if project.app %} app{% endif %} icon">
+				<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.name }}{% if project.app %} app{% endif %} icon" tabindex="0">
 				{% if project.app %}
-					<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store">
+					<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store" tabindex="0">
 				{% endif %}
 			</a>
-			<a class="titleLink" href="{{ project.link | relative_url }}">
+			<a class="titleLink" href="{{ project.link | relative_url }}" tabindex="0">
 				<h2>{{ project.name }}</h2>
 			</a>
 			<p>{{ project.description | markdownify }}</p>
 			{% if project.app %}
 				<div class="appLinks">
-					<a href="{{ project.faq | relative_url }}">FAQ</a>
-					<a href="{{ project.privacyPolicy | relative_url }}">Privacy Policy</a>
+					<a href="{{ project.faq | relative_url }}" tabindex="0">FAQ</a>
+					<a href="{{ project.privacyPolicy | relative_url }}" tabindex="0">Privacy Policy</a>
 				</div>
 			{% endif %}
 		</div>
