@@ -1,15 +1,15 @@
 <div id="subscriptionButtons">
-	<a href="{{ '/blog/feed.rss' | relative_url }}">
+	<a href="{{ '/blog/feed.rss' | relative_url }}" tabindex="0">
 		<img src="{{ '/assets/images/subscriptionIcons/rss.png' | relative_url }}" alt="RSS feed">
 		<span class="long">Subscribe with RSS</span>
 		<span class="short">RSS</span>
 	</a>
-	<a href="{{ '/blog/feed.atom' | relative_url }}">
+	<a href="{{ '/blog/feed.atom' | relative_url }}" tabindex="0">
 		<img src="{{ '/assets/images/subscriptionIcons/atom.png' | relative_url }}" alt="Atom feed">
 		<span class="long">Subscribe with Atom</span>
 		<span class="short">Atom</span>
 	</a>
-	<a href="mailto:add@rssby.email?subject={{ 'Subscribe to feed' | uri_escape }}&body={{ 'Choose which email address you would like new posts to be sent to by selecting the "from" address, then send this email to subscribe.' | uri_escape }}%0A%0A{{ 'Feed link: ' | uri_escape }}{{ '/blog/feed.rss' | absolute_url | uri_escape }}">
+	<a href="mailto:add@rssby.email?subject={{ 'Subscribe to feed' | uri_escape }}&body={{ 'Choose which email address you would like new posts to be sent to by selecting the "from" address, then send this email to subscribe.' | uri_escape }}%0A%0A{{ 'Feed link: ' | uri_escape }}{{ '/blog/feed.rss' | absolute_url | uri_escape }}" tabindex="0">
 		<img src="{{ '/assets/images/subscriptionIcons/email.png' | relative_url }}" alt="Email">
 		<span class="long">Subscribe by Email</span>
 		<span class="short">Email</span>

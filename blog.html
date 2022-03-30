@@ -10,13 +10,13 @@ scripts:
 </div>
 <br>
 <span class="tagList" id="tagFilterList">
-    Filter by tag: <span onclick="blogTagFilter('none');" class="tagLabel none">none</span>
+    Filter by tag: <span onclick="blogTagFilter('none');" class="tagLabel none"  tabindex="0">none</span>
     {% for tag in site.tags %}
-        <span onclick="blogTagFilter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}">{{ tag[0] }}</span>
+        <span onclick="blogTagFilter('{{ tag[0] }}');" class="tagLabel {{ tag[0] }}" tabindex="0">{{ tag[0] }}</span>
     {% endfor %}
 </span>
 {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="postSummary">
+    <a href="{{ post.url | relative_url }}" class="postSummary" tabindex="0">
         <img src="/assets/images/blogIcons/{{ post.icon }}" alt="blog post icon">
         <h3>{{ post.title }}</h3>
         <div class="postMetaLine">

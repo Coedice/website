@@ -8,8 +8,8 @@ layout: default
 	{{ content }}
 </div>
 <div id="postArrow">
-	<a href="{{ page.next.url | relative_url }}"{% if page.next == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron"></a>
-	<a href="{{ page.previous.url | relative_url }}"{% if page.previous == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron"></a>
+	<a href="{{ page.next.url | relative_url }}"{% if page.next == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron" tabindex="1"></a>
+	<a href="{{ page.previous.url | relative_url }}"{% if page.previous == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron" tabindex="2"></a>
 </div>
 {% include disqus.html %}
 {% include subscribe.html %}
