@@ -21,8 +21,10 @@ window.generateKey = (participantName) ->
 
 	# Apply filters on participant names
 	modifiedParticipantName = document.getElementById("participantNameInput").value
+	modifiedParticipantName = modifiedParticipantName.replace(/ /g, "")  # Remove spaces
 	modifiedParticipantName = modifiedParticipantName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")  # Remove diacritics
-	modifiedParticipantName = modifiedParticipantName.replace(/[^\x21-\x7E]/g, "")  # Filter to only printable, non-space, ASCII characters
+	modifiedParticipantName = punycode.toASCII(modifiedParticipantName)  # Encode non-latin characters in punycode
+	modifiedParticipantName = modifiedParticipantName.replace(/[^\x20-\x7E]/g, "")  # Filter to only printable US-ASCII
 	modifiedParticipantName = modifiedParticipantName.toLowerCase()
 
 	# Create hash
