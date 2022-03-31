@@ -3,6 +3,7 @@ title: AnonKey
 layout: default
 scripts:
 - anonKey.js
+- punycode.js
 ---
 <input type="text" id="participantNameInput" placeholder="Participant name" autofocus autocomplete="off" oninput="generateKey()">
 <p>AnonKey: <span id="output">1ve3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855375</span></p>
@@ -24,8 +25,8 @@ delete their data later on, you will not be able to match your saved AnonKey wit
 Some variation is allowed (differences in spaces, diacritics, and capitalisation), but it's much easier to just type in their name correctly the first time.
 
 ## Details for Nerds
-The name is preprocessed by removing diacritics, spaces, and non-printable US-ASCII characters (in that order), and then converting all characters to
-lowercase.
+The name is preprocessed by removing spaces, removing diacritics, substituting text in a non-latin script for punycode, removing non-printable US-ASCII characters,
+and then converting all characters to lowercase (in that order).
 
 The base of the AnonKey is a SHA-256 hash of the preprocessed name, displayed in hexadecimal. It has a prefixed version number that stops at "v", and it is
 suffixed by a three-digit checksum based on the sum of the US-ASCII values of every character before the third last digit, modulo 1000.
