@@ -1,0 +1,51 @@
+#output {
+  font-family: Menlo, Courier, monospace;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: #111111;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#copyBox {
+  display: none;
+}
+
+#copyAnonKey {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 50%;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 100%;
+  }
+}
+
+#participantNameInput {
+  $height: 50px;
+  width: 50%;
+  background-color: #111111;
+  display: block;
+  font-size: $height * 0.5;
+  border: 0;
+  color: white;
+  box-sizing: border-box;
+  padding-right: $height * 0.3;
+  padding-left: $height * 0.3;
+  margin: 10px auto 20px;
+  height: $height;
+  border-radius: 20px;
+  vertical-align: center;
+  text-align: center;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 480pt) {
+  #participantNameInput {
+    width: 100%;
+  }
+}
