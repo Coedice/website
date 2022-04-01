@@ -19,6 +19,9 @@ sha256 = (string) ->
 window.generateKey = (participantName) ->
 	key = "1v"  # Version 1
 
+	# Reset copy button
+	document.getElementById("copyAnonKey").innerText = "Copy"
+
 	# Apply filters on participant names
 	modifiedParticipantName = document.getElementById("participantNameInput").value
 	modifiedParticipantName = modifiedParticipantName.replace(/ /g, "")  # Remove spaces
@@ -56,11 +59,15 @@ window.generateKey = (participantName) ->
 
 
 window.copyKey = () ->
+	# Perform copy
 	copyBox = document.getElementById("copyBox")
 	copyBox.value = document.getElementById("output").innerText
 	copyBox.select()
 	copyBox.setSelectionRange(0, 99999);  # For mobile devices
 	navigator.clipboard.writeText(copyBox.value)
+
+	# Change copy button text
+	document.getElementById("copyAnonKey").innerText = "Copied!"
 
 
 
