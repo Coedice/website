@@ -42,8 +42,16 @@ window.generateKey = (participantName) ->
 			paddedDigitsSum = String(digitsSum).padStart(3, '0')
 			key += paddedDigitsSum
 
+			colouredKey = ""
+
+			for character in key
+				if !isNaN(character)  # If the character is a digit
+					colouredKey += "<span class='keyNumber'>#{character}</span>"
+				else
+					colouredKey += character
+
 			# Output key
-			document.getElementById("output").innerText = key
+			document.getElementById("output").innerHTML = colouredKey
 	)
 
 
