@@ -1,11 +1,14 @@
 #output {
-  font-family: Menlo, Courier, monospace;
   text-align: center;
   word-wrap: break-word;
   background-color: #111111;
   border-radius: 10px;
   padding: 5px;
   color: cornflowerblue;
+
+  &, * {
+    font-family: Menlo, Courier, monospace;
+  }
 }
 
 #copyBox {
