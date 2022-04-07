@@ -30,6 +30,13 @@ projects:
     app: true
     faq: monashZeitgeistFAQ
     privacyPolicy: monashZeitgeistPrivacyPolicy
+  - name: AnonKey
+    link: anonKey
+    image: anonKey.png
+    description: |-
+      An AnonKey is a string of text that represents a research participant. You type in the name of the
+      research participant into the text-box above, and you get the AnonKey that you store in your database instead
+      of their name.
   - name: Dozenal Time
     link: /assets/docs/DozenalTime.app.zip
     image: dozenalTime.png
