@@ -8,3 +8,6 @@ socialIcons:
   - name: Twitter
     url: https://twitter.com/GavinDouch
     icon: twitter.png
+  - name: Email
+    url: mailto:gavindouch@gmail.com
+    icon: email.png
