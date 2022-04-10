@@ -163,17 +163,29 @@ span.tagList {
 
 a.postSummary {
   $imgHeight: 140px;
+  $padding: 20px;
+  $imgRightMargin: 20px;
+
+  background-color: #111111;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  padding: $padding;
+  border: transparent solid 0.5px;
+  margin-top: $padding;
+  min-height: $imgHeight;
 
   > img {
     float: left;
     height: $imgHeight;
     width: $imgHeight;;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-right: $imgRightMargin;
   }
 
   > p {
     margin: 0;
+    padding-left: $imgHeight + $imgRightMargin;
   }
 
   > h3 {
@@ -193,16 +205,6 @@ a.postSummary {
       font-size: 1em;
     }
   }
-
-  $padding: 20px;
-  background-color: #111111;
-  border-radius: 20px;
-  text-decoration: none;
-  display: block;
-  padding: $padding;
-  border: transparent solid 0.5px;
-  margin-top: $padding;
-  min-height: $imgHeight;
 
   &:hover {
     background-color: #171717;
@@ -276,7 +278,13 @@ div#subscriptionButtons {
 
   a.postSummary {
     > img {
-      display: none;
+      float: none;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    > p {
+      padding-left: 0;
     }
   }
 
