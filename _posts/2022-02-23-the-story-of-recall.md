@@ -8,7 +8,8 @@ The first iOS app I created, [Recall](/#Recall), is a tool for committing knowle
 its invention.
 
 ## What is Spaced Repetition?
-Spaced repetition is the process of attempting to recall information from your long-term memory into your working-memory when it is challenging to do so.
+Spaced repetition is a method of adding information into your long-term memory. It does this by getting you to recall (hence the name of the app) information
+just before it would have been forgotten, embedding it further into your long-term memory.
 
 The purpose of this is to teach your brain that the information is important and to build neural pathways to that knowledge. When you do this for long
 enough, you can remember this information for very long periods of time, if not forever.
