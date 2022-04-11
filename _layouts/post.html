@@ -3,7 +3,7 @@ layout: default
 ---
 <img src="/assets/images/blogIcons/{{ page.icon }}" alt="blog post icon" id="blogPostIcon">
 <h1 id="blogTitle">{{ page.title }}</h1>
-<p id="postMeta"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>, {% include readingTime.html %}</p>
+<div class="postMetaLine"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>, {% include readingTime.html %}</div>
 <div id="blogContent">
 	{{ content }}
 </div>
