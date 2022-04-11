@@ -39,15 +39,6 @@ h1#blogTitle {
   margin-top: 20px;
 }
 
-p#postMeta {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  &, time {
-    color: #aaaaaa;
-  }
-}
-
 span.tagList {
   .tagLabel {
     border-radius: 5px;
@@ -197,18 +188,17 @@ a.postSummary {
     }
   }
 
-  > .postMetaLine {
-    margin-bottom: 10px;
-
-    &, .relativePostTime {
-      color: #aaaaaa;
-      font-size: 1em;
-    }
-  }
-
   &:hover {
     background-color: #171717;
     border: gray solid 0.5px;
+  }
+}
+
+.postMetaLine {
+  margin-bottom: 10px;
+
+  &, time, .relativePostTime {
+    color: #aaaaaa;
   }
 }
 
