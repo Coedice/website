@@ -45,13 +45,23 @@ window.generateKey = (participantName) ->
 			paddedDigitsSum = String(digitsSum).padStart(3, '0')
 			key += paddedDigitsSum
 
+			# Add spans for colouring
 			colouredKey = ""
+			previous_character_was_digit = false
 
 			for character in key
-				if !isNaN(character)  # If the character is a digit
-					colouredKey += "<span class='keyNumber'>#{character}</span>"
+				console.log("character:", character)
+				if !isNaN(character) and not previous_character_was_digit  # If first contiguous digit
+					colouredKey += "<span class='keyNumber'>#{character}"
+					previous_character_was_digit = true
+					console.log("1")
+				else if isNaN(character) and previous_character_was_digit # If first letter after digit
+					colouredKey += "</span>#{character}"
+					previous_character_was_digit = false
+					console.log("2")
 				else
 					colouredKey += character
+					console.log("3")
 
 			# Output key
 			document.getElementById("output").innerHTML = colouredKey
