@@ -9,6 +9,10 @@
   &, * {
     font-family: Menlo, Courier, monospace;
   }
+
+  span { /* Numbers in the AnonKey */
+    color: white;
+  }
 }
 
 #copyBox {
@@ -45,11 +49,6 @@
   vertical-align: center;
   text-align: center;
 }
-
-.keyNumber {
-  color: white;
-}
-
 
 /* Mobile */
 @media only screen and (max-width: 480pt) {

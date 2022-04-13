@@ -51,7 +51,7 @@ window.generateKey = (participantName) ->
 
 			for character in key
 				if !isNaN(character) and not previous_character_was_digit  # If first contiguous digit
-					colouredKey += "<span class='keyNumber'>#{character}"
+					colouredKey += "<span>#{character}"
 					previous_character_was_digit = true
 				else if isNaN(character) and previous_character_was_digit # If first letter after digit
 					colouredKey += "</span>#{character}"
