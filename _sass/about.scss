@@ -63,9 +63,11 @@ div#intro {
   }
 
   > .experienceMetaLine {
-	margin-bottom: 10px;
-	color: #aaaaaa;
-	font-size: 1em;
+	&, * {
+	  margin-bottom: 10px;
+	  color: #aaaaaa;
+	  font-size: 1em;
+	}
   }
 
   $padding: 20px;

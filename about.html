@@ -19,9 +19,9 @@ layout: default
 	<h2>Experience</h2>
 	{% for experience in site.data.experiences.experiences %}
 		<div class="experienceItem" tabindex="0">
-			<h3>{{ experience.name }}</h3>
+			<h3>{% if experience.url %}<a href="{{ experience.url }}" target="_blank">{% endif %}{{ experience.name }}{% if experience.url %}</a>{% endif %}</h3>
 			<div class="experienceMetaLine">
-				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | {{ experience.location }}
+				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | <a href="{{ experience.locationUrl }}" target="_blank">{{ experience.suburb }}, {{ experience.state }}</a>
 			</div>
 			<p>{{ experience.description | markdownify }}</p>
 		</div>
@@ -29,7 +29,7 @@ layout: default
 	<h2>Media appearances</h2>
 	<ul>
 		{% for mediaAppearance in site.data.mediaAppearances.mediaAppearances %}
-			<li tabindex="0">{{ mediaAppearance.mediaOrganisation }}: <a href="{{ mediaAppearance.url }}">{{ mediaAppearance.title }}</a></li>
+			<li tabindex="0">{{ mediaAppearance.mediaOrganisation }}: <a href="{{ mediaAppearance.url }}" target="_blank">{{ mediaAppearance.title }}</a></li>
 		{% endfor %}
 	</ul>
 </div>
