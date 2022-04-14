@@ -242,6 +242,24 @@ div#subscriptionButtons {
   margin: 0 auto;
 }
 
+// Post-specific styles
+.colorSquare {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: text-top;
+  border: white 1px solid;
+  border-radius: 5px;
+}
+
+.colorCode {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  padding: 0 5px;
+  font-family: $monospace-hierarchy;
+}
+
 /* Mobile */
 @media only screen and (max-width: 480pt) {
   div#postArrow {
