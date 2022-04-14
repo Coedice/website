@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Colour Encoding Systems
+use_math: true
 tags: programming design
 icon: pencils.jpg
 ---
@@ -22,32 +23,32 @@ The first requirement to understand hex codes is to understand hexadecimal. This
 
 Hex codes are written with a "#" followed by three two-digit numbers in hexadecimal representing the amounts of red, green, and blue respectively. Let's break that down.
 
-&#35;<span style="color: red">RR</span><span style="color: green">GG</span><span style="color: blue">BB</span> (I have coloured the three sections for clarity)
+<span class="colorCode">&#35;<span style="color: red">RR</span><span style="color: green">GG</span><span style="color: blue">BB</span></span> (I have coloured the three sections for clarity)
 
-Say we want the reddest red possible, in that case we want to shine red out of the pixels as much as possible, and we want to shine as little blue and green as possible. We would do this by writing the largest two-digit hexadecimal number "FF" in the first two digits, and completely turn of the green and blue by writing "00" in those places. This gives #<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">00</span>, which looks like <span style="color: red">◼</span>.
+Say we want the reddest red possible, in that case we want to shine red out of the pixels as much as possible, and we want to shine as little blue and green as possible. We would do this by writing the largest two-digit hexadecimal number "FF" in the first two digits, and completely turn of the green and blue by writing "00" in those places. This gives <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">00</span></span>, which looks like <span class="colorSquare" style="background-color: red"></span>.
 
-What if we want a darker red? In that case we keep green and blue as they are, and we turn down the amount of red to "9A", this gives #<span style="color: red">91</span><span style="color: green">00</span><span style="color: blue">00</span> which looks like <span style="color: #910000">◼</span>.
+What if we want a darker red? In that case we keep green and blue as they are, and we turn down the amount of red to "9A", this gives <span class="colorCode">#<span style="color: red">91</span><span style="color: green">00</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: #910000"></span>.
 
-Now let's mix in red and green to get a yellow. #<span style="color: red">DD</span><span style="color: green">DD</span><span style="color: blue">00</span> which looks like <span style="color: #DDDD00">◼</span>.
+Now let's mix in red and green to get a yellow. <span class="colorCode">#<span style="color: red">DD</span><span style="color: green">DD</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: #DDDD00"></span>.
 
-Black and white work similarly. Since shining all three primary colours as much as possible gets us white, #<span style="color: red">FF</span><span style="color: green">FF</span><span style="color: blue">FF</span> looks like <span style="color: white">◼</span>, and if we turn off all three colours, we get #<span style="color: red">00</span><span style="color: green">00</span><span style="color: blue">00</span> which looks like <span style="color: black">◼</span>. To get any grey, we simply shine red, blue, and green equally, for example #<span style="color: red">B1</span><span style="color: green">B1</span><span style="color: blue">B1</span> looks like <span style="color: #B1B1B1B1">◼</span>.
+Black and white work similarly. Since shining all three primary colours as much as possible gets us white, <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">FF</span><span style="color: blue">FF</span></span> looks like <span class="colorSquare" style="background-color: white"></span>, and if we turn off all three colours, we get <span class="colorCode">#<span style="color: red">00</span><span style="color: green">00</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: black"></span>. To get any grey, we simply shine red, blue, and green equally, for example <span class="colorCode">#<span style="color: red">B1</span><span style="color: green">B1</span><span style="color: blue">B1</span></span> looks like <span class="colorSquare" style="background-color: #B1B1B1B1"></span>.
 
-Using hex codes, we are limited to 16,777,216 colours (16^6), which is enough for many purposes.
+Using hex codes, we are limited to $16^6 = 16,777,216$ colours, which is enough for many purposes.
 
-A modern variation of hex code adds two extra digits on the right to encode for opacity. The lower the number, the more transparent. So #<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">00</span>80 looks like <span style="color: #FF000080">◼</span> (a half transparent red).
+A modern variation of hex code adds two extra digits on the right to encode for opacity. The lower the number, the more transparent. So <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">00</span>80</span> looks like <span class="colorSquare" style="background-color: #FF000080"></span> (a half transparent red).
 
-There is also a shorthand hex code called a hex triplet. They are written like "#<span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span>". They are very similar to full hex codes, but where each digit represents the same digit doubled in a full hex code. For example #<span style="color: red">F</span><span style="color: green">6</span><span style="color: blue">0</span> is the same as #<span style="color: red">FF</span><span style="color: green">66</span><span style="color: blue">00</span>, and #<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">66</span>DD is the same as #<span style="color: red">F</span><span style="color: green">0</span><span style="color: blue">6</span>D (which is partly transparent).
+There is also a shorthand hex code called a hex triplet. They are written like "<span class="colorCode">#<span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span></span>". They are very similar to full hex codes, but where each digit represents the same digit doubled in a full hex code. For example <span class="colorCode">#<span style="color: red">F</span><span style="color: green">6</span><span style="color: blue">0</span></span> is the same as <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">66</span><span style="color: blue">00</span></span>, and <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">66</span>DD</span> is the same as <span class="colorCode">#<span style="color: red">F</span><span style="color: green">0</span><span style="color: blue">6</span>D</span> (which is partly transparent).
 
 ## RGB and RGBA
 Different syntax is used depending on the application, but it is common in front-end software application to encode colours as a function/method call with three arguments. 
 
-rgb(<span style="color: red">red</span>, <span style="color: green">green</span>, <span style="color: blue">blue</span>)
+<span class="colorCode">rgb(<span style="color: red">red</span>, <span style="color: green">green</span>, <span style="color: blue">blue</span>)</span>
 
 The values in each argument numbers are out of 255 (which is the same as two hexadecimal digits in a hex code).
 
 There is also an extended variety, rgba, which includes opacity.
 
-rgba(<span style="color: red">red</span>, <span style="color: green">green</span>, <span style="color: blue">blue</span>, opacity)
+<span class="colorCode">rgba(<span style="color: red">red</span>, <span style="color: green">green</span>, <span style="color: blue">blue</span>, opacity)</span>
 
 The opacity argument, unlike red, green, and blue, is a number between 0 and 1, where one is completely opaque, and 0 is completely transparent.
 
@@ -57,12 +58,12 @@ HSL represents colours in a similar syntax to rgb (above), but it uses hue, satu
 - **S**aturation: The vividness of the colour. 1 is most saturated, and 0 is completely grey.
 - **L**ightness: The amount of white or black that is mixed with the colour. 0.5 is mixed with neither white nor black, 1 is completely white, and 0 is completely black.
 
-Therefore, hsl(250, 0.5, 0.7) looks like <span style="color: hsl(250, 50%, 70%)">◼</span> (magenta, muted, light).
+Therefore, <span class="colorCode">hsl(250, 0.5, 0.7)</span> looks like <span class="colorSquare" style="background-color: hsl(250, 50%, 70%)"></span> (magenta, muted, light).
 
 ## Colour Names
 Some applications will have colours systems where certain colours are given keywords.
 
-For example, in CSS there are keywords for regular colours such as "<span style="color: red">red</span>" and "<span style="color: cyan">cyan</span>", but also more unusual shades such as "<span style="color: tomato">tomato</span>" and "<span style="color: dodgerBlue">dodgerBlue</span>".
+For example, in CSS there are keywords for regular colours such as <span class="colorCode" style="color: red">red</span> and <span class="colorCode" style="color: cyan">cyan</span>, but also more unusual shades such as <span class="colorCode" style="color: tomato">tomato</span> and <span class="colorCode" style="color: dodgerBlue">dodgerBlue</span>.
 
 The keywords available will depend on the environment you are coding in.
 
@@ -71,4 +72,4 @@ Some applications will have colours systems where there are keywords which repre
 
 Let's say you were making an app with a white background, and you want to have some text that does not call as much attention as the main text. The usual way to do this would be to change the colour of text to be a light grey. The problem with this is that when the user switches their device to dark mode, the background goes dark grey, the black text is nearly invisible, and the light grey text becomes the centre of attention.
 
-Instead, the solution is to specify the main text as "text colour", and the secondary text as "secondary text colour." Then, when the user changes to dark mode, the primary and secondary text colours change automatically according to what the OS (or whichever other system) determines is the dark mode version of the text colour and secondary text colour.
+Instead, the solution is to specify the main text as <span class="colorCode">primary-text-color</span>, and the secondary text as <span class="colorCode">secondary-text-color</span>. Then, when the user changes to dark mode, the primary and secondary text colours change automatically according to what the OS (or whichever other system) determines is the dark mode version of the text colour and secondary text colour.

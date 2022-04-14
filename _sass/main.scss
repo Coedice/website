@@ -1,4 +1,5 @@
 $background-color: #1c1c1c;
+$monospace-hierarchy: Courier, Menlo, monospace;
 
 * {
   color: white;
@@ -100,7 +101,7 @@ input {
   }
 
   * {
-    font-family: Courier, Menlo, monospace;
+    font-family: $monospace-hierarchy;
   }
 }
 
