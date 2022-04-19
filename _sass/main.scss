@@ -59,7 +59,7 @@ nav {
     padding: 0;
     text-align: center;
     white-space: nowrap;
-    overflow: scroll;
+    overflow: hidden;
     display: inline-block;
     font-size: 0; // Prevents gap created by HTML newlines
     background-color: #898989;
