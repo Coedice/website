@@ -1,1 +1,1 @@
-document.write("This text comes from an external script.");
+document.getElementsByTagName("body")[0].innerHTML = "<h1>XSS</h1>";
