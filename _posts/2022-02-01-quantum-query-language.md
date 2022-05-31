@@ -14,7 +14,7 @@ Assuming they do become viable, we can be sure that it would take a very long ti
 
 ## Why Now?
 Historically, more successful (i.e. ubiquitously supported) open standards have had in common that they were standardised before there was much practical need for them.
-It is much easier to keep uniformity when you have it, and modify the standard when needed, than to start off with many competing standards and try to get [uniformity by outcompeting other standards](https://xkcd.com/927/).
+It is much easier to keep uniformity when you have it, and modify the standard when needed, than to start off with many competing standards and try to get [uniformity by out-competing other standards](https://xkcd.com/927/).
 
 ## A Case Study in Late Standardisation
 E. F. Codd invented the concept of relational databases in 1970, and in 1976 the Multics Relational Data Store was the first RDBMS to be sold. Oracle came next in 1979, after which there was a flurry of new RDBMS options, including Ingres, IBM BS12, and 4D, bringing us to 1987, the same year ANSI standardised the first version of SQL, SQL-86.
