@@ -17,7 +17,7 @@ This post is not intended to support this worldview, but to draw a comparison wi
 ## What Is the Analogy?
 Forms are analogous to classes. The qualities of Forms are that they are unchanging, incorruptible, and non-physical, which are all true of classes, since classes do not have state, and so cannot be changed or corrupted, and they are essentially non-physical since they can’t be interacted with directly.
 
-The physical objects in the theory of Forms are analogous to code objects, as they both mimic their idealised version (their Form or class). Since code objects do have state, they are changeable, they are also “physical”, since you can directly interacted with them.
+The physical objects in the theory of Forms are analogous to code objects, as they both mimic their idealised version (their Form or class). Since code objects do have state, they are changeable, they are also “physical”, since you can directly interact with them.
 
 ## What about Subclasses?
 Subclasses can be thought of as relating to a Form that is more specific than another Form.
