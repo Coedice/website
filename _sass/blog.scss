@@ -257,7 +257,10 @@ div#subscriptionButtons {
   border-radius: 5px;
   color: black;
   padding: 0 5px;
-  font-family: $monospace-hierarchy;
+
+  &, * {
+    font-family: $monospace-hierarchy;
+  }
 }
 
 /* Mobile */
