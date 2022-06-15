@@ -28,7 +28,7 @@ Hex codes are written with a "#" followed by three two-digit numbers in hexadeci
 
 Say we want the reddest red possible, in that case we want to shine red out of the pixels as much as possible, and we want to shine as little blue and green as possible. We would do this by writing the largest two-digit hexadecimal number "FF" in the first two digits, and completely turn of the green and blue by writing "00" in those places. This gives <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">00</span></span>, which looks like <span class="colorSquare" style="background-color: red"></span>.
 
-What if we want a darker red? In that case we keep green and blue as they are, and we turn down the amount of red to "9A", this gives <span class="colorCode">#<span style="color: red">91</span><span style="color: green">00</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: #910000"></span>.
+What if we want a darker red? In that case we keep green and blue as they are, and we turn down the amount of red to, say, "91", this gives <span class="colorCode">#<span style="color: red">91</span><span style="color: green">00</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: #910000"></span>.
 
 Now let's mix in red and green to get a yellow. <span class="colorCode">#<span style="color: red">DD</span><span style="color: green">DD</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: #DDDD00"></span>.
 
