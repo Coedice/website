@@ -51,17 +51,17 @@ We'll then know how much time we have to divide among the units. Let's use 15 ho
 
 ### Step 2: How Important Is Each Unit?
 You then set an importance rating as a percentage for each unit, for example:
-- First unit: $70\%$
-- Second unit: $40\%$
-- Third unit: $80\%$
-- Fourth unit: $30\%$
-- Now that we have the importance rating for each unit, we add the ratings together. $70\% + 40\% + 80\% + 30\% = 220\%$.
+- First unit: $$70\%$$
+- Second unit: $$40\%$$
+- Third unit: $$80\%$$
+- Fourth unit: $$30\%$$
+- Now that we have the importance rating for each unit, we add the ratings together. $$70\% + 40\% + 80\% + 30\% = 220\%$$.
 
 Lastly, we divide each rating by the total, and multiply it by the weekly goal (15 hours). This gives you your rough study goal for each unit over a week.
-- First unit: $\frac{70\%}{220\%}\times 15$ hours $= 4$ hours and $46$ minutes
-- Second unit: $\frac{40\%}{220\%}\times 15$ hours $= 2$ hours and $43$ minutes
-- Third unit: $\frac{80\%}{220\%}\times 15$ hours $= 5$ hours and $27$ minutes
-- Fourth unit: $\frac{30\%}{220\%}\times 15$ hours $= 2$ hours and $2$ minutes
+- First unit: $$\frac{70\%}{220\%}\times 15$$ hours $$= 4$$ hours and $$46$$ minutes
+- Second unit: $$\frac{40\%}{220\%}\times 15$$ hours $$= 2$$ hours and $$43$$ minutes
+- Third unit: $$\frac{80\%}{220\%}\times 15$$ hours $$= 5$$ hours and $$27$$ minutes
+- Fourth unit: $$\frac{30\%}{220\%}\times 15$$ hours $$= 2$$ hours and $$2$$ minutes
 
 This may sound a bit complicated, but in my app all you need to do is drag some sliders, and your goals will be made for you.
 
