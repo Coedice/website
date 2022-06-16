@@ -59,7 +59,7 @@ HSL represents colours in a similar syntax to rgb (above), but it uses hue, satu
 - **S**aturation: The vividness of the colour. 1 is most saturated, and 0 is completely grey.
 - **L**ightness: The amount of white or black that is mixed with the colour. 0.5 is mixed with neither white nor black, 1 is completely white, and 0 is completely black.
 
-Therefore, <span class="colorCode">hsl(250, 0.5, 0.7)</span> looks like <span class="colorSquare" style="background-color: hsl(250, 50%, 70%)"></span> (magenta, muted, light).
+Therefore, <span class="colorCode">hsl(260, 0.5, 0.7)</span> looks like <span class="colorSquare" style="background-color: hsl(260, 50%, 70%)"></span> (magenta, muted, light).
 
 ## Colour Names
 Some applications will have colours systems where certain colours are given keywords.
