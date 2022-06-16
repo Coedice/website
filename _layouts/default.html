@@ -30,7 +30,7 @@ layout: compress
 
 		<!-- JavaScript -->
 		{% if page.use_math %}
-			{% include mathjax_support.html %}
+			{% include mathjax.html %}
 		{% endif %}
 		{% for scriptFileName in page.scripts %}
 			<script src="{{ '/assets/scripts/' | append: scriptFileName | relative_url }}"></script>

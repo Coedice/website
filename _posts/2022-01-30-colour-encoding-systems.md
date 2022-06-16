@@ -34,7 +34,7 @@ Now let's mix in red and green to get a yellow. <span class="colorCode">#<span s
 
 Black and white work similarly. Since shining all three primary colours as much as possible gets us white, <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">FF</span><span style="color: blue">FF</span></span> looks like <span class="colorSquare" style="background-color: white"></span>, and if we turn off all three colours, we get <span class="colorCode">#<span style="color: red">00</span><span style="color: green">00</span><span style="color: blue">00</span></span> which looks like <span class="colorSquare" style="background-color: black"></span>. To get any grey, we simply shine red, blue, and green equally, for example <span class="colorCode">#<span style="color: red">B1</span><span style="color: green">B1</span><span style="color: blue">B1</span></span> looks like <span class="colorSquare" style="background-color: #B1B1B1B1"></span>.
 
-Using hex codes, we are limited to $16^6 = 16,777,216$ colours, which is enough for many purposes.
+Using hex codes, we are limited to $$16^6 = 16,777,216$$ colours, which is enough for many purposes.
 
 A modern variation of hex code adds two extra digits on the right to encode for opacity. The lower the number, the more transparent. So <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">00</span>80</span> looks like <span class="colorSquare" style="background-color: #FF000080"></span> (a half transparent red).
 
