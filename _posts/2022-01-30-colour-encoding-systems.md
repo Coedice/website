@@ -69,8 +69,8 @@ For example, in CSS there are keywords for regular colours such as <span class="
 The keywords available will depend on the environment you are coding in.
 
 ## Semantic Colour
-Some applications will have colours systems where there are keywords which represent the colours purpose, rather than the colour itself. The colour itself will be chosen by some other system.
+Some applications will have colour systems where there are keywords which represent the colour's purpose, rather than the colour itself. The colour itself will be chosen by some other system.
 
-Let's say you were making an app with a white background, and you want to have some text that does not call as much attention as the main text. The usual way to do this would be to change the colour of text to be a light grey. The problem with this is that when the user switches their device to dark mode, the background goes dark grey, the black text is nearly invisible, and the light grey text becomes the centre of attention.
+Let's say you were making an app with a white background, and you want to have some text that does not call as much attention as the primary text. The usual way to do this would be to change the colour of the secondary text to be a light grey. The problem with this is that when the user switches their device to dark mode, the background goes dark grey, the black primary text is nearly invisible, and the light grey secondary text becomes the centre of attention.
 
-Instead, the solution is to specify the main text as <span class="colorCode">primary-text-color</span>, and the secondary text as <span class="colorCode">secondary-text-color</span>. Then, when the user changes to dark mode, the primary and secondary text colours change automatically according to what the OS (or whichever other system) determines is the dark mode version of the text colour and secondary text colour.
+Instead, the solution is to specify the primary text as <span class="colorCode">primary-text-color</span>, and the secondary text as <span class="colorCode">secondary-text-color</span>. Then, when the user changes to dark mode, the primary and secondary text colours change automatically according to what the OS (or whichever other system) determines should be the dark mode version of the primary and secondary text colours.
