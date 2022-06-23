@@ -6,7 +6,7 @@ layout: default
 	{% for project in site.data.projects.projects %}
 		<div id="{{ project.name | remove: ' ' }}">
 			<a class="iconBox" href="{{ project.link | relative_url }}">
-				<img class="projectImage" src="assets/images/projects/{{ project.image }}" alt="{{ project.image_alt }}" tabindex="0">
+				<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp" alt="{{ project.image_alt }}" tabindex="0">
 				{% if project.app %}
 					<img class="appleBadge" src="assets/images/appStoreBanners/downloadWhite.svg" alt="Download on the iOS App Store" tabindex="0">
 				{% endif %}
