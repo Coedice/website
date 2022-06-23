@@ -3,11 +3,11 @@ title: About
 layout: default
 ---
 <div id="intro">
-	<img src="{{ 'assets/images/gavinDouch.webp' | relative_url }}" alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
+	<img src="{{ 'assets/images/gavin-douch.webp' | relative_url }}" alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
 	<div id="socialIcons">
-		{% for socialIcon in site.data.socialIcons.socialIcons %}
-		<a href="{{ socialIcon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
-			<img src="/assets/images/socialIcons/{{ socialIcon.icon }}" alt="{{ socialIcon.name }} icon">
+		{% for social_icon in site.data.socialIcons.social_icons %}
+		<a href="{{ social_icon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
+			<img src="/assets/images/social-icons/{{ social_icon.icon }}" alt="{{ social_icon.name }} icon">
 		</a>
 		{% endfor %}
 	</div>
@@ -17,19 +17,19 @@ layout: default
 	<p>I am a self-taught full-stack programmer who's interested in all things tech. I am currently completing the last year of my Bachelor of Computer Science (Advanced Computer Science) degree.</p>
 	<p>If you have any interest in one of my projects, have a question, or just want to chat, please get in touch!</p>
 	<h2>Experience</h2>
-	{% for experience in site.data.experiences.experiences %}
+	{% for experience in site.data.experiences %}
 		<div class="experienceItem" tabindex="0">
 			<h3>{% if experience.url %}<a href="{{ experience.url }}" target="_blank">{% endif %}{{ experience.name }}{% if experience.url %}</a>{% endif %}</h3>
 			<div class="experienceMetaLine">
-				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | <a href="{{ experience.locationUrl }}" target="_blank">{{ experience.suburb }}, {{ experience.state }}</a>
+				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | <a href="{{ experience.location_url }}" target="_blank">{{ experience.suburb }}, {{ experience.state }}</a>
 			</div>
 			<p>{{ experience.description | markdownify }}</p>
 		</div>
 	{% endfor %}
 	<h2>Media appearances</h2>
 	<ul>
-		{% for mediaAppearance in site.data.mediaAppearances.mediaAppearances %}
-			<li tabindex="0">{{ mediaAppearance.mediaOrganisation }}: <a href="{{ mediaAppearance.url }}" target="_blank">{{ mediaAppearance.title }}</a></li>
+		{% for media_appearance in site.data.media_appearance %}
+			<li tabindex="0">{{ mediaAppearance.organisation }}: <a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a></li>
 		{% endfor %}
 	</ul>
 </div>

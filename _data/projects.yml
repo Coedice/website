@@ -1,49 +1,48 @@
-projects:
-  - name: StudyStreaks
-    link: https://apps.apple.com/au/app/studystreaks/id1478096728
-    image_alt: Rounded square with red and blue horizontal bars
-    description: |-
-      A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
-    app: true
-    faq: studyStreaksFAQ
-    privacyPolicy: studyStreaksPrivacyPolicy
-  - name: Recall
-    link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
-    image_alt: Brain shape, viewed from above, with two arrows pointing to eachother's tail forming a circle above the brain
-    description: |-
-      Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the
-      [Leitner system](https://en.wikipedia.org/wiki/Leitner_system), Recall shows you flashcards less often when you get them right, and more often when you
-      get them wrong.
-    app: true
-    faq: recallFAQ
-    privacyPolicy: recallPrivacyPolicy
-  - name: Code Smells
-    link: https://code-smells.com
-    image_alt: Capital 'C' written in a serif font
-    description: |-
-      A guide to identifying and fixing characteristics that may indicate deeper programming flaws.
-  - name: Monash Zeitgeist
-    link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
-    image_alt: Capital 'M' on a blue background, rotated clockwise so that it can also be seen as a capital 'Z'
-    description: |-
-      A news aggregator for Monash University news, including central university news, faculty news, student club news, student association news, and more.
-    app: true
-    faq: monashZeitgeistFAQ
-    privacyPolicy: monashZeitgeistPrivacyPolicy
-  - name: AnonKey
-    link: anonKey
-    image_alt: Black circle with the text 'an0n', with all the characters except the 0 rendered in blue
-    description: |-
-      An AnonKey is a string of text that represents a research participant. You type in the name of the
-      research participant into the text-box above, and you get the AnonKey that you store in your database instead
-      of their name.
-  - name: Dozenal Time
-    link: /assets/docs/DozenalTime.app.zip
-    image_alt: Red upside down '2' on a white circle
-    description: |-
-      This app is a clock that lives in the Mac menu bar and shows the time in dozenal. [Learn how dozenal works](https://www.youtube.com/watch?v=U6xJfP7-HCc).
-  - name: QR Code Generator
-    link: qrCode
-    image_alt: QR code that encodes example.com
-    description: |-
-      A highly customisable live QR code generator.
+- name: StudyStreaks
+  link: https://apps.apple.com/au/app/studystreaks/id1478096728
+  image_alt: Rounded square with red and blue horizontal bars
+  description: |-
+    A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
+  app: true
+  faq: projects/studystreaks-faq
+  privacyPolicy: projects/studystreaks-privacy-policy
+- name: Recall
+  link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
+  image_alt: Brain shape, viewed from above, with two arrows pointing to eachother's tail forming a circle above the brain
+  description: |-
+    Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the
+    [Leitner system](https://en.wikipedia.org/wiki/Leitner_system), Recall shows you flashcards less often when you get them right, and more often when you
+    get them wrong.
+  app: true
+  faq: projects/recall-faq
+  privacyPolicy: projects/recall-privacy-policy
+- name: Code Smells
+  link: https://code-smells.com
+  image_alt: Capital 'C' written in a serif font
+  description: |-
+    A guide to identifying and fixing characteristics that may indicate deeper programming flaws.
+- name: Monash Zeitgeist
+  link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
+  image_alt: Capital 'M' on a blue background, rotated clockwise so that it can also be seen as a capital 'Z'
+  description: |-
+    A news aggregator for Monash University news, including central university news, faculty news, student club news, student association news, and more.
+  app: true
+  faq: projects/monash-zeitgeist-faq
+  privacyPolicy: projects/monash-zeitgeist-privacy-policy
+- name: AnonKey
+  link: projects/anonkey
+  image_alt: Black circle with the text 'an0n', with all the characters except the 0 rendered in blue
+  description: |-
+    An AnonKey is a string of text that represents a research participant. You type in the name of the
+    research participant into the text-box above, and you get the AnonKey that you store in your database instead
+    of their name.
+- name: Dozenal Time
+  link: /assets/docs/DozenalTime.app.zip
+  image_alt: Red upside down '2' on a white circle
+  description: |-
+    This app is a clock that lives in the Mac menu bar and shows the time in dozenal. [Learn how dozenal works](https://www.youtube.com/watch?v=U6xJfP7-HCc).
+- name: QR Code Generator
+  link: projects/qr-code-generator
+  image_alt: QR code that encodes example.com
+  description: |-
+    A highly customisable live QR code generator.

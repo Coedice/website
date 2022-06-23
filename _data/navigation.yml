@@ -1,7 +1,6 @@
-pages:
-  - title: Projects
-    url: /
-  - title: About
-    url: /about
-  - title: Blog
-    url: /blog
+- title: Projects
+  url: /
+- title: About
+  url: /about
+- title: Blog
+  url: /blog
