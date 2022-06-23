@@ -2,7 +2,6 @@
 layout: post
 title: At WIRED's Helm
 tags: story
-icon: wired.png
 icon_alt: Purple background with a white greater than symbol and underscore in the middle, written in a pixelated typeface
 ---
 WIRED (officially the Faculty of Information Technology Society), is Monash University's official IT club. I have lead

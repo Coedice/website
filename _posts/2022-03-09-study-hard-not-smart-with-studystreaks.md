@@ -3,7 +3,6 @@ layout: post
 title: Study Smart, Not Hard, with StudyStreaks
 use_math: true
 tags: software
-icon: books.jpg
 icon_alt: Bookshelf filled with books bound in the same red leather covers
 ---
 Studying and staying motivated weren't easy before, and now it is harder than ever with
