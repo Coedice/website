@@ -28,8 +28,8 @@ layout: default
 	{% endfor %}
 	<h2>Media appearances</h2>
 	<ul>
-		{% for media_appearance in site.data.media_appearance %}
-			<li tabindex="0">{{ mediaAppearance.organisation }}: <a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a></li>
+		{% for media_appearance in site.data.media_appearances %}
+			<li tabindex="0">{{ media_appearance.organisation }}: <a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a></li>
 		{% endfor %}
 	</ul>
 </div>
