@@ -32,8 +32,8 @@ layout: compress
 		{% if page.use_math %}
 			{% include mathjax.html %}
 		{% endif %}
-		{% for scriptFileName in page.scripts %}
-			<script src="{{ '/assets/scripts/' | append: scriptFileName | relative_url }}"></script>
+		{% for script_file_name in page.scripts %}
+			<script src="{{ '/assets/scripts/' | append: script_file_name | relative_url }}"></script>
 		{% endfor %}
 	</head>
 	<body>

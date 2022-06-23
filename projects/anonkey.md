@@ -2,7 +2,7 @@
 title: AnonKey
 layout: default
 scripts:
-- anonKey.js
+- anonkey.js
 - punycode.js
 ---
 <input type="text" id="participantNameInput" placeholder="Participant name" autofocus autocomplete="off" oninput="generateKey()">

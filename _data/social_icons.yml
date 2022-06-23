@@ -1,0 +1,12 @@
+- name: GitHub
+  url: https://github.com/Coedice
+  icon: github.png
+- name: LinkedIn
+  url: https://www.linkedin.com/in/gavin-douch-a77259117/
+  icon: linkedin.png
+- name: Twitter
+  url: https://twitter.com/GavinDouch
+  icon: twitter.png
+- name: Email
+  url: mailto:gavindouch@gmail.com
+  icon: email.png

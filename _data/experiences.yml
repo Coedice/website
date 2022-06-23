@@ -1,69 +1,68 @@
-experiences:
-  - name: Monash University Student Misconduct Panel
-    role: Member
-    suburb: Clayton
-    state: VIC
-    locationUrl: https://www.google.com.au/maps/place/Monash+University+Clayton+Campus/@-37.9145082,145.1328084,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad66acbf64673b9:0xfaf9b169a587104!8m2!3d-37.9145125!4d145.1349971
-    url: https://www.monash.edu/students/support/safety-and-security/general-misconduct
-    start: Mar 2022
-    description: |-
-      As a representative on the student misconduct panel, I weigh the evidence and deliberate on allegations of
-      academic and general misconduct made against students.
-  - name: Monash University Faculty of IT
-    role: Student Services Officer
-    suburb: Clayton
-    state: VIC
-    locationUrl: https://www.google.com.au/maps/place/Faculty+of+Information+Technology/@-37.9105633,145.1317808,1009m/data=!3m2!1e3!4b1!4m5!3m4!1s0x6ad66acbb0c20823:0x6902fa6f1dcdef36!8m2!3d-37.9105779!4d145.1340309
-    url: https://www.monash.edu/it
-    start: Jan 2021
-    description: |-
-      I am involved with Monash Faculty of IT's Education Transformation Project,
-      and help to improve the community and academic life for the faculty's students. I also write the weekly faculty
-      newsletter [The Byte](https://www.monash.edu/it/current-students/join-the-community/newsletters/byte),
-      showcasing news, student events, internships, and graduate roles.
-  - name: PricewaterhouseCoopers (PwC)
-    role: Data Forensics/Risk Analytics IBL
-    suburb: Southbank
-    state: VIC
-    locationUrl: https://www.google.com.au/maps/place/PwC+Melbourne+%26+PwC's+Digital+Services/@-37.8213352,144.9611008,17z/data=!3m2!4b1!5s0x6ad642b28fa23581:0x15389f77037c20f5!4m5!3m4!1s0x6ad642c58aab0757:0xa5540420f50c3d14!8m2!3d-37.8213395!4d144.9632895
-    url: https://www.pwc.com.au
-    start: Jul 2021
-    end: Dec 2021
-    description: |-
-      At PwC I used data analytics and forensics to identify risks and anomalies
-      in client data in order to prevent and detect procedural and human error, as well as to inform decision making with
-      data and visualisations. To do this I employ a range of advanced software products, programming languages, and
-      techniques.
-  - name: WIRED Monash (Faculty of IT Society)
-    role: President
-    suburb: Clayton
-    state: VIC
-    locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
-    url: https://wired.org.au
-    start: Mar 2020
-    end: Mar 2022
-    description: |-
-      As the President of Monash WIRED, I oversaw all aspects of our club, including event
-      creation, industry involvement, liaising with other groups at Monash, with Monash staff, and with industry.
-      Read more about my time at WIRED in this blog post.
-  - name: Australian Computing Students' Association
-    role: Founder and President
-    suburb: Clayton
-    state: VIC
-    locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
-    start: Feb 2019
-    end: Mar 2022
-    description: |-
-      I founded the umbrella association of tertiary education IT clubs known as ACSA. This allows for the sharing of
-      events, and all sorts of collaboration and cross-pollination between club leaders
-  - name: Monash Google Developer Student Club
-    role: GDSC Lead
-    suburb: Clayton
-    state: VIC
-    locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
-    url: https://gdsc.community.dev/monash-university/
-    start: Jun 2021
-    end: Mar 2022
-    description: |-
-      I became the GDSC Lead for Monash University, and combined it into WIRED,
-      in order to run fun and educational Google events for our members.
+- name: Monash University Student Misconduct Panel
+  role: Member
+  suburb: Clayton
+  state: VIC
+  locationUrl: https://www.google.com.au/maps/place/Monash+University+Clayton+Campus/@-37.9145082,145.1328084,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad66acbf64673b9:0xfaf9b169a587104!8m2!3d-37.9145125!4d145.1349971
+  url: https://www.monash.edu/students/support/safety-and-security/general-misconduct
+  start: Mar 2022
+  description: |-
+    As a representative on the student misconduct panel, I weigh the evidence and deliberate on allegations of
+    academic and general misconduct made against students.
+- name: Monash University Faculty of IT
+  role: Student Services Officer
+  suburb: Clayton
+  state: VIC
+  locationUrl: https://www.google.com.au/maps/place/Faculty+of+Information+Technology/@-37.9105633,145.1317808,1009m/data=!3m2!1e3!4b1!4m5!3m4!1s0x6ad66acbb0c20823:0x6902fa6f1dcdef36!8m2!3d-37.9105779!4d145.1340309
+  url: https://www.monash.edu/it
+  start: Jan 2021
+  description: |-
+    I am involved with Monash Faculty of IT's Education Transformation Project,
+    and help to improve the community and academic life for the faculty's students. I also write the weekly faculty
+    newsletter [The Byte](https://www.monash.edu/it/current-students/join-the-community/newsletters/byte),
+    showcasing news, student events, internships, and graduate roles.
+- name: PricewaterhouseCoopers (PwC)
+  role: Data Forensics/Risk Analytics IBL
+  suburb: Southbank
+  state: VIC
+  locationUrl: https://www.google.com.au/maps/place/PwC+Melbourne+%26+PwC's+Digital+Services/@-37.8213352,144.9611008,17z/data=!3m2!4b1!5s0x6ad642b28fa23581:0x15389f77037c20f5!4m5!3m4!1s0x6ad642c58aab0757:0xa5540420f50c3d14!8m2!3d-37.8213395!4d144.9632895
+  url: https://www.pwc.com.au
+  start: Jul 2021
+  end: Dec 2021
+  description: |-
+    At PwC I used data analytics and forensics to identify risks and anomalies
+    in client data in order to prevent and detect procedural and human error, as well as to inform decision making with
+    data and visualisations. To do this I employ a range of advanced software products, programming languages, and
+    techniques.
+- name: WIRED Monash (Faculty of IT Society)
+  role: President
+  suburb: Clayton
+  state: VIC
+  locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
+  url: https://wired.org.au
+  start: Mar 2020
+  end: Mar 2022
+  description: |-
+    As the President of Monash WIRED, I oversaw all aspects of our club, including event
+    creation, industry involvement, liaising with other groups at Monash, with Monash staff, and with industry.
+    Read more about my time at WIRED in this blog post.
+- name: Australian Computing Students' Association
+  role: Founder and President
+  suburb: Clayton
+  state: VIC
+  locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
+  start: Feb 2019
+  end: Mar 2022
+  description: |-
+    I founded the umbrella association of tertiary education IT clubs known as ACSA. This allows for the sharing of
+    events, and all sorts of collaboration and cross-pollination between club leaders
+- name: Monash Google Developer Student Club
+  role: GDSC Lead
+  suburb: Clayton
+  state: VIC
+  locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
+  url: https://gdsc.community.dev/monash-university/
+  start: Jun 2021
+  end: Mar 2022
+  description: |-
+    I became the GDSC Lead for Monash University, and combined it into WIRED,
+    in order to run fun and educational Google events for our members.
