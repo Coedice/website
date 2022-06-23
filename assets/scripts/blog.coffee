@@ -18,11 +18,11 @@ window.blogSearchFilter = () ->
 	searchIcon = document.getElementById("searchSection").getElementsByTagName("img")[0]
 
 	if searchPhrase.length > 0
-		searchIcon.src = "/assets/images/cross.png"
+		searchIcon.src = "/assets/images/search/cross.png"
 		searchIcon.setAttribute("onclick","clearSearchBar();");
 		searchIcon.style.cursor = "pointer"
 	else
-		searchIcon.src = "/assets/images/search.png"
+		searchIcon.src = "/assets/images/search/search.png"
 		searchIcon.setAttribute("onclick","");
 		searchIcon.style.cursor = "default"
 
