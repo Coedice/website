@@ -3,7 +3,6 @@ layout: post
 title: Colour Encoding Systems
 use_math: true
 tags: programming design
-icon: pencils.jpg
 icon_alt: The tips of many coloured pencils that are stacked on top of each other
 ---
 Here is everything you need to know about encoding colour as a programmer.

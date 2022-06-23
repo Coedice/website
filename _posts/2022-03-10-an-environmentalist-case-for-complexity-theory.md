@@ -2,7 +2,6 @@
 layout: post
 title: An Environmentalist Case for Complexity Theory
 tags: compsci
-icon: leaf.jpg
 icon_alt: Large and healthy leaf with a pinnate pattern
 ---
 Computational complexity theory is not the most popular topic of computer science undergrads, but if speed and memory
