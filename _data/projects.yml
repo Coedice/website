@@ -5,7 +5,7 @@
     A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
   app: true
   faq: projects/studystreaks-faq
-  privacyPolicy: projects/studystreaks-privacy-policy
+  privacy_policy: projects/studystreaks-privacy-policy
 - name: Recall
   link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
   image_alt: Brain shape, viewed from above, with two arrows pointing to eachother's tail forming a circle above the brain
@@ -15,7 +15,7 @@
     get them wrong.
   app: true
   faq: projects/recall-faq
-  privacyPolicy: projects/recall-privacy-policy
+  privacy_policy: projects/recall-privacy-policy
 - name: Code Smells
   link: https://code-smells.com
   image_alt: Capital 'C' written in a serif font
@@ -28,7 +28,7 @@
     A news aggregator for Monash University news, including central university news, faculty news, student club news, student association news, and more.
   app: true
   faq: projects/monash-zeitgeist-faq
-  privacyPolicy: projects/monash-zeitgeist-privacy-policy
+  privacy_policy: projects/monash-zeitgeist-privacy-policy
 - name: AnonKey
   link: projects/anonkey
   image_alt: Black circle with the text 'an0n', with all the characters except the 0 rendered in blue
