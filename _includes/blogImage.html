@@ -1,0 +1,10 @@
+{% assign slugified_title = page.title | slugify %}
+
+{% assign image_src = "/assets/images/blogImages/"
+| append: slugified_title
+| append: "/"
+| append: include.file_name
+| append: ".webp"
+| relative_url %}
+
+<img src="{{ image_src }}" alt="{{ include.alt }}">

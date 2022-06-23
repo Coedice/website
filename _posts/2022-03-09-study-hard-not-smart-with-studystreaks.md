@@ -18,11 +18,11 @@ According to the [New York Times](https://www.nytimes.com/2012/06/17/jobs/take-b
 the average person can study for about 25 minutes before losing focus, but fortunately,
 it only takes about five minutes to reset that concentration.
 
-![Graph showing concentration drop off being significant after 25 minutes](../assets/images/studyTips/concentrationGraph.png)
+{% include blogImage.html file_name="concentration-graph" alt="Graph showing concentration drop off being significant after 25 minutes" %}
 
 In StudyStreaks, the timer will count down to each break, and then count down the break to figure this out for you:
 
-![iPhone displaying Recall on the timer screen ready to begin counting time spent studying history](../assets/images/studyTips/timer.png)
+{% include blogImage.html file_name="timer" alt="iPhone displaying Recall on the timer screen ready to begin counting time spent studying history" %}
 
 ## How to Motivate Yourself
 The human brain is naturally loss averse, that is, we hate to lose progress, especially when it took
@@ -36,7 +36,7 @@ next.
 In StudyStreaks, the main screen tells you how many weeks in a row you've reached your goal, and it
 shows you how much more study you need to do today to be on your way there.
 
-![iPhone displaying Recall on the main screen showing only 1 minute and 40 seconds remaining to reach weekly goal. The current streak is 12 weeks](../assets/images/studyTips/streakScore.png)
+{% include blogImage.html file_name="streak-score" alt="iPhone displaying Recall on the main screen showing only 1 minute and 40 seconds remaining to reach weekly goal. The current streak is 12 weeks" %}
 
 StudyStreaks figures out roughly how much study you need for each unit, based on a few simple initial
 questions. Here's how it helps set a weekly study goal:
@@ -64,7 +64,7 @@ Lastly, we divide each rating by the total, and multiply it by the weekly goal (
 
 This may sound a bit complicated, but in my app all you need to do is drag some sliders, and your goals will be made for you.
 
-![iPhone displaying Recall on the subjects screen. Subjects are History, Guitar, French, and, Physics. Guitar and Physics are passed the week's goal](../assets/images/studyTips/subjects.png)
+{% include blogImage.html file_name="subjects" alt="iPhone displaying Recall on the subjects screen. Subjects are History, Guitar, French, and, Physics. Guitar and Physics are passed the week's goal" %}
 
 ## Try It for Yourself
 If after reading this you find yourself interested in trying out my app. You can download it [here](https://apps.apple.com/app/apple-store/id1478096728).
