@@ -49,15 +49,3 @@
   vertical-align: center;
   text-align: center;
 }
-
-/* Mobile */
-@media only screen and (max-width: 480pt) {
-  #participantNameInput {
-    width: 100%;
-  }
-
-  #copyAnonKey {
-    display: table;
-    margin: 0 auto;
-  }
-}

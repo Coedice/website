@@ -1,5 +1,8 @@
 ---
 ---
+$background-color: #1c1c1c;
+$monospace-hierarchy: Courier, Menlo, monospace;
+
 @import "main";
 @import "projects";
 @import "about";
@@ -7,3 +10,13 @@
 @import "qr";
 @import "anonkey";
 @import "syntax";
+
+/* Mobile */
+@media only screen and (max-width: 480pt) {
+  @import "main.mobile";
+  @import "projects.mobile";
+  @import "about.mobile";
+  @import "blog.mobile";
+  @import "qr.mobile";
+  @import "anonkey.mobile";
+}

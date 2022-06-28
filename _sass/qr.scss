@@ -8,23 +8,3 @@ img#qrCodeImage {
   display: block;
   width: 300px;
 }
-
-/* Mobile */
-@media only screen and (max-width: 480pt) {
-  table#qrTable > tbody > tr > td {
-    display: block;
-  }
-
-  td#qrOptions {
-    width: 100%;
-    display: block;
-
-    > select {
-      width: 100%;
-    }
-
-    > input:not([type="color"]) {
-      width: 100%;
-    }
-  }
-}

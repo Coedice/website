@@ -1,0 +1,40 @@
+div#postArrow {
+  display: none;
+}
+
+div#subscriptionButtons {
+  > a {
+    > span {
+      &.long {
+        display: none;
+      }
+
+      &.short {
+        display: inline;
+      }
+    }
+  }
+}
+
+#searchSection {
+  width: 100%;
+}
+
+a.postSummary {
+  > img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  > p {
+    padding-left: 0;
+  }
+}
+
+img#blogPostIcon {
+  float: none;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 140px;
+}

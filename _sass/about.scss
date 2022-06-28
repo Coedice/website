@@ -79,19 +79,3 @@ div#intro {
   border: transparent solid 0.5px;
   margin-top: $padding;
 }
-
-/* Mobile */
-@media only screen and (max-width: 480pt) {
-  div#intro > img {
-	display: block;
-	float: none;
-	width: 60%;
-	margin: 0 auto 0 auto;
-  }
-
-  #socialIcons {
-	float: none;
-	width: 60%;
-	margin: 20px auto 0 auto;
-  }
-}
