@@ -10,7 +10,7 @@ window.clearSearchBar = () ->
 window.blogSearchFilter = () ->
 	blogTagFilter("none") # Remove tag filters
 	searchPhrase = document.getElementById("searchBar").value
-	postSummaries = document.getElementsByClassName("postSummary")
+	postSummaries = document.getElementById("blogList").children
 	noResultsTag = document.getElementById("noResults")
 	foundMatch = false
 
@@ -52,7 +52,7 @@ window.blogSearchFilter = () ->
 
 
 window.blogTagFilter = (searchTag) ->
-	postSummaries = document.getElementsByClassName("postSummary")
+	postSummaries = document.getElementById("blogList").children
 
 	for postSummary in postSummaries
 		postTags = postSummary.getElementsByClassName("tagLabel")
