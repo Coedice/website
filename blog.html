@@ -30,7 +30,26 @@ scripts:
                 </span>
                 <br>{{ post.date | date_to_string }}<time datetime="{{ post.date | date_to_xmlschema }}" class="relativePostTime">{{ post.date | date_to_xmlschema }}</time>
             </div>
-            <p>{{ post.excerpt | strip_html }}</p>
+            <p>
+                {% assign excerpt_words = post.excerpt | strip_html | split: " " %}
+                {% assign running_length = 0 %}
+                {% assign result_excerpt = "" %}
+
+                {% for excerpt_word in excerpt_words %}
+                    {% assign word_size = excerpt_word | size %}
+                    {% assign running_length = running_length | plus: word_size %}
+
+                    {% if running_length > 200 %}
+                        {% assign result_excerpt = result_excerpt | append: "..." %}
+                        {% break %}
+                    {% endif %}
+
+                    {% assign result_excerpt = result_excerpt | append: " " %}
+                    {% assign result_excerpt = result_excerpt | append: excerpt_word %}
+                {% endfor %}
+
+                {{ result_excerpt }}
+            </p>
         </a>
     {% endfor %}
 </div>
