@@ -20,15 +20,19 @@ div#subscriptionButtons {
   width: 100%;
 }
 
-a.postSummary {
-  > img {
-    float: none;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
+#blogList {
+  display: block;
 
-  > p {
-    padding-left: 0;
+  > a {
+    > img {
+      float: none;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    > p {
+      padding-left: 0;
+    }
   }
 }
 

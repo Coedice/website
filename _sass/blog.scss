@@ -152,45 +152,51 @@ span.tagList {
   display: inline;
 }
 
-a.postSummary {
-  $imgHeight: 140px;
-  $padding: 20px;
-  $imgRightMargin: 20px;
+#blogList {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
 
-  background-color: #111111;
-  border-radius: 20px;
-  text-decoration: none;
-  display: block;
-  padding: $padding;
-  border: transparent solid 0.5px;
-  margin-top: $padding;
-  min-height: $imgHeight;
+  > a {
+    $imgHeight: 140px;
+    $padding: 20px;
+    $imgRightMargin: 20px;
 
-  > img {
-    float: left;
-    height: $imgHeight;
-    width: $imgHeight;;
+    background-color: #111111;
     border-radius: 20px;
-    margin-right: $imgRightMargin;
-  }
+    text-decoration: none;
+    display: block;
+    padding: $padding;
+    border: transparent solid 0.5px;
+    margin-top: $padding;
+    min-height: $imgHeight;
 
-  > p {
-    margin: 0;
-    padding-left: $imgHeight + $imgRightMargin;
-  }
+    > img {
+      float: left;
+      height: $imgHeight;
+      width: $imgHeight;;
+      border-radius: 20px;
+      margin-right: $imgRightMargin;
+    }
 
-  > h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+    > p {
+      margin: 0;
+      //padding-left: $imgHeight + $imgRightMargin;
+    }
+
+    > h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
     &:hover {
-      text-decoration: underline;
+      background-color: #171717;
+      border: gray solid 0.5px;
     }
-  }
-
-  &:hover {
-    background-color: #171717;
-    border: gray solid 0.5px;
   }
 }
 
