@@ -5,10 +5,10 @@ layout: default
 <div id="intro">
 	<img src="{{ 'assets/images/gavin-douch.webp' | relative_url }}" alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
 	<div id="socialIcons">
-		{% for social_icon in site.data.socialIcons.social_icons %}
-		<a href="{{ social_icon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
-			<img src="/assets/images/social-icons/{{ social_icon.icon }}" alt="{{ social_icon.name }} icon">
-		</a>
+		{% for social_icon in site.data.social_icons %}
+			<a href="{{ social_icon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
+				<img src="/assets/images/social-icons/{{ social_icon.icon }}" alt="{{ social_icon.name }} icon">
+			</a>
 		{% endfor %}
 	</div>
 	<h1>I am a <a href="{{ '/' | relative_url }}" tabindex="0">Software Developer &#x1F4BB;</a><br>and <a href="{{ '/blog' | relative_url }}" tabindex="0">Tech Blogger &#x1F58B;</a><br>from <a href="https://en.wikipedia.org/wiki/Melbourne" tabindex="0">Melbourne, Australia &#x1F1E6;&#x1F1FA;</a></h1>
