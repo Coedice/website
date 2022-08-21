@@ -1,3 +1,8 @@
+- name: Magma
+  link: https://magmarecruiting.com.au
+  image_alt: Dark blue M with red and orange layers behind it
+  description: |-
+    Project-based work experience for university students.
 - name: StudyStreaks
   link: https://apps.apple.com/au/app/studystreaks/id1478096728
   image_alt: Rounded square with red and blue horizontal bars
