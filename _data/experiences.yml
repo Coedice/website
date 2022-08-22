@@ -1,8 +1,18 @@
+- name: Magma
+  role: Co-founder
+  suburb: Caulfield
+  state: VIC
+  location_url: https://www.google.com.au/maps/place/Monash+University+Caulfield+Campus/@-37.8773481,145.0428116,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad6698cb33e0ac1:0x63f9134ad6bf7a0a!8m2!3d-37.8773524!4d145.0450003
+  url: https://magmarecruiting.com.au
+  start: August 2022
+  description: |-
+    I co-founded this startup that connects top-students and top-companies to create magical experiences for students,
+    and provide companies access to this untapped talent pool.
 - name: Monash University Student Misconduct Panel
   role: Member
   suburb: Clayton
   state: VIC
-  locationUrl: https://www.google.com.au/maps/place/Monash+University+Clayton+Campus/@-37.9145082,145.1328084,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad66acbf64673b9:0xfaf9b169a587104!8m2!3d-37.9145125!4d145.1349971
+  location_url: https://www.google.com.au/maps/place/Monash+University+Clayton+Campus/@-37.9145082,145.1328084,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad66acbf64673b9:0xfaf9b169a587104!8m2!3d-37.9145125!4d145.1349971
   url: https://www.monash.edu/students/support/safety-and-security/general-misconduct
   start: Mar 2022
   description: |-
@@ -12,7 +22,7 @@
   role: Student Services Officer
   suburb: Clayton
   state: VIC
-  locationUrl: https://www.google.com.au/maps/place/Faculty+of+Information+Technology/@-37.9105633,145.1317808,1009m/data=!3m2!1e3!4b1!4m5!3m4!1s0x6ad66acbb0c20823:0x6902fa6f1dcdef36!8m2!3d-37.9105779!4d145.1340309
+  location_url: https://www.google.com.au/maps/place/Faculty+of+Information+Technology/@-37.9105633,145.1317808,1009m/data=!3m2!1e3!4b1!4m5!3m4!1s0x6ad66acbb0c20823:0x6902fa6f1dcdef36!8m2!3d-37.9105779!4d145.1340309
   url: https://www.monash.edu/it
   start: Jan 2021
   description: |-
@@ -24,7 +34,7 @@
   role: Data Forensics/Risk Analytics IBL
   suburb: Southbank
   state: VIC
-  locationUrl: https://www.google.com.au/maps/place/PwC+Melbourne+%26+PwC's+Digital+Services/@-37.8213352,144.9611008,17z/data=!3m2!4b1!5s0x6ad642b28fa23581:0x15389f77037c20f5!4m5!3m4!1s0x6ad642c58aab0757:0xa5540420f50c3d14!8m2!3d-37.8213395!4d144.9632895
+  location_url: https://www.google.com.au/maps/place/PwC+Melbourne+%26+PwC's+Digital+Services/@-37.8213352,144.9611008,17z/data=!3m2!4b1!5s0x6ad642b28fa23581:0x15389f77037c20f5!4m5!3m4!1s0x6ad642c58aab0757:0xa5540420f50c3d14!8m2!3d-37.8213395!4d144.9632895
   url: https://www.pwc.com.au
   start: Jul 2021
   end: Dec 2021
@@ -37,7 +47,7 @@
   role: President
   suburb: Clayton
   state: VIC
-  locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
+  location_url: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
   url: https://wired.org.au
   start: Mar 2020
   end: Mar 2022
@@ -49,7 +59,7 @@
   role: Founder and President
   suburb: Clayton
   state: VIC
-  locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
+  location_url: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
   start: Feb 2019
   end: Mar 2022
   description: |-
@@ -59,7 +69,7 @@
   role: GDSC Lead
   suburb: Clayton
   state: VIC
-  locationUrl: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
+  location_url: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
   url: https://gdsc.community.dev/monash-university/
   start: Jun 2021
   end: Mar 2022
