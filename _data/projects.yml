@@ -27,11 +27,6 @@
   image_alt: Capital 'C' written in a serif font
   description: |-
     A guide to identifying and fixing characteristics that may indicate deeper programming flaws.
-- name: Café Websites
-  link: projects/cafe-websites
-  image_alt: Coffee mug
-  description: |-
-    A website generation tool I created for making café websites.
 - name: Monash Zeitgeist
   link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
   image_alt: Capital 'M' on a blue background, rotated clockwise so that it can also be seen as a capital 'Z'
