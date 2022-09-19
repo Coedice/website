@@ -32,7 +32,7 @@ layout: default
 			{% assign source_slug =  media_source.name | slugify: "ascii" | downcase %}
 			{% assign source_image_url = "/assets/images/media-sources/" | append: source_slug | append: ".webp" %}
 			<div tabindex="0">
-				<img src="{{ source_image_url }}" alt="{{ media_source.title }}">
+				<img src="{{ source_image_url }}" alt="{{ media_source.name }}">
 				<ul>
 					{% for media_appearance in media_source.appearances %}
 						{% assign archive_file_extension = ".pdf" %}
