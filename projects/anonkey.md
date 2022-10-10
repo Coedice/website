@@ -31,4 +31,4 @@ and then converting all characters to lowercase (in that order).
 The base of the AnonKey is a SHA-256 hash of the preprocessed name, displayed in hexadecimal. It has a prefixed version number that stops at "v", and it is
 suffixed by a three-digit checksum based on the sum of the US-ASCII values of every character before the third last digit, modulo 1000.
 
-[View the source code](https://github.com/Coedice/website/blob/main/assets/scripts/anonKey.coffee).
+[View the source code](https://github.com/Coedice/website/blob/main/assets/scripts/anonkey.coffee).
