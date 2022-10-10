@@ -5,13 +5,13 @@ layout: default
 <div id="projectsList">
 	{% for project in site.data.projects %}
 		<div id="{{ project.name | remove: ' ' }}">
-			<a class="iconBox" href="{{ project.link | relative_url }}">
+			<a class="iconBox" href="{{ project.link | relative_url }}"{% if project.external %} target="_blank"{% endif %}>
 				<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp" alt="{{ project.image_alt }}" tabindex="0">
 				{% if project.app %}
 					<img class="appleBadge" src="assets/images/app-store-banners/download-white.svg" alt="Download on the iOS App Store" tabindex="0">
 				{% endif %}
 			</a>
-			<a class="titleLink" href="{{ project.link | relative_url }}" tabindex="0">
+			<a class="titleLink" href="{{ project.link | relative_url }}"{% if project.external %} target="_blank"{% endif %} tabindex="0">
 				<h2>{{ project.name }}</h2>
 			</a>
 			<p>{{ project.description | markdownify }}</p>
