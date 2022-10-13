@@ -16,7 +16,6 @@ layout: default
 					{% elsif media_appearance.type == "video" %}
 						{% assign archive_file_extension = ".mp4" %}
 					{% endif %}
-
 					{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
 					{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
 					<li>
