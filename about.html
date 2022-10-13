@@ -16,42 +16,19 @@ layout: default
 <div id="biography">
 	<p>I am a self-taught full-stack programmer who's interested in all things tech. I am currently completing the last year of my Bachelor of Computer Science (Advanced Computer Science) degree.</p>
 	<p>If you have any interest in one of my projects, have a question, or just want to chat, please get in touch!</p>
-	<h2>Experience</h2>
-	{% for experience in site.data.experiences %}
-		<div class="experienceItem" tabindex="0">
-			<h3>{% if experience.url %}<a href="{{ experience.url }}" target="_blank">{% endif %}{{ experience.name }}{% if experience.url %}</a>{% endif %}</h3>
-			<div class="experienceMetaLine">
-				{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | <a href="{{ experience.location_url }}" target="_blank">{{ experience.suburb }}, {{ experience.state }}</a>
-			</div>
-			<p>{{ experience.description | markdownify }}</p>
-		</div>
-	{% endfor %}
-	<h2>Media appearances</h2>
-	<div id="media-appearances">
-		{% for media_source in site.data.media_sources %}
-			{% assign source_slug =  media_source.name | slugify: "ascii" | downcase %}
-			{% assign source_image_url = "/assets/images/media-sources/" | append: source_slug | append: ".webp" %}
-			<div tabindex="0">
-				<img src="{{ source_image_url }}" alt="{{ media_source.name }}">
-				<ul>
-					{% for media_appearance in media_source.appearances %}
-						{% assign archive_file_extension = ".pdf" %}
-						{% if media_appearance.type == "audio" %}
-							{% assign archive_file_extension = ".mp3" %}
-						{% elsif media_appearance.type == "video" %}
-							{% assign archive_file_extension = ".mp4" %}
-						{% endif %}
-
-						{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
-						{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
-						<li>
-							{{ media_appearance.date | date_to_string }}:
-							<a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a>
-							<a href="{{ archive_url }}" target="_blank">Archive</a>
-						</li>
-					{% endfor %}
-				</ul>
-			</div>
-		{% endfor %}
-	</div>
 </div>
+<h2>Experience</h2>
+{% for experience in site.data.experiences %}
+	<div class="experienceItem" tabindex="0">
+		<a href="{{ experience.url }}" target="_blank">
+			<img src="assets/images/experiences/{{ experience.name | slugify }}.webp" alt="{{ experience.image_alt }}">
+		</a>
+		<h3>
+			<a href="{{ experience.url }}" target="_blank">{{ experience.name }}</a>
+		</h3>
+		<div class="experienceMetaLine">
+			{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | <a href="{{ experience.location_url }}" target="_blank">{{ experience.suburb }}, {{ experience.state }}</a>
+		</div>
+		<p>{{ experience.description | markdownify }}</p>
+	</div>
+{% endfor %}
