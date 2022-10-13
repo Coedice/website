@@ -10,3 +10,18 @@ div#intro > img {
   width: 60%;
   margin: 20px auto 0 auto;
 }
+
+.experienceItem {
+  overflow: auto;
+
+  > a > img {
+    //width: 160px;
+    //height: 160px;
+    //display: block;
+    //float: left;
+    //border-radius: 20px;
+    //margin-right: 20px;
+    float: none;
+    margin: 0 auto 20px auto;
+  }
+}
