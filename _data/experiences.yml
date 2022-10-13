@@ -54,17 +54,12 @@
   description: |-
     As the President of Monash WIRED, I oversaw all aspects of our club, including event
     creation, industry involvement, liaising with other groups at Monash, with Monash staff, and with industry.
-    Read more about my time at WIRED in this blog post.
-- name: Australian Computing Students' Association
-  role: Founder and President
-  suburb: Clayton
-  state: VIC
-  location_url: https://www.google.com.au/maps/place/Campus+Centre/@-37.9117629,145.132391,252m/data=!3m3!1e3!4b1!5s0x6ad66acc0f54c241:0xbdde6fe28fed2b9c!4m5!3m4!1s0x6ad66acbf11dcb51:0x3404607fbde6418c!8m2!3d-37.9117629!4d145.1329382
-  start: Feb 2019
-  end: Mar 2022
-  description: |-
-    I founded the umbrella association of tertiary education IT clubs known as ACSA. This allows for the sharing of
-    events, and all sorts of collaboration and cross-pollination between club leaders
+    <br><br>
+    In my role, I created four subcommittees, registered a competitive programming club, I founded a chapter of the club in Monash's
+    Malaysia campus, and more, I founded a syndicate of Australian university IT clubs called ACSA (Australian Computing Students'
+    Association), and more.
+    <br><br>
+    You can read more about my time at WIRED in [this blog post](/blog/at-wireds-helm).
 - name: Monash Google Developer Student Club
   role: GDSC Lead
   suburb: Clayton
