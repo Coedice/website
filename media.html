@@ -1,0 +1,31 @@
+---
+title: Media
+layout: default
+---
+<div id="media-appearances">
+	{% for media_source in site.data.media_sources %}
+		{% assign source_slug =  media_source.name | slugify: "ascii" | downcase %}
+		{% assign source_image_url = "/assets/images/media-sources/" | append: source_slug | append: ".webp" %}
+		<div tabindex="0">
+			<img src="{{ source_image_url }}" alt="{{ media_source.name }} logo">
+			<ul>
+				{% for media_appearance in media_source.appearances %}
+					{% assign archive_file_extension = ".pdf" %}
+					{% if media_appearance.type == "audio" %}
+						{% assign archive_file_extension = ".mp3" %}
+					{% elsif media_appearance.type == "video" %}
+						{% assign archive_file_extension = ".mp4" %}
+					{% endif %}
+
+					{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
+					{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
+					<li>
+						{{ media_appearance.date | date_to_string }}:
+						<a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a>
+						<a href="{{ archive_url }}" target="_blank">Archive</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	{% endfor %}
+</div>
