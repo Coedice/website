@@ -51,6 +51,7 @@ div#main {
 
 nav {
   text-align: center;
+  overflow: scroll;
 
   ul {
     padding: 0;
@@ -67,7 +68,7 @@ nav {
       margin: 0;
 
       > a {
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         text-decoration: none;
         font-weight: 600;
