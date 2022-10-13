@@ -1,3 +1,12 @@
+- name: Planet Innovation
+  role: Graduate Software Engineer
+  suburb: Box Hill
+  state: VIC
+  location_url: https://www.google.com.au/maps/place/Planet+Innovation/@-37.8179511,145.1128604,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad642438888e269:0xd50b20ff3c7c3718!8m2!3d-37.8178987!4d145.1150952
+  url: https://planetinnovation.com
+  start: Jan 2023
+  description: |-
+    I will write software to run embedded systems, in aid of the creation of brand new medical and health devices.
 - name: Monash University Student Misconduct Panel
   role: Member
   suburb: Clayton
@@ -5,8 +14,9 @@
   location_url: https://www.google.com.au/maps/place/Monash+University+Clayton+Campus/@-37.9145082,145.1328084,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad66acbf64673b9:0xfaf9b169a587104!8m2!3d-37.9145125!4d145.1349971
   url: https://www.monash.edu/students/support/safety-and-security/general-misconduct
   start: Mar 2022
+  end: Oct 2022
   description: |-
-    As a representative on the student misconduct panel, I weigh the evidence and deliberate on allegations of
+    As a representative on the student misconduct panel, I weighed the evidence and deliberated on allegations of
     academic and general misconduct made against students.
 - name: Monash University Faculty of IT
   role: Student Services Officer
@@ -15,9 +25,10 @@
   location_url: https://www.google.com.au/maps/place/Faculty+of+Information+Technology/@-37.9105633,145.1317808,1009m/data=!3m2!1e3!4b1!4m5!3m4!1s0x6ad66acbb0c20823:0x6902fa6f1dcdef36!8m2!3d-37.9105779!4d145.1340309
   url: https://www.monash.edu/it
   start: Jan 2021
+  end: Oct 2022
   description: |-
-    I am involved with Monash Faculty of IT's Education Transformation Project,
-    and help to improve the community and academic life for the faculty's students. I also write the weekly faculty
+    I was involved with Monash Faculty of IT's Education Transformation Project,
+    which was an initiative to improve the community and academic life for the faculty's students. I also wrote the weekly faculty
     newsletter [The Byte](https://www.monash.edu/it/current-students/join-the-community/newsletters/byte),
     showcasing news, student events, internships, and graduate roles.
 - name: PricewaterhouseCoopers (PwC)
