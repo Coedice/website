@@ -1,10 +1,3 @@
-- name: Magma
-  link: https://magmarecruiting.com.au
-  external: true
-  image_alt: Dark blue M with red and orange layers behind it
-  description: |-
-    At Magma we are challenging the recruitment process. We match companies with pre-vetted
-    top students who are passionate self-starters and who want to apply their studies.
 - name: StudyStreaks
   link: https://apps.apple.com/au/app/studystreaks/id1478096728
   external: true
