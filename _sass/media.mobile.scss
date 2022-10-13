@@ -1,0 +1,13 @@
+#media-appearances {
+  div {
+	ul {
+	  li {
+		a {
+		  &:last-child {
+			display: none;
+		  }
+		}
+	  }
+	}
+  }
+}
