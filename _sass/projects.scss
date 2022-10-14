@@ -2,19 +2,9 @@
   $spacing: 20px;
 
   > a {
-	display: block;
-	background-color: $box-background-color;
-	border-radius: 20px;
-	margin-top: $spacing;
-	padding: $spacing;
+	@include round-box;
 	overflow: auto;
 	position: relative;
-	text-decoration: none;
-	border: transparent solid 0.5px;
-
-	&:hover {
-	  border: $accent-color solid 0.5px;
-	}
 
 	h2 {
 	  margin-top: 0;

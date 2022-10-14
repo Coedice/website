@@ -51,13 +51,8 @@ div#intro {
 }
 
 .experienceItem {
+  @include round-box;
   overflow: auto;
-  cursor: pointer;
-  border: transparent solid 0.5px;
-
-  &:hover {
-	border: $accent-color solid 0.5px;
-  }
 
   > img {
 	width: 160px;
@@ -88,12 +83,4 @@ div#intro {
 	color: $minor-color;
 	font-size: 1em;
   }
-
-  $padding: 20px;
-  background-color: $box-background-color;
-  border-radius: 20px;
-  text-decoration: none;
-  display: block;
-  padding: $padding;
-  margin-top: $padding;
 }
