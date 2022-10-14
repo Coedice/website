@@ -1,4 +1,8 @@
 #media-appearances {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+
   div {
 	$padding: 20px;
 	background-color: $box-background-color;
@@ -9,34 +13,32 @@
 	border: transparent solid 0.5px;
 	margin-top: $padding;
 
-
 	img {
-	  max-width: 50%;
-	  max-height: 150px;
+	  height: 150;
+	  width: 150px;
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
 	  margin-bottom: 20px;
+	  border-radius: 20px;
 	}
 
-	ul {
-	  padding-left: 20px;
-	  margin-bottom: 0;
+	.media-appearance-meta, .media-appearance-meta * {
+	  color: $minor-color;
+	  text-align: center;
+	  width: 100%;
+	  font-size: 1rem;
+	}
 
-	  li {
-		.media-appearance-date {
-		  color: $accent-color;
-		}
+	h2 {
+	  text-align: center;
 
-		a {
-		  &:last-child {
-			float: right;
-			color: $minor-color;
-		  }
-		}
+	  a {
+		color: $foreground-color;
+		text-decoration: none;
 
-		&:not(:last-child) {
-		  margin-bottom: 15px;
+		&:hover {
+		  text-decoration: underline;
 		}
 	  }
 	}

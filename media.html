@@ -3,30 +3,24 @@ title: Media
 layout: default
 ---
 <div id="media-appearances">
-	{% for media_source in site.data.media_sources %}
-		{% assign source_slug =  media_source.name | slugify: "ascii" | downcase %}
+	{% assign sorted_media_appearance = site.data.media_appearances | sort: "date" | reverse %}
+	{% for media_appearance in sorted_media_appearance %}
+		{% assign source_slug = media_appearance.source | slugify: "ascii" | downcase %}
 		{% assign source_image_url = "/assets/images/media-sources/" | append: source_slug | append: ".webp" %}
 		<div tabindex="0">
-			<a href="{{ media_source.appearances[0].url }}" target="_blank">
+			<a href="{{ sorted_media_appearance[0].url }}" target="_blank">
 				<img src="{{ source_image_url }}" alt="{{ media_source.name }} logo">
 			</a>
-			<ul>
-				{% for media_appearance in media_source.appearances %}
-					{% assign archive_file_extension = ".pdf" %}
-					{% if media_appearance.type == "audio" %}
-						{% assign archive_file_extension = ".mp3" %}
-					{% elsif media_appearance.type == "video" %}
-						{% assign archive_file_extension = ".mp4" %}
-					{% endif %}
-					{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
-					{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
-					<li>
-						<span class="media-appearance-date">{{ media_appearance.date | date_to_string }}</span>:
-						<a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a>
-						<a href="{{ archive_url }}" target="_blank">Archive</a>
-					</li>
-				{% endfor %}
-			</ul>
+			{% assign archive_file_extension = ".pdf" %}
+			{% if media_appearance.type == "audio" %}
+				{% assign archive_file_extension = ".mp3" %}
+			{% elsif media_appearance.type == "video" %}
+				{% assign archive_file_extension = ".mp4" %}
+			{% endif %}
+			{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
+			{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
+			<p class="media-appearance-meta">{{ media_appearance.date | date_to_string }}, <a href="{{ archive_url }}" target="_blank">Archive</a></p>
+			<h2><a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a></h2>
 		</div>
 	{% endfor %}
 </div>
