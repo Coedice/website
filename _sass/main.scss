@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: $foreground-color;
   font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -10,6 +10,15 @@ a#title {
   margin: 0 0 20px 0;
   font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 20px;
+  color: $accent-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $accent-color;
+
+  * {
+    color: $accent-color;
+  }
 }
 
 h2 {

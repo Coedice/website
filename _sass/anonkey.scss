@@ -1,17 +1,17 @@
 #output {
   text-align: center;
   word-wrap: break-word;
-  background-color: #111111;
+  background-color: $box-background-color;
   border-radius: 10px;
   padding: 5px;
-  color: cornflowerblue;
+  color: $foreground-color;
 
   &, * {
     font-family: Menlo, Courier, monospace;
   }
 
   span { /* Numbers in the AnonKey */
-    color: white;
+    color: $foreground-color;
   }
 }
 
@@ -20,11 +20,10 @@
 }
 
 #copyAnonKey {
-  background-color: white;
-  color: black;
+  background-color: $box-background-color;
+  color: $foreground-color;
   padding: 5px;
   border-radius: 10px;
-  opacity: 50%;
 
   &:hover {
     cursor: pointer;
@@ -35,11 +34,11 @@
 #participantNameInput {
   $height: 50px;
   width: 50%;
-  background-color: #111111;
+  background-color: $box-background-color;
   display: block;
   font-size: $height * 0.5;
   border: 0;
-  color: white;
+  color: $foreground-color;
   box-sizing: border-box;
   padding-right: $height * 0.3;
   padding-left: $height * 0.3;
