@@ -7,12 +7,12 @@ div#intro {
   }
 
   > h1 {
-	color: lightgray;
+	color: $minor-color;
 	font-weight: normal;
 	margin-bottom: 0;
 
 	a {
-	  color: white;
+	  color: $accent-color;
 	  font-weight: bold;
 	  text-decoration: none;
 
@@ -53,13 +53,15 @@ div#intro {
 .experienceItem {
   overflow: auto;
 
-  > a > img {
-	width: 160px;
-	height: 160px;
-	display: block;
-	float: left;
-	border-radius: 20px;
-	margin-right: 20px;
+  > a {
+	> img {
+	  width: 160px;
+	  height: 160px;
+	  display: block;
+	  float: left;
+	  border-radius: 20px;
+	  margin-right: 20px;
+	}
   }
 
   > p {
@@ -69,18 +71,27 @@ div#intro {
   > h3 {
 	margin-top: 0;
 	margin-bottom: 10px;
+	font-size: 1.5em;
+
+	a {
+	  text-decoration: none;
+
+	  &:hover {
+		text-decoration: underline;
+	  }
+	}
   }
 
   > .experienceMetaLine {
 	&, * {
 	  margin-bottom: 10px;
-	  color: #aaaaaa;
+	  color: $minor-color;
 	  font-size: 1em;
 	}
   }
 
   $padding: 20px;
-  background-color: #111111;
+  background-color: $box-background-color;
   border-radius: 20px;
   text-decoration: none;
   display: block;

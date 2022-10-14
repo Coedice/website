@@ -21,7 +21,7 @@ layout: default
 					{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
 					{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
 					<li>
-						{{ media_appearance.date | date_to_string }}:
+						<span class="media-appearance-date">{{ media_appearance.date | date_to_string }}</span>:
 						<a href="{{ media_appearance.url }}" target="_blank">{{ media_appearance.title }}</a>
 						<a href="{{ archive_url }}" target="_blank">Archive</a>
 					</li>

@@ -2,7 +2,7 @@
   $spacing: 20px;
 
   > div {
-	background-color: #111111;
+	background-color: $box-background-color;
 	border-radius: 20px;
 	margin-top: $spacing;
 	padding: $spacing;
@@ -16,6 +16,7 @@
 
 	.titleLink {
 	  text-decoration: none;
+	  color: $accent-color;
 
 	  &:hover {
 		text-decoration: underline;
@@ -35,8 +36,8 @@
 		margin-right: 2px;
 		text-decoration: none;
 		border: transparent solid 1px;
-		background-color: white;
-		color: black;
+		background-color: $foreground-color;
+		color: $box-background-color;
 
 		&:last-child {
 		  margin-right: 4px;
