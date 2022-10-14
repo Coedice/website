@@ -19,16 +19,14 @@ layout: default
 </div>
 <h1>Experience</h1>
 {% for experience in site.data.experiences %}
-	<div class="experienceItem" tabindex="0">
-		<a href="{{ experience.url }}" target="_blank">
-			<img src="assets/images/experiences/{{ experience.name | slugify }}.webp" alt="{{ experience.image_alt }}">
-		</a>
+	<a href="{{ experience.url }}" target="_blank" class="experienceItem" tabindex="0">
+		<img src="assets/images/experiences/{{ experience.name | slugify }}.webp" alt="{{ experience.image_alt }}">
 		<h3>
-			<a href="{{ experience.url }}" target="_blank">{{ experience.name }}</a>
+			{{ experience.name }}
 		</h3>
 		<div class="experienceMetaLine">
-			{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | <a href="{{ experience.location_url }}" target="_blank">{{ experience.suburb }}, {{ experience.state }}</a>
+			{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | {{ experience.suburb }}, {{ experience.state }}, {{ experience.country }}
 		</div>
 		<p>{{ experience.description | markdownify }}</p>
-	</div>
+	</a>
 {% endfor %}
