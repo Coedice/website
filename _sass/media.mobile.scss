@@ -1,15 +1,15 @@
 #media-appearances {
   display: block;
 
-  div {
-	ul {
-	  li {
-		a {
-		  &:last-child {
-			display: none;
-		  }
-		}
-	  }
+  a {
+	&:last-child {
+	  display: none;
+	}
+
+	img {
+	  float: none;
+	  display: block;
+	  margin: 0 auto 20px auto;
 	}
   }
 }
