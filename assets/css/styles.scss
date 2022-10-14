@@ -24,6 +24,26 @@ $monospace-hierarchy: Courier, Menlo, monospace;
   }
 }
 
+@mixin animated_underline {
+  text-decoration: none;
+  position: relative;
+  color: $accent-color;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid $accent-color;
+    transition: 0.4s;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
 @import "main";
 @import "projects";
 @import "about";

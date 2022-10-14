@@ -14,13 +14,10 @@
 	overflow: hidden;
 
 	a {
+	  @include animated_underline;
 	  color: $accent-color;
 	  font-weight: bold;
 	  text-decoration: none;
-
-	  &:hover {
-		text-decoration: underline;
-	  }
 	}
   }
 }
