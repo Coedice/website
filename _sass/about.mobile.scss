@@ -1,5 +1,5 @@
 #intro {
-  > img {
+  img {
     display: block;
     float: none;
     width: 60%;
@@ -35,8 +35,16 @@
 .experienceItem {
   overflow: auto;
 
-  > a > img {
+  img {
     float: none;
     margin: 0 auto 20px auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .experienceMetaLine {
+    text-align: center;
   }
 }

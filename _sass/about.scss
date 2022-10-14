@@ -1,5 +1,5 @@
 #intro {
-  > img {
+  img {
 	float: left;
 	width: 15%;
 	border-radius: 20px;
@@ -56,7 +56,7 @@
   @include round-box;
   overflow: auto;
 
-  > img {
+  img {
 	width: 160px;
 	height: 160px;
 	display: block;
@@ -65,11 +65,11 @@
 	margin-right: 20px;
   }
 
-  > p {
+  p {
 	margin: 0;
   }
 
-  > h3 {
+  h3 {
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-size: 1.5em;
@@ -80,7 +80,7 @@
 	}
   }
 
-  > .experienceMetaLine {
+  .experienceMetaLine {
 	margin-bottom: 10px;
 	color: $minor-color;
 	font-size: 1em;
