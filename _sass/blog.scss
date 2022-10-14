@@ -31,7 +31,7 @@ img#blogPostIcon {
   float: left;
   margin-right: 20px;
   width: 72px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 h1#blogTitle {
@@ -241,10 +241,25 @@ div#subscriptionButtons {
   }
 }
 
-#blogContent img {
-  max-width: 70%;
-  display: block;
-  margin: 0 auto;
+#blogContent {
+  img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  background-color: $box-background-color;
+  padding: 20px;
+  border-radius: 10px;;
+  margin-top: 20px;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // Post-specific styles
