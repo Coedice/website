@@ -4,21 +4,9 @@
   column-gap: 20px;
 
   a {
-	$padding: 20px;
-	background-color: $box-background-color;
-	border-radius: 20px;
-	text-decoration: none;
-	display: block;
-	padding: $padding;
-	border: transparent solid 0.5px;
-	margin-top: $padding;
+	@include round-box;
 	position: relative;
 	min-height: 150px;
-	border: transparent solid 0.5px;
-
-	&:hover {
-	  border: $accent-color solid 0.5px;
-	}
 
 	img {
 	  width: 150px;

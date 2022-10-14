@@ -158,17 +158,10 @@ span.tagList {
   column-gap: 20px;
 
   > a {
+    @include round-box;
     $imgHeight: 140px;
-    $padding: 20px;
     $imgRightMargin: 20px;
 
-    background-color: $box-background-color;
-    border-radius: 20px;
-    text-decoration: none;
-    display: block;
-    padding: $padding;
-    border: transparent solid 0.5px;
-    margin-top: $padding;
     min-height: $imgHeight;
 
     > img {
@@ -181,7 +174,6 @@ span.tagList {
 
     > p {
       margin: 0;
-      //padding-left: $imgHeight + $imgRightMargin;
     }
 
     > h3 {
@@ -192,10 +184,6 @@ span.tagList {
       &:hover {
         text-decoration: underline;
       }
-    }
-
-    &:hover {
-      border: $accent-color solid 0.5px;
     }
   }
 }

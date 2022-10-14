@@ -8,6 +8,22 @@ $background-color: #21202c;
 
 $monospace-hierarchy: Courier, Menlo, monospace;
 
+@mixin round-box {
+  cursor: pointer;
+  border: transparent solid 1px;
+  $padding: 20px;
+  background-color: $box-background-color;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  padding: $padding;
+  margin-top: $padding;
+
+  &:hover {
+    border: $accent-color solid 1px;
+  }
+}
+
 @import "main";
 @import "projects";
 @import "about";
