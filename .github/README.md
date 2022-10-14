@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://gavindou.ch">
-        <img src="https://gavindou.ch/assets/images/favicons/favicon-310.png" alt="Site icon" style="width: 110px; height: 110px;">
+        <img src="https://gavindou.ch/assets/images/favicons/favicon-192.png" alt="Site icon" style="width: 110px; height: 110px;">
     </a>
 </p>
 <h3 align="center">Gavin Douch Website</h3>
