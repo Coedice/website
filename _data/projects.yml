@@ -13,7 +13,7 @@
   image_alt: Brain shape, viewed from above, with two arrows pointing to eachother's tail forming a circle above the brain
   description: |-
     Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the
-    [Leitner system](https://en.wikipedia.org/wiki/Leitner_system), Recall shows you flashcards less often when you get them right, and more often when you
+    Leitner system, Recall shows you flashcards less often when you get them right, and more often when you
     get them wrong.
   app: true
   faq: projects/recall-faq
@@ -46,7 +46,7 @@
   external: false
   image_alt: Red upside down '2' on a white circle
   description: |-
-    This app is a clock that lives in the Mac menu bar and shows the time in dozenal. [Learn how dozenal works](https://www.youtube.com/watch?v=U6xJfP7-HCc).
+    This app is a clock that lives in the Mac menu bar and shows the time in the dozenal number system.
 - name: QR Code Generator
   link: projects/qr-code-generator
   external: false
