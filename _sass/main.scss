@@ -4,12 +4,12 @@
 }
 
 a#title {
+  @include animated_underline;
   font-size: 300%;
   text-decoration: none;
-  display: block;
-  margin: 0 0 20px 0;
+  display: inline-block;
+  margin: 20px 0;
   font-family: "Century Gothic", Futura, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-top: 20px;
   color: $accent-color;
 }
 
