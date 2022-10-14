@@ -1,4 +1,4 @@
-div#intro {
+#intro {
   > img {
 	float: left;
 	width: 15%;
@@ -6,10 +6,12 @@ div#intro {
 	margin-right: 20px;
   }
 
-  > h1 {
+  h2 {
 	color: $minor-color;
 	font-weight: normal;
 	margin-bottom: 0;
+	font-size: 2.5rem;
+	overflow: hidden;
 
 	a {
 	  color: $accent-color;

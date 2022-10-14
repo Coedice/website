@@ -1,8 +1,29 @@
-div#intro > img {
-  display: block;
-  float: none;
-  width: 60%;
-  margin: 0 auto 0 auto;
+#intro {
+  > img {
+    display: block;
+    float: none;
+    width: 60%;
+    margin: 0 auto 0 auto;
+  }
+
+  h2 {
+    //font-size: 2em;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+#biography {
+  p:first-child {
+    margin-top: 20px;
+  }
 }
 
 #socialIcons {
@@ -15,12 +36,6 @@ div#intro > img {
   overflow: auto;
 
   > a > img {
-    //width: 160px;
-    //height: 160px;
-    //display: block;
-    //float: left;
-    //border-radius: 20px;
-    //margin-right: 20px;
     float: none;
     margin: 0 auto 20px auto;
   }
