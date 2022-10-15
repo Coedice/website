@@ -4,6 +4,7 @@ $foreground-color: white;
 $accent-color: #ee72f1;
 $minor-color: #acacac;
 $box-background-color: #0e0e13;
+$hover-box-background-color: #1c1b25;
 $background-color: #21202c;
 
 $monospace-hierarchy: Courier, Menlo, monospace;
@@ -22,6 +23,7 @@ $animation_duration: 0.4s;
 
   &:hover {
     border: $accent-color solid 1px;
+    background-color: $hover-box-background-color;
     transition: $animation_duration;
   }
 }
