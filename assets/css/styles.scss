@@ -20,6 +20,7 @@ $animation_duration: 0.4s;
   display: block;
   padding: $padding;
   margin-top: $padding;
+  transition: border 0.9s;
 
   &:hover {
     border: $accent-color solid 1px;
