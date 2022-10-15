@@ -7,6 +7,7 @@ $box-background-color: #0e0e13;
 $background-color: #21202c;
 
 $monospace-hierarchy: Courier, Menlo, monospace;
+$animation_duration: 0.4s;
 
 @mixin round-box {
   cursor: pointer;
@@ -21,6 +22,7 @@ $monospace-hierarchy: Courier, Menlo, monospace;
 
   &:hover {
     border: $accent-color solid 1px;
+    transition: $animation_duration;
   }
 }
 
@@ -36,7 +38,7 @@ $monospace-hierarchy: Courier, Menlo, monospace;
     left: 0;
     width: 0;
     border-bottom: 2px solid $accent-color;
-    transition: 0.4s;
+    transition: $animation_duration;
   }
 
   &:hover:after {
