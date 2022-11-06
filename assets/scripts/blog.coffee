@@ -50,8 +50,14 @@ window.blogSearchFilter = () ->
 	# Set no match p tag display
 	noResultsTag.style.display = if foundMatch then "none" else "block"
 
+previous_search_tag = null
 
 window.blogTagFilter = (searchTag) ->
+	# Deal with unselecting search tag
+	if previous_search_tag == searchTag
+		searchTag = "none"
+
+	# Find post summaries to include
 	postSummaries = document.getElementById("blogList").children
 
 	for postSummary in postSummaries
@@ -73,6 +79,9 @@ window.blogTagFilter = (searchTag) ->
 
 		if searchTag in filterTagLabel.classList
 			filterTagLabel.style.border = "white solid 1px"
+
+	# Setup for next search tag interaction
+	previous_search_tag = searchTag
 
 
 postDateRelativeTimeMessage = (postDate) ->
