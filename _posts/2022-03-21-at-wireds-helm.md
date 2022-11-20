@@ -60,10 +60,9 @@ and away.
 ## Resigning
 After two years in the club (a pretty long term in this context), I felt that I had accomplished what I wanted to be
 accomplished, I was seeing that there was some leadership potential in some members of the committee, and I had begun
-a university entrepreneurship program called [Fastrack](https://www.fastrackatmonash.com) (there will be a future blog
-post on this) which took up a lot of my time. The writing was on the role, it felt right, so I decided to leave the club
-I became so fond of. In the ensuing general meeting's election, as a parting gift from the club, they kindly voted to
-make me an honorary life member.
+a university entrepreneurship program called [Fastrack](https://www.fastrackatmonash.com) which took up a lot of my time.
+The writing was on the role, it felt right, so I decided to leave the club I became so fond of. In the ensuing general
+meeting's election, as a parting gift from the club, they kindly voted to make me an honorary life member.
 
 ## Final Thoughts
 There are things I could have done better, for instance I think we should have held more events, even though we were in
