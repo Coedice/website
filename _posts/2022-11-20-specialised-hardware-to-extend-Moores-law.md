@@ -26,7 +26,7 @@ iterations, have added a number of specialised hardware components, such as:
 
 ## Into the future
 I believe it is likely that the number of specialised components will increase. Some possible additions to computer systems may
-include [DNA computing](https://en.wikipedia.org/wiki/DNA_computing) applications, and perhaps, one day, [quantum computing](https://en.wikipedia.org/wiki/Quantum_computing).
+include [DNA computing](https://en.wikipedia.org/wiki/DNA_computing) applications, true random number generators, and perhaps one day, [quantum computing](https://en.wikipedia.org/wiki/Quantum_computing).
 
 # Computation Comparisons
 Changes such as these make comparing computers harder and harder, since the specific task and the way it is computed will depend
