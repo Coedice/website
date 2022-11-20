@@ -22,7 +22,7 @@ A significant change in modern the hardware landscape, the [M1 chip](https://en.
 iterations, have added a number of specialised hardware components, such as:
 - Media engine - Hardware-accelerated encoding and decoding of H.264, HEVC, ProRes, and ProRes RAW (in M1 Ultra)
 - Neural Engine - Neural network training and use
-- Image processor - For quickly processing image data in parallel
+- Image processor - Quickly processing image data in parallel
 
 ## Into the future
 I believe it is likely that the number of specialised components will increase. Some possible additions to computer systems may
