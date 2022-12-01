@@ -17,16 +17,18 @@ layout: default
 	<p>I am a self-taught full-stack programmer who's interested in all things tech. I have recently completed my Bachelor of Computer Science course, specialising in Advanced Computer Science, with a minor in Cybersecurity.</p>
 	<p>If you have any interest in one of my projects, have a question, or just want to chat, please get in touch!</p>
 </div>
-<h1>Experience</h1>
-{% for experience in site.data.experiences %}
-	<a href="{{ experience.url }}" target="_blank" class="experienceItem" tabindex="0">
-		<img src="assets/images/experiences/{{ experience.name | slugify }}.webp" alt="{{ experience.image_alt }}">
-		<h3>
-			{{ experience.name }}
-		</h3>
-		<div class="experienceMetaLine">
-			{{ experience.role }} | {{ experience.start }} - {% if experience.end == nil %}present{% else %}{{ experience.end }}{% endif %} | {{ experience.suburb }}, {{ experience.state }}, {{ experience.country }}
-		</div>
-		<p>{{ experience.description | markdownify }}</p>
-	</a>
+{% for category in site.data.experiences %}
+	<h1>{{ category.title }}</h1>
+	{% for experience_item in category.experience_items %}
+		<a href="{{ experience_item.url }}" target="_blank" class="experienceItem" tabindex="0">
+			<img src="assets/images/experiences/{{ experience_item.name | slugify }}.webp" alt="{{ experience_item.image_alt }}">
+			<h3>
+				{{ experience_item.name }}
+			</h3>
+			<div class="experienceMetaLine">
+				{{ experience_item.role }} | {{ experience_item.start }} - {% if experience_item.end == nil %}present{% else %}{{ experience_item.end }}{% endif %} | {{ experience_item.suburb }}, {{ experience_item.state }}, {{ experience_item.country }}
+			</div>
+			<p>{{ experience_item.description | markdownify }}</p>
+		</a>
+	{% endfor %}
 {% endfor %}
