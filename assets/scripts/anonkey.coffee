@@ -41,7 +41,7 @@ window.generateKey = () ->
 	# Apply filters on participant names
 	modifiedParticipantName = participantName.replace(/ /g, "")  # Remove spaces
 	modifiedParticipantName = modifiedParticipantName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")  # Remove diacritics
-	modifiedParticipantName = punycode.toASCII(modifiedParticipantName)  # Encode non-latin characters in punycode
+	modifiedParticipantName = punycode.toASCII(modifiedParticipantName)  # Encode non-Latin characters in punycode
 	modifiedParticipantName = modifiedParticipantName.replace(/[^\x20-\x7E]/g, "")  # Filter to only printable US-ASCII
 	modifiedParticipantName = modifiedParticipantName.toLowerCase()
 
@@ -57,7 +57,7 @@ window.generateKey = () ->
 			digitsSum = 0
 
 			for digitChar in key
-				digitsSum += digitChar.charCodeAt(0)  # Add ASCII codepoint
+				digitsSum += digitChar.charCodeAt(0)  # Add US-ASCII codepoint
 
 			digitsSum = digitsSum % (16**3)  # Restrict to three-digit hex numbers
 			digitsSum = digitsSum.toString(16).padStart(3, '0')  # Convert to hexadecimal

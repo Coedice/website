@@ -23,7 +23,7 @@ using the AnonKey. But, if a participant withdraws their consent from the study,
 provided when they agreed to join the study), generate the AnonKey again, and look for a match in your database to delete it.
 
 By requiring the name in addition to the participant number to delete their data, we can be more sure that the person making the request is correct that
-the number they are providing is their participant number, and also prevents us from acting on fraudulent deletion requests, since they would now know
+the number they are providing is their participant number, and also prevents us from acting on fraudulent deletion requests, since they would not know
 what name corresponds to each participant number.
 
 ## A Small Warning
