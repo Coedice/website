@@ -17,13 +17,17 @@ sha256 = (string) ->
 
 
 window.generateKey = () ->
-	key = "1v"  # Version number
+	key = "2v"  # Version number
 
 	# Reset copy button
 	document.getElementById("copyAnonKey").innerText = "Copy"
 
 	# Get participant name
 	participantName = document.getElementById("participantNameInput").value
+
+	# Get participant number
+	participantNumber = document.getElementById("participantNumberInput").value
+	key += Number(participantNumber).toString(16) + "n"
 
 	# Apply filters on participant names
 	modifiedParticipantName = participantName.replace(/ /g, "")  # Remove spaces
@@ -32,8 +36,11 @@ window.generateKey = () ->
 	modifiedParticipantName = modifiedParticipantName.replace(/[^\x20-\x7E]/g, "")  # Filter to only printable US-ASCII
 	modifiedParticipantName = modifiedParticipantName.toLowerCase()
 
+	# Salt name with participant number
+	saltedParticipantName = modifiedParticipantName + participantNumber
+
 	# Create hash
-	sha256(modifiedParticipantName).then(
+	sha256(saltedParticipantName).then(
 		(hash) =>
 			key += hash
 
@@ -43,9 +50,9 @@ window.generateKey = () ->
 			for digitChar in key
 				digitsSum += digitChar.charCodeAt(0)  # Add ASCII codepoint
 
-			digitsSum = digitsSum % 1000  # Restrict to three-digit numbers
-			paddedDigitsSum = String(digitsSum).padStart(3, '0')
-			key += paddedDigitsSum
+			digitsSum = digitsSum % (16**3)  # Restrict to three-digit hex numbers
+			digitsSum = digitsSum.toString(16).padStart(3, '0')  # Convert to hexadecimal
+			key += digitsSum
 
 			# Add spans for colouring
 			colouredKey = ""

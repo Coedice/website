@@ -31,11 +31,9 @@
   }
 }
 
-#participantNameInput {
+#anonKeyFields > input {
   $height: 50px;
-  width: 50%;
   background-color: $box-background-color;
-  display: block;
   font-size: $height * 0.5;
   border: 0;
   color: $foreground-color;
@@ -47,4 +45,6 @@
   border-radius: 20px;
   vertical-align: center;
   text-align: center;
+  display: block;
+  width: 50%;
 }
