@@ -28,9 +28,14 @@ window.generateKey = () ->
 	# Get participant number
 	participantNumber = Number(document.getElementById("participantNumberInput").value)
 
+	# Require non-negative participant number
 	if participantNumber < 0
 		participantNumber = 0
 
+	# Require integer participant number
+	participantNumber = floor(participantNumber)
+
+	# Add to key
 	key += participantNumber.toString(16) + "n"
 
 	# Apply filters on participant names
