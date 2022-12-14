@@ -27,7 +27,12 @@ window.generateKey = () ->
 
 	# Get participant number
 	participantNumber = document.getElementById("participantNumberInput").value
-	key += Number(participantNumber).toString(16) + "n"
+	participantNumber = Number(participantNumber)
+
+	if participantNumber < 0
+		participantNumber = 0
+
+	key += participantNumber.toString(16) + "n"
 
 	# Apply filters on participant names
 	modifiedParticipantName = participantName.replace(/ /g, "")  # Remove spaces
