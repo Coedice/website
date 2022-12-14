@@ -5,8 +5,8 @@ scripts:
 - anonkey.js
 - punycode.js
 ---
-<input type="text" id="participantNameInput" placeholder="Participant name" autofocus autocomplete="off" oninput="generateKey()">
-<p>AnonKey: <span id="output"><span>1</span>ve<span>3</span>b<span>0</span>c<span>4</span><span>4</span><span>2</span><span>9</span><span>8</span>fc<span>1</span>c<span>1</span><span>4</span><span>9</span>afbf<span>4</span>c<span>8</span><span>9</span><span>9</span><span>6</span>fb<span>9</span><span>2</span><span>4</span><span>2</span><span>7</span>ae<span>4</span><span>1</span>e<span>4</span><span>6</span><span>4</span><span>9</span>b<span>9</span><span>3</span><span>4</span>ca<span>4</span><span>9</span><span>5</span><span>9</span><span>9</span><span>1</span>b<span>7</span><span>8</span><span>5</span><span>2</span>b<span>8</span><span>5</span><span>5</span><span>5</span><span>4</span><span>2</span></span></p>
+<input type="text" id="participantNameInput" placeholder="Participant name" autofocus autocomplete="off" oninput="generateKey();">
+<p>AnonKey: <span id="output"></span></p>
 <input type="text" id="copyBox">
 <span onclick="copyKey()" id="copyAnonKey">Copy</span>
 

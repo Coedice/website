@@ -16,15 +16,17 @@ sha256 = (string) ->
 	)
 
 
-window.generateKey = (participantName) ->
-	key = "1v"  # Version 1
+window.generateKey = () ->
+	key = "1v"  # Version number
 
 	# Reset copy button
 	document.getElementById("copyAnonKey").innerText = "Copy"
 
+	# Get participant name
+	participantName = document.getElementById("participantNameInput").value
+
 	# Apply filters on participant names
-	modifiedParticipantName = document.getElementById("participantNameInput").value
-	modifiedParticipantName = modifiedParticipantName.replace(/ /g, "")  # Remove spaces
+	modifiedParticipantName = participantName.replace(/ /g, "")  # Remove spaces
 	modifiedParticipantName = modifiedParticipantName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")  # Remove diacritics
 	modifiedParticipantName = punycode.toASCII(modifiedParticipantName)  # Encode non-latin characters in punycode
 	modifiedParticipantName = modifiedParticipantName.replace(/[^\x20-\x7E]/g, "")  # Filter to only printable US-ASCII
@@ -75,5 +77,5 @@ window.copyKey = () ->
 	# Change copy button text
 	document.getElementById("copyAnonKey").innerText = "Copied!"
 
-
-
+window.onload = () ->
+	generateKey()
