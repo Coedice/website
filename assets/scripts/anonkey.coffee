@@ -26,8 +26,7 @@ window.generateKey = () ->
 	participantName = document.getElementById("participantNameInput").value
 
 	# Get participant number
-	participantNumber = document.getElementById("participantNumberInput").value
-	participantNumber = Number(participantNumber)
+	participantNumber = Number(document.getElementById("participantNumberInput").value)
 
 	if participantNumber < 0
 		participantNumber = 0
