@@ -45,3 +45,20 @@ The base of the AnonKey is the SHA-256 hash of the preprocessed name (salted wit
 The AnonKey is suffixed by a three-digit hexadecimal checksum calculated as the sum of the US-ASCII values of every character before the third last character, modulo $$16^3$$.
 
 [View the source code](https://github.com/Coedice/website/blob/main/assets/scripts/anonkey.coffee).
+
+### EBNF
+~~~ python
+AnonKey = prefix, base, checksum;
+prefix = version, participant number;
+version = hex number, "v";
+hex number = (hex char - "0", {hex char}) | "0";
+hex char = digit | "a" | "b" | "c" | "d" | "e" | "f";
+participant number = hex number, "n";
+base = 64 * hex char;
+checksum = 3 * hex char;
+~~~
+
+### Regex
+~~~ python
+(([1-9a-f][0-9a-f]*)|0)v(([1-9a-f][0-9a-f]*)|0)n[0-9a-f]{67}
+~~~
