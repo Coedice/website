@@ -33,7 +33,7 @@ delete their data later on, you will not be able to match your saved AnonKey wit
 Some variation is allowed (differences in spaces, diacritics, and capitalisation), but it's much easier to just type in their name correctly the first time.
 
 ## Details for Nerds
-The prefix of the AnonKey is the version number that stops at "v", and then the hexadecimal encoded participant number that stops at "n" (this ensures AnonKeys never clash for different
+The prefix of the AnonKey is the hexadecimal version number that stops at "v", and then the hexadecimal encoded participant number that stops at "n" (this ensures AnonKeys never clash for different
 individuals, whether or not their names are identical).
 
 
