@@ -15,9 +15,9 @@ sha256 = (string) ->
 			return hashHex
 	)
 
-
 window.generateKey = () ->
-	key = "2v"  # Version number
+	versionNumber = 2
+	key = versionNumber.toString(16) + "v"  # Version number
 
 	# Reset copy button
 	document.getElementById("copyAnonKey").innerText = "Copy"
@@ -80,7 +80,6 @@ window.generateKey = () ->
 			# Output key
 			document.getElementById("output").innerHTML = colouredKey
 	)
-
 
 window.copyKey = () ->
 	# Perform copy
