@@ -10,7 +10,8 @@ Proof by induction allows us to prove things about infinite series. It is a nece
 I will describe how it works through the use of an analogy. Imagine a line of dominos that we want to knock over. We need to know two things about the line:
 1. That each domino is close enough to knock over the next domino,
 2. That we are able to knock over the first domino.
-   If we do these two things we have proven that every domino in the line will be knocked over, even if the domino line is infinitely long.
+
+If we do these two things we have proven that every domino in the line will be knocked over, even if the domino line is infinitely long.
 
 In mathematical induction terms, checking that each domino is close enough to the next to knock it down is called the inductive hypothesis, and this means that **if** a statement is true in one case, then it is true for the following case.
 Knocking over the first domino is called the basis or base step, and this means proving that the first statement is true.
