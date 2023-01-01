@@ -36,11 +36,12 @@ Some variation is allowed (differences in spaces, diacritics, and capitalisation
 The prefix of the AnonKey is the hexadecimal version number that stops at "v", and then the hexadecimal encoded participant number that stops at "n" (this ensures AnonKeys never clash for different
 individuals, whether or not their names are identical).
 
-
-The name is preprocessed by removing spaces, diacritics, substituting text in a non-Latin script for [punycode](https://en.wikipedia.org/wiki/Punycode), removing non-printable US-ASCII characters,
+The participant's name is preprocessed by removing spaces, diacritics, substituting text in a non-Latin script for [punycode](https://en.wikipedia.org/wiki/Punycode), removing non-printable US-ASCII characters,
 and then converting all characters to lowercase (in that order).
 
-The base of the AnonKey is the SHA-256 hash of the preprocessed name (salted with the participant number), encoded in hexadecimal.
+The base of the AnonKey is the SHA-256 hash of the preprocessed name, salted with the participant number, the string "AnonKey", and the AnonKey version number.
+This is then encoded in [Base64](https://datatracker.ietf.org/doc/html/rfc4648#section-4), but with "+" and "/" replaced with "-" and "_" respectively,
+and all trailing equals signs removed.
 
 The AnonKey is suffixed by a three-digit hexadecimal checksum calculated as the sum of the US-ASCII values of every character before the third last character, modulo $$16^3$$.
 
@@ -52,13 +53,14 @@ AnonKey = prefix, base, checksum;
 prefix = version, participant number;
 version = hex number, "v";
 hex number = (hex char - "0", {hex char}) | "0";
-hex char = digit | "a" | "b" | "c" | "d" | "e" | "f";
+hex char = [0-9a-f];
 participant number = hex number, "n";
-base = 64 * hex char;
+base = 43 * base64 char;
+base64 char = [0-9a-zA-Z-_]
 checksum = 3 * hex char;
 ~~~
 
 ### Regex
 ~~~ python
-/(([1-9a-f][0-9a-f]*)|0)v(([1-9a-f][0-9a-f]*)|0)n[0-9a-f]{67}/
+/(([1-9a-f][0-9a-f]*)|0)v(([1-9a-f][0-9a-f]*)|0)n[0-9a-zA-Z-_]{43}[0-9a-f]{3}/
 ~~~

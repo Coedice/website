@@ -1,22 +1,27 @@
 ---
 ---
+arrayBufferToBase64 = (buffer) ->
+	binary = '';
+	bytes = new Uint8Array(buffer);
+	len = bytes.byteLength;
+
+	for i in [0...len]
+		binary += String.fromCharCode(bytes[i]);
+
+	base64 = window.btoa(binary);
+	urlFriendly = base64.replace(/\+/g, '-').replace(/\//g, '_').replace(/\=+$/, '');
+	return urlFriendly
+
 sha256 = (string) ->
 	utf8 = new TextEncoder().encode(string);
 
 	return crypto.subtle.digest('SHA-256', utf8).then(
 		(hashBuffer) =>
-			hashArray = Array.from(new Uint8Array(hashBuffer))
-			hashHex = hashArray
-				.map(
-					(bytes) =>
-						bytes.toString(16).padStart(2, '0')
-				)
-				.join('')
-			return hashHex
+			return arrayBufferToBase64(hashBuffer)
 	)
 
 window.generateKey = () ->
-	versionNumber = 2
+	versionNumber = 3
 	key = versionNumber.toString(16) + "v"  # Version number
 
 	# Reset copy button
@@ -46,7 +51,8 @@ window.generateKey = () ->
 	modifiedParticipantName = modifiedParticipantName.toLowerCase()
 
 	# Salt name with participant number
-	saltedParticipantName = modifiedParticipantName + participantNumber
+	salt = participantNumber + "AnonKey" + versionNumber
+	saltedParticipantName = modifiedParticipantName + salt
 
 	# Create hash
 	sha256(saltedParticipantName).then(
@@ -69,13 +75,13 @@ window.generateKey = () ->
 
 			for character in key
 				if !isNaN(character) and not previous_character_was_digit  # If first contiguous digit
-					colouredKey += "<span>#{character}"
+					colouredKey += "<span>"
 					previous_character_was_digit = true
 				else if isNaN(character) and previous_character_was_digit # If first letter after digit
-					colouredKey += "</span>#{character}"
+					colouredKey += "</span>"
 					previous_character_was_digit = false
-				else
-					colouredKey += character
+
+				colouredKey += character
 
 			# Output key
 			document.getElementById("output").innerHTML = colouredKey
