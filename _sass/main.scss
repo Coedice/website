@@ -68,7 +68,7 @@ div#main {
 
 nav {
   text-align: center;
-  overflow: scroll;
+  overflow: auto;
   margin-bottom: 30px;
 
   ul {
@@ -112,7 +112,7 @@ input {
 .highlighter-rouge {
   > .highlight {
     padding: 20px;
-    overflow: scroll;
+    overflow: auto;
     border-radius: 20px;
   }
 
