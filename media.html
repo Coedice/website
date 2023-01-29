@@ -4,20 +4,26 @@ layout: default
 ---
 <div id="media-appearances">
 	{% assign sorted_media_appearance = site.data.media_appearances | sort: "date" | reverse %}
+
 	{% for media_appearance in sorted_media_appearance %}
 		{% assign source_slug = media_appearance.source | slugify: "ascii" | downcase %}
 		{% assign source_image_url = "/assets/images/media-sources/" | append: source_slug | append: ".webp" %}
-		<a href="{{ media_appearance.url }}" target="_blank" tabindex="0">
+		{% assign title_slug = media_appearance.title | slugify: "ascii" | downcase %}
+		{% assign archive_file_extension = ".pdf" %}
+
+		{% if media_appearance.type == "audio" %}
+			{% assign archive_file_extension = ".mp3" %}
+		{% elsif media_appearance.type == "video" %}
+			{% assign archive_file_extension = ".mp4" %}
+		{% endif %}
+
+		{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
+		<a href="{{ media_appearance.url }}" id="{{ title_slug }}" target="_blank" tabindex="0">
 			<img src="{{ source_image_url }}" alt="{{ media_appearance.source }} logo">
-			{% assign archive_file_extension = ".pdf" %}
-			{% if media_appearance.type == "audio" %}
-				{% assign archive_file_extension = ".mp3" %}
-			{% elsif media_appearance.type == "video" %}
-				{% assign archive_file_extension = ".mp4" %}
-			{% endif %}
-			{% assign title_slug =  media_appearance.title | slugify: "ascii" | downcase %}
-			{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
 			<h2>{{ media_appearance.title }}</h2>
+			<audio controls style="display: none">
+				<source src="{{ archive_url }}" type="audio/mpeg">
+			</audio>
 			<p class="media-appearance-meta">{{ media_appearance.date | date_to_string }} | <span onclick="window.open('{{ archive_url }}'); return false;">Archive</span></p>
 		</a>
 	{% endfor %}
