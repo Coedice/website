@@ -1,0 +1,61 @@
+---
+title: QR Code Generator
+layout: default
+---
+<canvas id="myCanvas" width="600" height="600" style="display: none;">Your browser does not support the HTML canvas tag.</canvas>
+<p>Choose a photo of yourself: <input type='file' id="file" accept="image/*" oninput="generateImage()" /></p>
+<img src="" alt="Display image" id="outputImage" style="display: none;">
+<script>
+	const canvas = document.getElementById("myCanvas");
+	const context = canvas.getContext("2d");
+	const image_width = 600;
+	const face_width = 340;
+
+	function generateImage() {
+		const background = document.createElement("img");
+		background.src = "/assets/images/planet-innovation/background.png";
+
+		background.onload = function () {
+			context.drawImage(background, 0, 0);
+			getFaceInput();
+		};
+	}
+
+	function getFaceInput() {
+		const file = document.getElementById('file').files[0];
+		const reader = new FileReader();
+
+		reader.onload = function(e) {
+			const image = document.createElement("img");
+			image.src = e.target.result;
+			placeFace(image);
+		};
+
+		reader.readAsDataURL(file);
+	}
+
+	function placeFace(face) {
+		face.onload = function () {
+			const displacement = (image_width - face_width)/2;
+
+			/* Clip to circle */
+			context.save();
+			context.beginPath();
+			context.arc(image_width/2, image_width/2, face_width/2, 0, Math.PI * 2, true);
+			context.closePath();
+			context.clip();
+			context.drawImage(face, displacement, displacement, face_width, face_width);
+
+			downloadCanvas();
+		};
+	}
+
+	function downloadCanvas() {
+		const link = document.createElement('a');
+		link.download = 'pi_LinkedIn.png';
+		link.href = document.getElementById('myCanvas').toDataURL();
+		/* link.click(); */
+		document.getElementById('outputImage').src = link.href;
+		document.getElementById('outputImage').style = "display: block;width: 550px;";
+	}
+</script>
