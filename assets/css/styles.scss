@@ -11,9 +11,10 @@ $monospace-hierarchy: Courier, Menlo, monospace;
 $animation_duration: 0.4s;
 
 @mixin round-box {
+  $padding: 20px;
+  $box-shadow-offset: 8px;
   cursor: pointer;
   border: transparent solid 1px;
-  $padding: 20px;
   background-color: $box-background-color;
   border-radius: 20px;
   text-decoration: none;
@@ -21,11 +22,18 @@ $animation_duration: 0.4s;
   padding: $padding;
   margin-top: $padding;
   transition: border 0.9s;
+  position: relative;
 
   &:hover {
     border: $accent-color solid 1px;
     background-color: $hover-box-background-color;
     transition: $animation_duration;
+    box-shadow: -$box-shadow-offset $box-shadow-offset $accent-color, -$box-shadow-offset*0.75 $box-shadow-offset*0.75 $accent-color, -$box-shadow-offset*0.5 $box-shadow-offset*0.5 $accent-color, -$box-shadow-offset*0.25 $box-shadow-offset*0.25 $accent-color;
+  }
+
+  &:active {
+    transform: translate(-$box-shadow-offset, $box-shadow-offset);
+    box-shadow: 0 0 $accent-color;
   }
 }
 
