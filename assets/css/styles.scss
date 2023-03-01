@@ -21,13 +21,12 @@ $animation_duration: 0.4s;
   display: block;
   padding: $padding;
   margin-top: $padding;
-  transition: border 0.9s;
+  transition: $animation_duration;
   position: relative;
 
   &:hover {
     border: $accent-color solid 1px;
     background-color: $hover-box-background-color;
-    transition: $animation_duration;
     box-shadow: -$box-shadow-offset $box-shadow-offset $accent-color, -$box-shadow-offset*0.75 $box-shadow-offset*0.75 $accent-color, -$box-shadow-offset*0.5 $box-shadow-offset*0.5 $accent-color, -$box-shadow-offset*0.25 $box-shadow-offset*0.25 $accent-color;
   }
 
