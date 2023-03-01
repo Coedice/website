@@ -53,6 +53,8 @@
 
 .experienceItem {
   @include round-box;
+  margin-top: 0;
+  margin-bottom: 20px;
   overflow: auto;
 
   img {
@@ -84,4 +86,11 @@
 	color: $minor-color;
 	font-size: 1em;
   }
+}
+
+.experienceCategoryTitle {
+  font-size: 2em;
+  color: $foreground-color;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
