@@ -1,6 +1,23 @@
 ---
 title: About
 layout: default
+
+intro:
+ - prompt: "I'm a"
+   link_relative: true
+   link: "/"
+   link_text: "Software Developer"
+   emoji: "&#x1F4BB;"
+ - prompt: "and"
+   link_relative: true
+   link: "/blog"
+   link_text: "Tech Blogger"
+   emoji: "&#x1F58B;"
+ - prompt: "from"
+   link_relative: false
+   link: "https://en.wikipedia.org/wiki/Melbourne"
+   link_text: "Melbourne"
+   emoji: "&#x1F1E6;&#x1F1FA;"
 ---
 <div id="intro">
 	<img src="{{ 'assets/images/gavin-douch.webp' | relative_url }}" alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
@@ -11,7 +28,11 @@ layout: default
 			</a>
 		{% endfor %}
 	</div>
-	<h2>I'm a <a href="{{ '/' | relative_url }}" tabindex="0">Software Developer&nbsp;&#x1F4BB;</a><br>and <a href="{{ '/blog' | relative_url }}" tabindex="0">Tech Blogger&nbsp;&#x1F58B;</a><br>from <a href="https://en.wikipedia.org/wiki/Melbourne" target="_blank" tabindex="0">Melbourne, Australia&nbsp;&#x1F1E6;&#x1F1FA;</a></h2>
+	<h2>
+		{% for intro_item in page.intro %}
+			{{intro_item.prompt}} <a href="{% if intro_item.link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}" tabindex="0" {% unless intro_item.link_relative %}target="_blank"{% endunless %}>{{intro_item.link_text}}&nbsp;{{intro_item.emoji}}</a>{% unless forloop.last %}<br>{% endunless %}
+		{% endfor %}
+	</h2>
 </div>
 <div id="biography">
 	<p>I am a self-taught full-stack programmer who's interested in all things tech. I have recently completed my Bachelor of Computer Science course, specialising in Advanced Computer Science, with a minor in Cybersecurity.</p>
