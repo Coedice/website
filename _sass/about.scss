@@ -18,6 +18,14 @@
 	  color: $accent-color;
 	  font-weight: bold;
 	  text-decoration: none;
+
+	  img {
+		height: 1em;
+		width: auto;
+		display: inline;
+		position: relative;
+		top: 5px;
+	  }
 	}
   }
 }
