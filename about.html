@@ -7,17 +7,17 @@ intro:
    link_relative: true
    link: "/"
    link_text: "Software Developer"
-   emoji: "&#x1F4BB;"
+   emoji: "💻"
  - prompt: "and"
    link_relative: true
    link: "/blog"
    link_text: "Tech Blogger"
-   emoji: "&#x1F58B;"
+   emoji: "🖋"
  - prompt: "from"
    link_relative: false
    link: "https://en.wikipedia.org/wiki/Melbourne"
    link_text: "Melbourne"
-   emoji: "&#x1F1E6;&#x1F1FA;"
+   emoji: "🇦🇺"
 ---
 <div id="intro">
 	<img src="{{ 'assets/images/gavin-douch.webp' | relative_url }}" alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
@@ -30,7 +30,7 @@ intro:
 	</div>
 	<h2>
 		{% for intro_item in page.intro %}
-			{{intro_item.prompt}} <a href="{% if intro_item.link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}" tabindex="0" {% unless intro_item.link_relative %}target="_blank"{% endunless %}>{{intro_item.link_text}}&nbsp;{{intro_item.emoji}}</a>{% unless forloop.last %}<br>{% endunless %}
+			{{intro_item.prompt}} <a href="{% if intro_item.link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}" tabindex="0" {% unless intro_item.link_relative %}target="_blank"{% endunless %}>{{intro_item.link_text}} <img src="{{ 'assets/images/emoji/' | append: intro_item.emoji | append: '.png' | relative_url }}" alt="{{ intro_item.emoji }}"></a>{% unless forloop.last %}<br>{% endunless %}
 		{% endfor %}
 	</h2>
 </div>
