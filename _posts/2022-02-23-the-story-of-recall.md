@@ -8,6 +8,7 @@ The first iOS app I created, [Recall](/#Recall), is a tool for committing knowle
 its invention.
 
 ## What is Spaced Repetition?
+
 Spaced repetition is a method of adding information into your long-term memory. It does this by getting you to recall (hence the name of the app) information
 just before it would have been forgotten, embedding it further into your long-term memory.
 
@@ -19,6 +20,7 @@ how often to review it. When the information could be recalled correctly, it goe
 to the first bucket to be reviewed daily.
 
 ## How I Came to the App Idea
+
 In high school, I was a mediocre Italian student, I was _alright_ with the grammar rules, but I had a lot of trouble memorising verbs and nouns.
 
 Two years before I graduated, I came across spaced repetition while browsing YouTube and immediately thought it could help me out. I created a spreadsheet
@@ -32,13 +34,16 @@ In order to help my classmates out, I sent them the spreadsheet I made, since no
 confusing layout. That was the point where I realised that I had found a gap in the market.
 
 ## Making the App
+
 Once I graduated and finished my exams, I jumped into app development for the first time. I watched a few tutorials on Swift, Xcode, UIKit, etc., and then
 went straight into making Recall. Almost every challenge was a road-block at first, but with every problem I just had to do a bit more reading and a bit more
 learning. Eventually, it was done.
 
 ## Hitting the Top Charts
+
 After spreading the news of the launch to some schools, some online marketing, and a [very flattering article in the local news](https://www.sheppnews.com.au/news/recall-year-12-graduate-develops-clever-memory-app/),
 My app rocketed upwards and upwards. After about a week or so, a friend of mine spotted it on the Australian Top Charts in the Education section.
 
 ## Summary
+
 The process of creating Recall was a wild ride, and one that I could certainly never forget.

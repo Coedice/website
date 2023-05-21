@@ -18,7 +18,7 @@ layout: default
 		{% endif %}
 
 		{% assign archive_url = "/assets/media-archive/" | append: source_slug | append: "/" | append: title_slug | append: archive_file_extension %}
-		<a href="{{ media_appearance.url }}" id="{{ title_slug }}" target="_blank" tabindex="0">
+		<a href="{{ media_appearance.url }}" id="{{ title_slug }}" target="_blank" rel="noopener noreferrer" tabindex="0">
 			<img src="{{ source_image_url }}" alt="{{ media_appearance.source }} logo">
 			<h2>{{ media_appearance.title }}</h2>
 			<audio controls style="display: none">

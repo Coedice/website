@@ -7,6 +7,7 @@
 <p align="center">A website to showcase my projects and host my blog.</p>
 
 # Tech stack
+
 - Hosting: [Github Pages](https://pages.github.com)
 - Static site generator: [Jekyll](https://jekyllrb.com)
 - Styles: [Sass](https://sass-lang.com/documentation/syntax)
@@ -21,4 +22,5 @@
 - Particles.js: [particles.js](https://vincentgarreau.com/particles.js/)
 
 # Security
+
 Visit the [security policy](https://github.com/Coedice/website/security/policy) for more information about responsible disclosures.

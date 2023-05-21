@@ -9,12 +9,14 @@ this club for two years, and now that I have resigned I thought I would write ab
 at WIRED's helm.
 
 ## Joining WIRED
+
 Excited to jump into uni life, I was looking online for IT groups I can join at Monash, hoping to make some connections
 and meet like-minded people, and saw that they were recruiting for some positions in their committee. I applied on a
 whim, thinking they would never accept a first-year into any important role. On March 2020, To my surprise, they accepted me to become
 the new club Secretary.
 
 ## My Stumble into Leadership
+
 The club was facing a few huge hurdles. The previous committee had not filled out required financial audit documentation
 (meaning the club could have been shut down), the club's membership had shrunk because O-week was cancelled when the
 virus spread to Australia, and to top it all off, both the President and Vice President were looking for the exit door.
@@ -23,12 +25,14 @@ Perhaps with a little too much self-confidence, I put my hand up to become Presi
 and VP both left.
 
 ## Putting out the Fire
+
 I had a few ideas in mind about how to revitalise the club. But first I had to put out the fire that the previous committee
 left us by not completing the financial audit. I had a lot of meetings and a lot of reparations to pay on the club's
 behalf, all while figuring out the legal and financial landscape of this space myself, but eventually I was able to get a
 special dispensation, and I could get to what I really wanted to work on.
 
 ## Growing the Club
+
 I wanted to grow the club's leadership, since I knew I couldn't make the changes I wanted to make by myself. I designed
 WIRED's four subcommittees (Industry, Publications, Education, and Events) wrote their drafts, and began the recruitment
 application reviews, interviews, and official acceptances of the applicants. After this, WIRED really got into the swing
@@ -44,6 +48,7 @@ Malaysian school of IT to create it in a way consistent with Malaysian cultural 
 to lead it with a lot of autonomy. Once the legal process was over, recruitment started, and WIRED Malaysia was born.
 
 ## Founding ACSA
+
 Many of WIRED's events could be accessed online (such as industry panels), and I thought about how we could very easily
 share some of these events with a wider audience.
 
@@ -58,6 +63,7 @@ the constitution were tedious, since it was a room full of lions and not a singl
 and away.
 
 ## Resigning
+
 After two years in the club (a pretty long term in this context), I felt that I had accomplished what I wanted to be
 accomplished, I was seeing that there was some leadership potential in some members of the committee, and I had begun
 a university entrepreneurship program called [Fastrack](https://www.fastrackatmonash.com) which took up a lot of my time.
@@ -65,6 +71,7 @@ The writing was on the role, it felt right, so I decided to leave the club I bec
 meeting's election, as a parting gift from the club, they kindly voted to make me an honorary life member.
 
 ## Final Thoughts
+
 There are things I could have done better, for instance I think we should have held more events, even though we were in
 lockdown, but overall, I am very happy with what I was able to do in WIRED.
 
