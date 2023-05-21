@@ -8,6 +8,7 @@ icon_alt: The tips of many coloured pencils that are stacked on top of each othe
 Here is everything you need to know about encoding colour as a programmer.
 
 ## Primary Colours
+
 The primary colours of light are red, green, and blue (RGB). Yes, you read that correctly.
 
 You most likely believe that the primary colours are red, yellow, and blue (RYB), and this is true if what you mean is that they are the primary colours of a particular subset of colours (i.e. the colours made by mixing red, yellow, and blue), but it is not true if you mean **all** colours. RYB exists because of artistic tradition and that the colours that can be created with them are often better looking.
@@ -17,6 +18,7 @@ You may have even heard that the primary colours are cyan, magenta, and yellow (
 What we are interested in are additive primary colours, which are what you would need if you wanted to shine lights in the same spot on a wall to get the different colours. These are the colours that are emitted by pixels, these are colours used when specifying colours in code, and they are the colours that stimulate our eyes' colour-sensing cells (cones).
 
 ## Hex Codes
+
 Hex codes are the most common way to encode colours on the web, and they are often used by non-programmers in programs like Photoshop.
 
 The first requirement to understand hex codes is to understand hexadecimal. This is a number system like the number system you know with different characters from 0 to 9 before recycling them, except that hexadecimal use 16 characters before recycling them (0, 1, ..., 8, 9, A, B, ..., E, F). This means that A -> 10, F -> 16, and 10 -> 17.
@@ -40,6 +42,7 @@ A modern variation of hex code adds two extra digits on the right to encode for 
 There is also a shorthand hex code called a hex triplet. They are written like "<span class="colorCode">#<span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span></span>". They are very similar to full hex codes, but where each digit represents the same digit doubled in a full hex code. For example <span class="colorCode">#<span style="color: red">F</span><span style="color: green">6</span><span style="color: blue">0</span></span> is the same as <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">66</span><span style="color: blue">00</span></span>, and <span class="colorCode">#<span style="color: red">FF</span><span style="color: green">00</span><span style="color: blue">66</span>DD</span> is the same as <span class="colorCode">#<span style="color: red">F</span><span style="color: green">0</span><span style="color: blue">6</span>D</span> (which is partly transparent).
 
 ## RGB and RGBA
+
 Different syntax is used depending on the application, but it is common in front-end software application to encode colours as a function/method call with three arguments. 
 
 <span class="colorCode">rgb(<span style="color: red">red</span>, <span style="color: green">green</span>, <span style="color: blue">blue</span>)</span>
@@ -53,6 +56,7 @@ There is also an extended variety, rgba, which includes opacity.
 The opacity argument, unlike red, green, and blue, is a number between 0 and 1, where one is completely opaque, and 0 is completely transparent.
 
 ## Hue, Saturation, and Lightness (HSL)
+
 HSL represents colours in a similar syntax to rgb (above), but it uses hue, saturation, and lightness rather than the primary colours.
 - **H**ue: The angle on the colour wheel (whether the colour is a red, yellow, cyan, etc.), 0 is red, 120 is green, 240 is blue, and 360 is back to red.
 - **S**aturation: The vividness of the colour. 1 is most saturated, and 0 is completely grey.
@@ -61,6 +65,7 @@ HSL represents colours in a similar syntax to rgb (above), but it uses hue, satu
 Therefore, <span class="colorCode">hsl(260, 0.5, 0.7)</span> looks like <span class="colorSquare" style="background-color: hsl(260, 50%, 70%)"></span> (magenta, muted, light).
 
 ## Colour Names
+
 Some applications will have colours systems where certain colours are given keywords.
 
 For example, in CSS there are keywords for regular colours such as <span class="colorCode" style="color: red">red</span> and <span class="colorCode" style="color: cyan">cyan</span>, but also more unusual shades such as <span class="colorCode" style="color: tomato">tomato</span> and <span class="colorCode" style="color: dodgerBlue">dodgerBlue</span>.
@@ -68,6 +73,7 @@ For example, in CSS there are keywords for regular colours such as <span class="
 The keywords available will depend on the environment you are coding in.
 
 ## Semantic Colour
+
 Some applications will have colour systems where there are keywords which represent the colour's purpose, rather than the colour itself. The colour itself will be chosen by some other system.
 
 Let's say you were making an app with a white background, and you want to have some text that does not call as much attention as the primary text. The usual way to do this would be to change the colour of the secondary text to be a light grey. The problem with this is that when the user switches their device to dark mode, the background goes dark grey, the black primary text is nearly invisible, and the light grey secondary text becomes the centre of attention.

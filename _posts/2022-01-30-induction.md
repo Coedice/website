@@ -8,6 +8,7 @@ icon_alt: Dominos in a line, beginning to be knocked over
 Proof by induction allows us to prove things about infinite series. It is a necessary skill for computer programmers to prove that some code or algorithm does what it is supposed to do.
 
 I will describe how it works through the use of an analogy. Imagine a line of dominos that we want to knock over. We need to know two things about the line:
+
 1. That each domino is close enough to knock over the next domino,
 2. That we are able to knock over the first domino.
 

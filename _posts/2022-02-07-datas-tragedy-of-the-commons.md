@@ -10,6 +10,7 @@ running on their computers and what resources they are using, developers and com
 to reduce their use of these resources.
 
 ## What does "The Tragedy of the Commons" Mean?
+
 Here is an example: a group of fisherman find a lake with fish in it. They know that if each of them only fished as much
 as they needed, there would always be plenty of fish. However, it is in each fisherman's interest to fish more, since
 they could sell the extra fish and make more money. Each of the fishermen begins to overfish, and before long, there are
@@ -19,6 +20,7 @@ The lake in this metaphor is a *commons*, a resource that does not belong to any
 A tragedy of the commons is the abuse of this commons based on the uncoordinated self-interest of each party.
 
 ## Memory and Storage
+
 Many popular apps are large memory hogs because they face no repercussions for taking up an excessive amount
 of resources. In fact, by taking up all this memory, they can run slightly faster. There is no reason for these apps to
 care that these resources are taken away from other processes or slow down the device overall.
@@ -27,6 +29,7 @@ This is why we have a tragedy of the commons in memory and storage. With so many
 own data, this shared commons is degraded.
 
 ## What to Do about It
+
 I can think of two solutions to this problem:
 
 Include a section on app stores about memory use reasonableness. This names and shames apps that are using too much
