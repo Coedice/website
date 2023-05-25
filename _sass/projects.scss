@@ -1,69 +1,69 @@
 #projectsList {
-  $spacing: 20px;
+	$spacing: 20px;
 
-  > a {
-	@include round-box;
-	overflow: auto;
-	position: relative;
+	> a {
+		@include round-box;
+		overflow: auto;
+		position: relative;
 
-	h2 {
-	  margin-top: 0;
-	  margin-bottom: 10px;
-	}
-
-	.project-title {
-	  text-decoration: none;
-	  color: $foreground-color;
-
-	  &:hover {
-		text-decoration: underline;
-	  }
-	}
-
-	.appLinks {
-	  position: absolute;
-	  bottom: $spacing;
-	  right: $spacing;
-
-	  span {
-		border-radius: 5px;
-		display: inline-block;
-		padding-left: 5px;
-		padding-right: 5px;
-		margin-right: 2px;
-		text-decoration: none;
-		border: transparent solid 1px;
-		background-color: $foreground-color;
-		color: $box-background-color;
-
-		&:last-child {
-		  margin-right: 4px;
+		h2 {
+			margin-top: 0;
+			margin-bottom: 10px;
 		}
 
-		&:hover {
-		  cursor: pointer;
+		.project-title {
+			text-decoration: none;
+			color: $foreground-color;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
-	  }
-	}
 
-	div.iconBox {
-	  float: left;
+		.appLinks {
+			position: absolute;
+			bottom: $spacing;
+			right: $spacing;
 
-	  img.projectImage {
-		width: 160px;
-		height: 160px;
-		margin-right: $spacing;
-		display: block;
-	  }
+			span {
+				border-radius: 5px;
+				display: inline-block;
+				padding-left: 5px;
+				padding-right: 5px;
+				margin-right: 2px;
+				text-decoration: none;
+				border: transparent solid 1px;
+				background-color: $foreground-color;
+				color: $box-background-color;
 
-	  img.appleBadge {
-		display: block;
-		margin: $spacing $spacing 0;
-		width: 120px;
-	  }
+				&:last-child {
+					margin-right: 4px;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		div.iconBox {
+			float: left;
+
+			img.projectImage {
+				width: 160px;
+				height: 160px;
+				margin-right: $spacing;
+				display: block;
+			}
+
+			img.appleBadge {
+				display: block;
+				margin: $spacing $spacing 0;
+				width: 120px;
+			}
+		}
+		p {
+			margin: 0;
+		}
 	}
-	p {
-	  margin: 0;
-	}
-  }
 }

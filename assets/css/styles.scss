@@ -1,5 +1,6 @@
 ---
 ---
+
 $foreground-color: white;
 $accent-color: #ee72f1;
 $minor-color: #acacac;
@@ -11,49 +12,52 @@ $monospace-hierarchy: Courier, Menlo, monospace;
 $animation_duration: 0.4s;
 
 @mixin round-box {
-  $padding: 20px;
-  $box-shadow-offset: 8px;
-  cursor: pointer;
-  border: transparent solid 1px;
-  background-color: $box-background-color;
-  border-radius: 20px;
-  text-decoration: none;
-  display: block;
-  padding: $padding;
-  margin-top: $padding;
-  transition: $animation_duration;
-  position: relative;
+	$padding: 20px;
+	$box-shadow-offset: 8px;
+	cursor: pointer;
+	border: transparent solid 1px;
+	background-color: $box-background-color;
+	border-radius: 20px;
+	text-decoration: none;
+	display: block;
+	padding: $padding;
+	margin-top: $padding;
+	transition: $animation_duration;
+	position: relative;
 
-  &:hover {
-    border: $accent-color solid 1px;
-    background-color: $hover-box-background-color;
-    box-shadow: -$box-shadow-offset $box-shadow-offset $accent-color, -$box-shadow-offset*0.75 $box-shadow-offset*0.75 $accent-color, -$box-shadow-offset*0.5 $box-shadow-offset*0.5 $accent-color, -$box-shadow-offset*0.25 $box-shadow-offset*0.25 $accent-color;
-  }
+	&:hover {
+		border: $accent-color solid 1px;
+		background-color: $hover-box-background-color;
+		box-shadow: -$box-shadow-offset $box-shadow-offset $accent-color,
+			-$box-shadow-offset * 0.75 $box-shadow-offset * 0.75 $accent-color,
+			-$box-shadow-offset * 0.5 $box-shadow-offset * 0.5 $accent-color,
+			-$box-shadow-offset * 0.25 $box-shadow-offset * 0.25 $accent-color;
+	}
 
-  &:active {
-    transform: translate(-$box-shadow-offset, $box-shadow-offset);
-    box-shadow: 0 0 $accent-color;
-  }
+	&:active {
+		transform: translate(-$box-shadow-offset, $box-shadow-offset);
+		box-shadow: 0 0 $accent-color;
+	}
 }
 
 @mixin animated_underline {
-  text-decoration: none;
-  position: relative;
-  color: $accent-color;
+	text-decoration: none;
+	position: relative;
+	color: $accent-color;
 
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    width: 0;
-    border-bottom: 2px solid $accent-color;
-    transition: $animation_duration;
-  }
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 8px;
+		left: 0;
+		width: 0;
+		border-bottom: 2px solid $accent-color;
+		transition: $animation_duration;
+	}
 
-  &:hover:after {
-    width: 100%;
-  }
+	&:hover:after {
+		width: 100%;
+	}
 }
 
 @import "main";
@@ -67,11 +71,11 @@ $animation_duration: 0.4s;
 
 /* Mobile */
 @media only screen and (max-width: 480pt) {
-  @import "main.mobile";
-  @import "projects.mobile";
-  @import "about.mobile";
-  @import "media.mobile";
-  @import "blog.mobile";
-  @import "qr.mobile";
-  @import "anonkey.mobile";
+	@import "main.mobile";
+	@import "projects.mobile";
+	@import "about.mobile";
+	@import "media.mobile";
+	@import "blog.mobile";
+	@import "qr.mobile";
+	@import "anonkey.mobile";
 }

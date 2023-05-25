@@ -1,31 +1,32 @@
-p, li:not(nav) {
-  font-size: 1.5em;
-  margin: 0 5px 0 5px
+p,
+li:not(nav) {
+	font-size: 1.5em;
+	margin: 0 5px 0 5px;
 }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+	font-size: 2em;
+	margin-bottom: 10px;
 }
 
 div#main {
-  width: 90%;
-  padding-bottom: 90px;
+	width: 90%;
+	padding-bottom: 90px;
 }
 
 a#title {
-  font-size: 2.7em;
-  text-align: center;
-  width: 100%;
+	font-size: 2.7em;
+	text-align: center;
+	width: 100%;
 }
 
 nav {
-  ul {
-    > li {
-      > a {
-        font-size: 20px;
-        padding: 0 12px;
-      }
-    }
-  }
+	ul {
+		> li {
+			> a {
+				font-size: 20px;
+				padding: 0 12px;
+			}
+		}
+	}
 }

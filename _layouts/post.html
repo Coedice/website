@@ -3,13 +3,17 @@ layout: default
 ---
 <img src="/assets/images/blog-icons/{{ page.title | slugify }}.webp" alt="{{ page.icon_alt }}" id="blogPostIcon">
 <h1 id="blogTitle">{{ page.title }}</h1>
-<div class="postMetaLine"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag }}</span>{% endfor %}</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>, {% include reading-time.html %}</div>
+<div class="postMetaLine"><span class="tagList">{% for tag in page.tags %}<span class="tagLabel {{ tag }}">{{ tag
+			}}</span>{% endfor %}</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date |
+		date_to_string }}</time>, {% include reading-time.html %}</div>
 <div id="blogContent">
 	{{ content }}
 </div>
 <div id="postArrow">
-	<a href="{{ page.next.url | relative_url }}"{% if page.next == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron" tabindex="1"></a>
-	<a href="{{ page.previous.url | relative_url }}"{% if page.previous == nil %} style="display: none;"{% endif %}><img src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron" tabindex="2"></a>
+	<a href="{{ page.next.url | relative_url }}" {% if page.next==nil %} style="display: none;" {% endif %}><img
+			src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Left chevron" tabindex="1"></a>
+	<a href="{{ page.previous.url | relative_url }}" {% if page.previous==nil %} style="display: none;" {% endif %}><img
+			src="{{ '/assets/images/chevron.png' | relative_url }}" alt="Right chevron" tabindex="2"></a>
 </div>
 {% include disqus.html %}
 {% include subscribe.html %}

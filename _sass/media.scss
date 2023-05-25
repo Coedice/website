@@ -1,49 +1,50 @@
 #media-appearances {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 20px;
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 20px;
 
-  a {
-	@include round-box;
-	position: relative;
-	min-height: 150px;
+	a {
+		@include round-box;
+		position: relative;
+		min-height: 150px;
 
-	img {
-	  width: 150px;
-	  float: left;
-	  display: block;
-	  border-radius: 20px;
-	  margin-right: 20px;
+		img {
+			width: 150px;
+			float: left;
+			display: block;
+			border-radius: 20px;
+			margin-right: 20px;
+		}
+
+		.media-appearance-meta {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			text-align: right;
+			font-size: 1rem;
+			margin: 0;
+			height: 20px;
+
+			&,
+			* {
+				color: $minor-color;
+			}
+
+			span {
+				text-decoration: underline;
+			}
+		}
+
+		h2 {
+			text-align: left;
+			margin-top: 0;
+			font-size: 1.5em;
+			margin-bottom: 20px + 10px;
+			color: $foreground-color;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
-
-	.media-appearance-meta {
-	  position: absolute;
-	  bottom: 20px;
-	  right: 20px;
-	  text-align: right;
-	  font-size: 1rem;
-	  margin: 0;
-	  height: 20px;
-
-	  &, * {
-		color: $minor-color;
-	  }
-
-	  span {
-		text-decoration: underline;
-	  }
-	}
-
-	h2 {
-	  text-align: left;
-	  margin-top: 0;
-	  font-size: 1.5em;
-	  margin-bottom: 20px + 10px;
-	  color: $foreground-color;
-
-	  &:hover {
-		text-decoration: underline;
-	  }
-	}
-  }
 }

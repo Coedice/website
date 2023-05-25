@@ -1,58 +1,54 @@
 ---
 title: About
 layout: default
-
-intro:
- - prompt: "I'm a"
-   link: "/"
-   link_text: "Software Developer"
-   emoji: "💻"
- - prompt: "and"
-   link: "/blog"
-   link_text: "Tech Blogger"
-   emoji: "🖋"
- - prompt: "from"
-   link: "https://en.wikipedia.org/wiki/Melbourne"
-   link_text: "Melbourne"
-   emoji: "🇦🇺"
 ---
 <div id="intro">
-	<img src="{{ 'assets/images/gavin-douch.webp' | relative_url }}" alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
+	<img src="{{ 'assets/images/gavin-douch.webp' | relative_url }}"
+		alt="Gavin Douch smiling and wearing suit and standing in front of a flower bush">
 	<div id="socialIcons">
 		{% for social_icon in site.data.social_icons %}
-			<a href="{{ social_icon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
-				<img src="/assets/images/social-icons/{{ social_icon.icon }}" alt="{{ social_icon.name }} icon">
-			</a>
+		<a href="{{ social_icon.url | relative_url }}" target="_blank" rel="noopener noreferrer">
+			<img src="/assets/images/social-icons/{{ social_icon.icon }}" alt="{{ social_icon.name }} icon">
+		</a>
 		{% endfor %}
 	</div>
 	<h2>
-		{% for intro_item in page.intro %}
-			{% assign link_first_char = intro_item.link | split: "" | first %}
-			{% if link_first_char == "/" %}
-				{% assign link_relative = true %}
-			{% else %}
-				{% assign link_relative = false %}
-			{% endif %}
-			{{ intro_item.prompt }} <a href="{% if link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}" tabindex="0" {% unless link_relative %}target="_blank"{% endunless %}>{{intro_item.link_text}} <img src="{{ 'assets/images/emoji/' | append: intro_item.emoji | append: '.png' | relative_url }}" alt="{{ intro_item.emoji }}"></a>{% unless forloop.last %}<br>{% endunless %}
+		{% for intro_item in site.data.intro %}
+		{% assign link_first_char = intro_item.link | split: "" | first %}
+		{% if link_first_char == "/" %}
+		{% assign link_relative = true %}
+		{% else %}
+		{% assign link_relative = false %}
+		{% endif %}
+		{{ intro_item.prompt }}
+		<a href="{% if link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}"
+			tabindex="0" {% unless link_relative %}target="_blank" {% endunless %}>{{intro_item.link_text}} <img
+				src="{{ 'assets/images/emoji/' | append: intro_item.emoji | append: '.png' | relative_url }}"
+				alt="{{ intro_item.emoji }}"></a>{% unless forloop.last %}<br>{% endunless %}
 		{% endfor %}
 	</h2>
 </div>
 <div id="biography">
-	<p>I am a self-taught full-stack programmer who's interested in all things tech. I have recently completed my Bachelor of Computer Science course, specialising in Advanced Computer Science, with a minor in Cybersecurity.</p>
+	<p>I am a self-taught full-stack programmer who's interested in all things tech. I have recently completed my
+		Bachelor of Computer Science course, specialising in Advanced Computer Science, with a minor in Cybersecurity.
+	</p>
 	<p>If you have any interest in one of my projects, have a question, or just want to chat, please get in touch!</p>
 </div>
 {% for category in site.data.experiences %}
-	<h2 class="experienceCategoryTitle">{{ category.title }}</h2>
-	{% for experience_item in category.experience_items %}
-		<a href="{{ experience_item.url }}" target="_blank"  rel="noopener noreferrer" class="experienceItem" tabindex="0">
-			<img src="assets/images/experiences/{{ experience_item.name | slugify }}.webp" alt="{{ experience_item.image_alt }}">
-			<h3>
-				{{ experience_item.name }}
-			</h3>
-			<div class="experienceMetaLine">
-				{{ experience_item.role }} | {{ experience_item.start }} - {% if experience_item.end == nil %}present{% else %}{{ experience_item.end }}{% endif %} | {{ experience_item.suburb }}, {{ experience_item.state }}, {{ experience_item.country }}
-			</div>
-			<p>{{ experience_item.description | markdownify }}</p>
-		</a>
-	{% endfor %}
+<h2 class="experienceCategoryTitle">{{ category.title }}</h2>
+{% for experience_item in category.experience_items %}
+<a href="{{ experience_item.url }}" target="_blank" rel="noopener noreferrer" class="experienceItem" tabindex="0">
+	<img src="assets/images/experiences/{{ experience_item.name | slugify }}.webp"
+		alt="{{ experience_item.image_alt }}">
+	<h3>
+		{{ experience_item.name }}
+	</h3>
+	<div class="experienceMetaLine">
+		{{ experience_item.role }} | {{ experience_item.start }} - {% if experience_item.end == nil %}present{% else
+		%}{{ experience_item.end }}{% endif %} | {{ experience_item.suburb }}, {{ experience_item.state }}, {{
+		experience_item.country }}
+	</div>
+	<p>{{ experience_item.description | markdownify }}</p>
+</a>
+{% endfor %}
 {% endfor %}

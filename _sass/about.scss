@@ -1,104 +1,104 @@
 #intro {
-  > img {
-	float: left;
-	width: 15%;
-	border-radius: 20px;
-	margin-right: 20px;
-  }
-
-  h2 {
-	color: $foreground-color;
-	font-weight: normal;
-	margin-bottom: 0;
-	font-size: 2.5rem;
-	overflow: hidden;
-
-	a {
-	  @include animated_underline;
-	  color: $accent-color;
-	  font-weight: bold;
-	  text-decoration: none;
-
-	  img {
-		height: 1em;
-		width: auto;
-		display: inline;
-		position: relative;
-		top: 5px;
-	  }
+	> img {
+		float: left;
+		width: 15%;
+		border-radius: 20px;
+		margin-right: 20px;
 	}
-  }
+
+	h2 {
+		color: $foreground-color;
+		font-weight: normal;
+		margin-bottom: 0;
+		font-size: 2.5rem;
+		overflow: hidden;
+
+		a {
+			@include animated_underline;
+			color: $accent-color;
+			font-weight: bold;
+			text-decoration: none;
+
+			img {
+				height: 1em;
+				width: auto;
+				display: inline;
+				position: relative;
+				top: 5px;
+			}
+		}
+	}
 }
 
 #socialIcons {
-  float: left;
-  clear: both;
-  width: 15%;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
-  margin-right: 20px;
+	float: left;
+	clear: both;
+	width: 15%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 20px;
 
-  a {
-	margin: 0 5px;
-	img {
-	  width: 100%;
-	  border-radius: 100%;
-	  -webkit-filter: invert(100%);
-	  filter: invert(100%);
+	a {
+		margin: 0 5px;
+		img {
+			width: 100%;
+			border-radius: 100%;
+			-webkit-filter: invert(100%);
+			filter: invert(100%);
+		}
 	}
-  }
 }
 
 #biography {
-  overflow: hidden;
-  margin-top: 0;
+	overflow: hidden;
+	margin-top: 0;
 
-  > p {
-	margin-bottom: 0;
-  }
+	> p {
+		margin-bottom: 0;
+	}
 }
 
 .experienceItem {
-  @include round-box;
-  margin-top: 0;
-  margin-bottom: 20px;
-  overflow: auto;
-
-  img {
-	width: 160px;
-	height: 160px;
-	display: block;
-	float: left;
-	border-radius: 20px;
-	margin-right: 20px;
-  }
-
-  p {
-	margin: 0;
-  }
-
-  h3 {
+	@include round-box;
 	margin-top: 0;
-	margin-bottom: 10px;
-	font-size: 1.5em;
-	color: $foreground-color;
+	margin-bottom: 20px;
+	overflow: auto;
 
-	&:hover {
-	  text-decoration: underline;
+	img {
+		width: 160px;
+		height: 160px;
+		display: block;
+		float: left;
+		border-radius: 20px;
+		margin-right: 20px;
 	}
-  }
 
-  .experienceMetaLine {
-	margin-bottom: 10px;
-	color: $minor-color;
-	font-size: 1em;
-  }
+	p {
+		margin: 0;
+	}
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: 1.5em;
+		color: $foreground-color;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.experienceMetaLine {
+		margin-bottom: 10px;
+		color: $minor-color;
+		font-size: 1em;
+	}
 }
 
 .experienceCategoryTitle {
-  font-size: 2em;
-  color: $foreground-color;
-  margin-top: 50px;
-  margin-bottom: 5px;
+	font-size: 2em;
+	color: $foreground-color;
+	margin-top: 50px;
+	margin-bottom: 5px;
 }

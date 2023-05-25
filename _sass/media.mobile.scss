@@ -1,25 +1,25 @@
 #media-appearances {
-  display: block;
+	display: block;
 
-  a {
-	&:last-child {
-	  display: none;
-	}
+	a {
+		&:last-child {
+			display: none;
+		}
 
-	img {
-	  float: none;
-	  display: block;
-	  margin: 0 auto 20px auto;
-	}
+		img {
+			float: none;
+			display: block;
+			margin: 0 auto 20px auto;
+		}
 
-	h2 {
-	  text-align: center;
-	}
+		h2 {
+			text-align: center;
+		}
 
-	.media-appearance-meta {
-	  text-align: center;
-	  right: 0;
-	  left: 0;
+		.media-appearance-meta {
+			text-align: center;
+			right: 0;
+			left: 0;
+		}
 	}
-  }
 }

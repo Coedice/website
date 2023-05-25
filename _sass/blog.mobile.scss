@@ -1,62 +1,62 @@
 div#postArrow {
-  display: none;
+	display: none;
 }
 
 div#subscriptionButtons {
-  > a {
-    > span {
-      &.long {
-        display: none;
-      }
+	> a {
+		> span {
+			&.long {
+				display: none;
+			}
 
-      &.short {
-        display: inline;
-      }
-    }
-  }
+			&.short {
+				display: inline;
+			}
+		}
+	}
 }
 
 #searchSection {
-  width: 100%;
+	width: 100%;
 }
 
 #blogList {
-  display: block;
+	display: block;
 
-  > a {
-    > img {
-      float: none;
-      display: block;
-      margin: 0 auto 20px auto;
-    }
+	> a {
+		> img {
+			float: none;
+			display: block;
+			margin: 0 auto 20px auto;
+		}
 
-    > p {
-      padding-left: 0;
-    }
+		> p {
+			padding-left: 0;
+		}
 
-    h3 {
-      text-align: center;
-    }
-  }
+		h3 {
+			text-align: center;
+		}
+	}
 }
 
 #blogTitle {
-  text-align: center;
+	text-align: center;
 }
 
 .postMetaLine {
-  text-align: center;
+	text-align: center;
 }
 
 #blogContent {
-  h2 {
-    text-align: center;
-  }
+	h2 {
+		text-align: center;
+	}
 }
 
 img#blogPostIcon {
-  float: none;
-  display: block;
-  margin: 0 auto 20px auto;
-  width: 140px;
+	float: none;
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 140px;
 }

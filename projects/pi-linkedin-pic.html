@@ -2,7 +2,8 @@
 title: QR Code Generator
 layout: default
 ---
-<canvas id="myCanvas" width="600" height="600" style="display: none;">Your browser does not support the HTML canvas tag.</canvas>
+<canvas id="myCanvas" width="600" height="600" style="display: none;">Your browser does not support the HTML canvas
+	tag.</canvas>
 <p>Choose a photo of yourself: <input type='file' id="file" accept="image/*" oninput="generateImage()" /></p>
 <img src="" alt="Display image" id="outputImage" style="display: none;">
 <script>
@@ -25,7 +26,7 @@ layout: default
 		const file = document.getElementById('file').files[0];
 		const reader = new FileReader();
 
-		reader.onload = function(e) {
+		reader.onload = function (e) {
 			const image = document.createElement("img");
 			image.src = e.target.result;
 			placeFace(image);
@@ -36,12 +37,12 @@ layout: default
 
 	function placeFace(face) {
 		face.onload = function () {
-			const displacement = (image_width - face_width)/2;
+			const displacement = (image_width - face_width) / 2;
 
 			/* Clip to circle */
 			context.save();
 			context.beginPath();
-			context.arc(image_width/2, image_width/2, face_width/2, 0, Math.PI * 2, true);
+			context.arc(image_width / 2, image_width / 2, face_width / 2, 0, Math.PI * 2, true);
 			context.closePath();
 			context.clip();
 			context.drawImage(face, displacement, displacement, face_width, face_width);
