@@ -1,0 +1,7 @@
+Gemfile.lock
+notes.md
+.idea
+.jekyll-cache
+_site
+_drafts
+.DS_Store
