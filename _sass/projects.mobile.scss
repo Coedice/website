@@ -1,24 +1,24 @@
 #projectsList > a {
-  div.iconBox {
-	float: none;
+	div.iconBox {
+		float: none;
 
-	img.projectImage {
-	  width: 60%;
-	  height: auto;
-	  display: block;
-	  margin: 0 auto 20px auto;
+		img.projectImage {
+			width: 60%;
+			height: auto;
+			display: block;
+			margin: 0 auto 20px auto;
+		}
+
+		img.appleBadge {
+			display: none;
+		}
 	}
 
-	img.appleBadge {
-	  display: none;
+	h2 {
+		text-align: center;
 	}
-  }
 
-  h2 {
-	text-align: center;
-  }
-
-  .appLinks {
-	position: static;
-  }
+	.appLinks {
+		position: static;
+	}
 }

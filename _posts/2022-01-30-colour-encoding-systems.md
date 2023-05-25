@@ -43,7 +43,7 @@ There is also a shorthand hex code called a hex triplet. They are written like "
 
 ## RGB and RGBA
 
-Different syntax is used depending on the application, but it is common in front-end software application to encode colours as a function/method call with three arguments. 
+Different syntax is used depending on the application, but it is common in front-end software application to encode colours as a function/method call with three arguments.
 
 <span class="colorCode">rgb(<span style="color: red">red</span>, <span style="color: green">green</span>, <span style="color: blue">blue</span>)</span>
 
@@ -58,6 +58,7 @@ The opacity argument, unlike red, green, and blue, is a number between 0 and 1, 
 ## Hue, Saturation, and Lightness (HSL)
 
 HSL represents colours in a similar syntax to rgb (above), but it uses hue, saturation, and lightness rather than the primary colours.
+
 - **H**ue: The angle on the colour wheel (whether the colour is a red, yellow, cyan, etc.), 0 is red, 120 is green, 240 is blue, and 360 is back to red.
 - **S**aturation: The vividness of the colour. 1 is most saturated, and 0 is completely grey.
 - **L**ightness: The amount of white or black that is mixed with the colour. 0.5 is mixed with neither white nor black, 1 is completely white, and 0 is completely black.

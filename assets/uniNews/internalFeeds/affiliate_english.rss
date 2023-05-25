@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 	<channel>
-	<title>Affiliate Ads</title>
-	<link></link>
-	<description>Affiliate links</description>
-	<item>
-		<title>Example Title</title>
-		<link>https://html5zombo.com</link>
-		<pubDate>Sun, 10 Jan 2021 15:00:00 +1100</pubDate>
-	</item>
+		<title>Affiliate Ads</title>
+		<link></link>
+		<description>Affiliate links</description>
+		<item>
+			<title>Example Title</title>
+			<link>https://html5zombo.com</link>
+			<pubDate>Sun, 10 Jan 2021 15:00:00 +1100</pubDate>
+		</item>
 	</channel>
 </rss>

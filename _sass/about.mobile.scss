@@ -1,49 +1,49 @@
 #intro {
-  img {
-    display: block;
-    float: none;
-    width: 60%;
-    margin: 0 auto 0 auto;
-  }
+	img {
+		display: block;
+		float: none;
+		width: 60%;
+		margin: 0 auto 0 auto;
+	}
 
-  h2 {
-    text-align: center;
+	h2 {
+		text-align: center;
 
-    br {
-      display: none;
-    }
+		br {
+			display: none;
+		}
 
-    a {
-      display: block;
-    }
-  }
+		a {
+			display: block;
+		}
+	}
 }
 
 #biography {
-  p:first-child {
-    margin-top: 20px;
-  }
+	p:first-child {
+		margin-top: 20px;
+	}
 }
 
 #socialIcons {
-  float: none;
-  width: 60%;
-  margin: 20px auto 0 auto;
+	float: none;
+	width: 60%;
+	margin: 20px auto 0 auto;
 }
 
 .experienceItem {
-  overflow: auto;
+	overflow: auto;
 
-  img {
-    float: none;
-    margin: 0 auto 20px auto;
-  }
+	img {
+		float: none;
+		margin: 0 auto 20px auto;
+	}
 
-  h3 {
-    text-align: center;
-  }
+	h3 {
+		text-align: center;
+	}
 
-  .experienceMetaLine {
-    text-align: center;
-  }
+	.experienceMetaLine {
+		text-align: center;
+	}
 }

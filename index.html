@@ -4,21 +4,25 @@ layout: default
 ---
 <div id="projectsList">
 	{% for project in site.data.projects %}
-		<a href="{{ project.link | relative_url }}" id="{{ project.name | remove: ' ' }}"{% if project.external %} target="_blank"{% endif %}>
-			<div class="iconBox">
-				<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp" alt="{{ project.image_alt }}" tabindex="0">
-				{% if project.app %}
-					<img class="appleBadge" src="assets/images/app-store-banners/download-white.svg" alt="Download on the iOS App Store" tabindex="0">
-				{% endif %}
-			</div>
-			<h2 class="project-title">{{ project.name }}</h2>
-			<p>{{ project.description | markdownify }}</p>
+	<a href="{{ project.link | relative_url }}" id="{{ project.name | remove: ' ' }}" {% if project.external %}
+		target="_blank" {% endif %}>
+		<div class="iconBox">
+			<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp"
+				alt="{{ project.image_alt }}" tabindex="0">
 			{% if project.app %}
-				<div class="appLinks">
-					<span onclick="window.open('{{ project.faq | relative_url }}'); return false;" tabindex="0">FAQ</span>
-					<span onclick="window.open('{{ project.privacy_policy | relative_url }}'); return false;" tabindex="0">Privacy Policy</span>
-				</div>
+			<img class="appleBadge" src="assets/images/app-store-banners/download-white.svg"
+				alt="Download on the iOS App Store" tabindex="0">
 			{% endif %}
-		</a>
+		</div>
+		<h2 class="project-title">{{ project.name }}</h2>
+		<p>{{ project.description | markdownify }}</p>
+		{% if project.app %}
+		<div class="appLinks">
+			<span onclick="window.open('{{ project.faq | relative_url }}'); return false;" tabindex="0">FAQ</span>
+			<span onclick="window.open('{{ project.privacy_policy | relative_url }}'); return false;"
+				tabindex="0">Privacy Policy</span>
+		</div>
+		{% endif %}
+	</a>
 	{% endfor %}
 </div>

@@ -1,16 +1,16 @@
 table#qrTable > tbody > tr > td {
-  display: block;
+	display: block;
 }
 
 td#qrOptions {
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 
-  > select {
-    width: 100%;
-  }
+	> select {
+		width: 100%;
+	}
 
-  > input:not([type="color"]) {
-    width: 100%;
-  }
+	> input:not([type="color"]) {
+		width: 100%;
+	}
 }

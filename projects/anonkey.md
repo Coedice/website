@@ -15,6 +15,7 @@ scripts:
 <span onclick="copyKey()" id="copyAnonKey">Copy</span>
 
 ## What is this?
+
 An AnonKey is a string of text that represents a participant in your research. You type in the name of the research participant into the text-box above,
 along with their unique participant number, and you get the AnonKey that you store in your database instead of their name.
 
@@ -27,12 +28,14 @@ the number they are providing is their participant number, and also prevents us 
 what name corresponds to each participant number.
 
 ## A Small Warning
+
 If you spell the participant's name incorrectly when you save their data into your database, your AnonKey will not match their real name. If you then need to
 delete their data later on, you will not be able to match your saved AnonKey with the new one you generate using the correct spelling of their name.
 
 Some variation is allowed (differences in spaces, diacritics, and capitalisation), but it's much easier to just type in their name correctly the first time.
 
 ## Details for Nerds
+
 The prefix of the AnonKey is the hexadecimal version number that stops at "v", and then the hexadecimal encoded participant number that stops at "n" (this ensures AnonKeys never clash for different
 individuals, whether or not their names are identical).
 
@@ -48,6 +51,7 @@ The AnonKey is suffixed by a three-digit hexadecimal checksum calculated as the 
 [View the source code](https://github.com/Coedice/website/blob/main/assets/scripts/anonkey.coffee).
 
 ### EBNF
+
 ~~~ python
 AnonKey = prefix, base, checksum;
 prefix = version, participant number;
@@ -61,6 +65,7 @@ checksum = 3 * hex char;
 ~~~
 
 ### Regex
+
 ~~~ python
 /(([1-9a-f][0-9a-f]*)|0)v(([1-9a-f][0-9a-f]*)|0)n[0-9a-zA-Z-_]{43}[0-9a-f]{3}/
 ~~~
