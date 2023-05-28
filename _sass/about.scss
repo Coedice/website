@@ -2,6 +2,7 @@
 	> img {
 		float: left;
 		width: 15%;
+		aspect-ratio: 1;
 		border-radius: 20px;
 		margin-right: 20px;
 	}
@@ -21,7 +22,7 @@
 
 			img {
 				height: 1em;
-				width: auto;
+				aspect-ratio: 1;
 				display: inline;
 				position: relative;
 				top: 5px;
@@ -43,6 +44,7 @@
 		margin: 0 5px;
 		img {
 			width: 100%;
+			aspect-ratio: 1;
 			border-radius: 100%;
 			-webkit-filter: invert(100%);
 			filter: invert(100%);
