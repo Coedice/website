@@ -1,6 +1,4 @@
 source "https://rubygems.org"
-# Update gems: bundle install
-# Run Jekyll: bundle exec jekyll serve
 
 gem "webrick"
 
