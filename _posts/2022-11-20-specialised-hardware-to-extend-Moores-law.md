@@ -3,6 +3,7 @@ layout: post
 title: Specialised Hardware to Extend Moore's Law
 tags: compsci
 icon_alt: Gordon Moore wearing a suit
+doi: 10.5281/zenodo.8325992
 ---
 As [Moore's Law](https://en.wikipedia.org/wiki/Moore%27s_law) continues to become less accurate, computer scientists have had to
 become more clever to satisfy the economy's need for speed. One way this has happened is with the increased number of specialised

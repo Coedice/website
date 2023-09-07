@@ -3,6 +3,7 @@ layout: post
 title: Object-Oriented Programming - Plato’s Paradigm
 tags: programming compsci
 icon_alt: Old oil painting of Plato pointing towards the sky
+doi: 10.5281/zenodo.8325687
 ---
 Plato’s Theory of Forms provides a great lens for thinking about Object-Oriented Programming, and I believe using this philosophical lens results in making better decisions when writing OOP code.
 
