@@ -4,6 +4,7 @@ title: Proof by Induction
 use_math: true
 tags: compsci
 icon_alt: Dominos in a line, beginning to be knocked over
+doi: 10.5281/zenodo.8325588
 ---
 Proof by induction allows us to prove things about infinite series. It is a necessary skill for computer programmers to prove that some code or algorithm does what it is supposed to do.
 

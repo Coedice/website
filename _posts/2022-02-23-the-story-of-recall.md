@@ -3,6 +3,7 @@ layout: post
 title: The Story of Recall
 tags: software story
 icon_alt: Anatomical human brain
+doi: 10.5281/zenodo.8325818
 ---
 The first iOS app I created, [Recall](/#Recall), is a tool for committing knowledge to long-term memory. Here is how it works and the story of
 its invention.
