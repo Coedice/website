@@ -43,6 +43,8 @@ h1#blogTitle {
 	border-radius: 5px;
 	display: inline-block;
 	padding-right: 5px;
+	position: absolute;
+	right: 0;
 	font-style: normal;
 	text-decoration: none;
 	border: $minor-color solid 1px;
