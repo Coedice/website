@@ -1,17 +1,14 @@
 #projectsList > a {
-	div.iconBox {
+	img.projectImage {
 		float: none;
+		width: 60%;
+		height: auto;
+		display: block;
+		margin: 0 auto 20px auto;
+	}
 
-		img.projectImage {
-			width: 60%;
-			height: auto;
-			display: block;
-			margin: 0 auto 20px auto;
-		}
-
-		img.appleBadge {
-			display: none;
-		}
+	div#appDownloadBadges {
+		display: none;
 	}
 
 	h2 {
