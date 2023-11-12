@@ -1,12 +1,3 @@
-- name: StudyStreaks
-  link: https://apps.apple.com/au/app/studystreaks/id1478096728
-  external: true
-  image_alt: Rounded square with red and blue horizontal bars
-  description: |-
-    A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
-  app: true
-  faq: projects/studystreaks-faq
-  privacy_policy: projects/studystreaks-privacy-policy
 - name: Recall
   link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
   external: true
@@ -17,6 +8,15 @@
     get them wrong.
   app: true
   privacy_policy: projects/recall-privacy-policy
+- name: StudyStreaks
+  link: https://apps.apple.com/au/app/studystreaks/id1478096728
+  external: true
+  image_alt: Rounded square with red and blue horizontal bars
+  description: |-
+    A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
+  app: true
+  faq: projects/studystreaks-faq
+  privacy_policy: projects/studystreaks-privacy-policy
 - name: Code Smells
   link: https://code-smells.com
   external: true
