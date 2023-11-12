@@ -46,23 +46,39 @@
 			}
 		}
 
-		div.iconBox {
+		img.projectImage {
 			float: left;
+			width: 160px;
+			height: 160px;
+			margin-right: $spacing;
+			display: block;
+		}
 
-			img.projectImage {
-				width: 160px;
-				height: 160px;
-				margin-right: $spacing;
-				display: block;
-			}
+		div#appDownloadBadges {
+			display: block;
+			left: 160px + $spacing;
+			width: 100%;
 
-			img.appleBadge {
-				display: block;
+			img {
+				display: inline;
 				margin: $spacing $spacing 0;
-				width: 120px;
 				height: 40px;
+				margin-left: 0;
+
+				&.appleDownloadBadge {
+					width: 120px;
+				}
+
+				&.googleDownloadBadge {
+					width: 134px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 		}
+
 		p {
 			margin: 0;
 		}

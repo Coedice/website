@@ -5,24 +5,25 @@ layout: default
 <div id="projectsList">
 	{% for project in site.data.projects %}
 		<a href="{{ project.link | relative_url }}" id="{{ project.name | remove: ' ' }}"{% if project.external %} target="_blank"{% endif %}>
-			<div class="iconBox">
-				<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp" alt="{{ project.image_alt }}" tabindex="0">
-				{% if project.app %}
-					<img class="appleBadge" src="assets/images/app-store-banners/download-white.svg" alt="Download on the iOS App Store" tabindex="0">
-				{% endif %}
-			</div>
+			<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp" alt="{{ project.image_alt }}" tabindex="0">
 			<h2 class="project-title">{{ project.name }}</h2>
 			<p>{{ project.description | markdownify }}</p>
-			{% if project.app %}
-				<div class="appLinks">
-					{% if project.faq %}
-						<span onclick="window.open('{{ project.faq | relative_url }}'); return false;" tabindex="0">FAQ</span>
-					{% endif %}
-					{% if project.privacy_policy %}
-						<span onclick="window.open('{{ project.privacy_policy | relative_url }}'); return false;" tabindex="0">Privacy Policy</span>
-					{% endif %}
-				</div>
-			{% endif %}
+			<div id="appDownloadBadges">
+				{% if project.ios_app_link %}
+					<img class="appleDownloadBadge" src="assets/images/download-badges/ios-app-store.svg" alt="Download on the App Store" tabindex="0">
+				{% endif %}
+				{% if project.android_app_link %}
+					<img class="googleDownloadBadge" src="assets/images/download-badges/google-play.webp" alt="Download on Google Play" tabindex="0">
+				{% endif %}
+			</div>
+			<div class="appLinks">
+				{% if project.faq %}
+					<span onclick="window.open('{{ project.faq | relative_url }}'); return false;" tabindex="0">FAQ</span>
+				{% endif %}
+				{% if project.privacy_policy %}
+					<span onclick="window.open('{{ project.privacy_policy | relative_url }}'); return false;" tabindex="0">Privacy Policy</span>
+				{% endif %}
+			</div>
 		</a>
 	{% endfor %}
 </div>
