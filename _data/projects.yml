@@ -1,20 +1,21 @@
 - name: Recall
   link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
+  ios_app_link: https://apps.apple.com/au/app/recall-efficient-flashcards/id1449434101
+  android_app_link: https://play.google.com/store/apps/details?id=com.gavindouch.Recall
   external: true
   image_alt: Brain shape, viewed from above, with two arrows pointing to eachother's tail forming a circle above the brain
   description: |-
     Recall helps you bring new things into your long term memory. Based on the psychology of spaced repetition and the
     Leitner system, Recall shows you flashcards less often when you get them right, and more often when you
     get them wrong.
-  app: true
   privacy_policy: projects/recall-privacy-policy
 - name: StudyStreaks
   link: https://apps.apple.com/au/app/studystreaks/id1478096728
+  ios_app_link: https://apps.apple.com/au/app/studystreaks/id1478096728
   external: true
   image_alt: Rounded square with red and blue horizontal bars
   description: |-
     A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
-  app: true
   faq: projects/studystreaks-faq
   privacy_policy: projects/studystreaks-privacy-policy
 - name: Code Smells
@@ -25,11 +26,11 @@
     A guide to identifying and fixing characteristics that may indicate deeper programming flaws.
 - name: Monash Zeitgeist
   link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
+  ios_app_link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
   external: true
   image_alt: Capital 'M' on a blue background, rotated clockwise so that it can also be seen as a capital 'Z'
   description: |-
     A news aggregator for Monash University news, including central university news, faculty news, student club news, student association news, and more.
-  app: true
   faq: projects/monash-zeitgeist-faq
   privacy_policy: projects/monash-zeitgeist-privacy-policy
 - name: AnonKey
