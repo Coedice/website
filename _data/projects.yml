@@ -16,7 +16,6 @@
     Leitner system, Recall shows you flashcards less often when you get them right, and more often when you
     get them wrong.
   app: true
-  faq: projects/recall-faq
   privacy_policy: projects/recall-privacy-policy
 - name: Code Smells
   link: https://code-smells.com
