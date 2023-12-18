@@ -10,10 +10,10 @@ layout: default
 			<p>{{ project.description | markdownify }}</p>
 			<div id="appDownloadBadges">
 				{% if project.ios_app_link %}
-					<img class="appleDownloadBadge" src="assets/images/download-badges/ios-app-store.svg" alt="Download on the App Store" tabindex="0">
+					<img class="appleDownloadBadge" onclick="window.open('{{ project.ios_app_link }}'); return false;" src="assets/images/download-badges/ios-app-store.svg" alt="Download on the App Store" tabindex="0">
 				{% endif %}
 				{% if project.android_app_link %}
-					<img class="googleDownloadBadge" src="assets/images/download-badges/google-play.webp" alt="Download on Google Play" tabindex="0">
+					<img class="googleDownloadBadge" onclick="window.open('{{ project.android_app_link }}'); return false;" src="assets/images/download-badges/google-play.webp" alt="Download on Google Play" tabindex="0">
 				{% endif %}
 			</div>
 			<div class="appLinks">
