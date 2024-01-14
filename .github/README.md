@@ -19,7 +19,6 @@
 - Sitemap generator: [Jekyll Sitemap Generator Plugin](https://github.com/jekyll/jekyll-sitemap)
 - HTML minifier: [Compress HTML in Jekyll](http://jch.penibelst.de)
 - LaTeX rendering: [MathJax](https://www.mathjax.org)
-- Particles.js: [particles.js](https://vincentgarreau.com/particles.js/)
 
 # Security
 
