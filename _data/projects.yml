@@ -24,6 +24,14 @@
   image_alt: Capital 'C' written in a serif font
   description: |-
     A guide to identifying and fixing characteristics that may indicate deeper programming flaws.
+- name: Enchiridion
+  link: https://example.com
+  external: true
+  image_alt: Epictetus reading a book
+  ios_app_link: https://example.com
+  android_app_link: https://example.com
+  description: |-
+    Reader app for the ancient Enchiridion of Epictetus.
 - name: Monash Zeitgeist
   link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
   ios_app_link: https://apps.apple.com/us/app/monash-zeitgeist/id1492213861
