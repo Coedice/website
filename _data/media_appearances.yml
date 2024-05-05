@@ -2,29 +2,29 @@
   source: Shepparton News
   title: "Recall: Year-12 graduate develops clever memory app"
   date: 2019-02-12
-  type: article # article, audio
+  type: article
 - url: https://www.sheppnews.com.au/news/an-app-titude-for-programming/
   source: Shepparton News
   title: An app-titude for programming
   date: 2020-01-27
-  type: article # article, audio, video
+  type: article
 - url: https://www.hit.com.au/story/a-local-shepp-inventor-has-created-the-app-we-all-need-125662
   source: HIT96.9
   title: A Local Shepp Inventor Has Created The App We ALL Need
   date: 2019-03-13
-  type: audio # article, audio
+  type: audio
 - url: https://lotswife.com.au/study-advice-from-a-jaffy/
   source: Lot's Wife
   title: Study Advice From A Jaffy
   date: 2020-04-24
-  type: article # article, audio, video
+  type: article
 - url: https://open.spotify.com/episode/0bwv4T6pBwC2nlsbn2yOv0?si=oI2gFWeDSwOTB9EEl5shVQ
   source: WIRED_in
   title: FIT1047 lovers all hate Shakespeare
   date: 2021-08-10
-  type: audio # article, audio, video
+  type: audio
 - url: https://open.spotify.com/episode/4fSn8QFnfTCp67LNDXUxKs?si=tdNJVHE3TpuZKeexlKX5Tg
   source: WIRED_in
   title: Rate the FIT - Unit Review
   date: 2021-09-21
-  type: audio # article, audio, video
+  type: audio
