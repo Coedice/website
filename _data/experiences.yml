@@ -62,6 +62,15 @@
         in order to run fun and educational Google events for our members.
 - title: Education
   experience_items:
+    - name: Box Hill Institute
+      role: Cert IV in Cybersecurity
+      suburb: Box Hill
+      state: VIC
+      country: Australia
+      url: https://www.boxhill.edu.au/courses/certificate-iv-in-cyber-security-co423-d/
+      start: Oct 2024
+      description: |-
+        I am further developing my knowledge and skills in cybersecurity alongside my full-time job.
     - name: Monash University
       role: Bachelor of Computer Science, specialisation in Advanced Computer Science, minor in Cybersecurity
       suburb: Clayton
