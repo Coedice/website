@@ -33,6 +33,12 @@
     A news aggregator for Monash University news, including central university news, faculty news, student club news, student association news, and more.
   faq: projects/monash-zeitgeist-faq
   privacy_policy: projects/monash-zeitgeist-privacy-policy
+- name: Parliament Kanban
+  link: https://coedice.github.io/parliament-kanban
+  external: true
+  image_alt: Canberra Parliament House
+  description: |-
+    A kanban board for all bills in the current Australian federal parliament.
 - name: AnonKey
   link: projects/anonkey
   external: false
