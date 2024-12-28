@@ -3,56 +3,52 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-
-	<!-- Analytics-->
-	{% if jekyll.environment == "production" %}
-	{% include gtag.html %}
-	{% endif %}
-
-	<!-- Generic -->
-	<meta name="language" content="english">
-	<meta name="copyright" content="Gavin Douch">
-
-	<!-- SEO -->
-	{% seo %}
-	<link rel="me" href="https://mastodon.social/@GavinDouch">
-	{% include icons.html %}
-
-	<!-- Styles -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#1c1c1c">
-	<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-
-	<!-- Feeds -->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/blog/feed.rss' | relative_url }}">
-	<link type="application/atom+xml" rel="alternate" href="{{ '/blog/feed.atom' | relative_url }}"
-		title="{{ site.data.feed.title }}">
-
-	<!-- JavaScript -->
-	{% if page.use_math %}
-	{% include mathjax.html %}
-	{% endif %}
-	{% for script_file_name in page.scripts %}
-	<script src="{{ '/assets/scripts/' | append: script_file_name | relative_url }}"></script>
-	{% endfor %}
-</head>
-
-<body>
-	<div id="main">
-		<a id="title" href="{{ '/' | relative_url }}" tabindex="0">Gavin Douch</a>
-		{% include nav.html %}
-		{% if page.use_math %}
-		<noscript>
-			<p>You do not have JavaScript enabled in your browser, so maths on this page will not render correctly. To
-				fix this, please adjust your settings, or update to the latest version of a modern browser.</p>
-		</noscript>
+	<head>
+		<meta charset="UTF-8">
+		<!-- Analytics-->
+		{% if jekyll.environment == "production" %}
+		{% include gtag.html %}
 		{% endif %}
-		{{ content }}
-	</div>
-	<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Gavin Douch</p>
-</body>
 
+		<!-- Generic -->
+		<meta name="language" content="english">
+		<meta name="copyright" content="Gavin Douch">
+
+		<!-- SEO -->
+		{% seo %}
+		<link rel="me" href="https://mastodon.social/@GavinDouch">
+		{% include icons.html %}
+
+		<!-- Styles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#1c1c1c">
+		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+		<!-- Feeds -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/blog/feed.rss' | relative_url }}">
+		<link type="application/atom+xml" rel="alternate" href="{{ '/blog/feed.atom' | relative_url }}"
+			title="{{ site.data.feed.title }}">
+
+		<!-- JavaScript -->
+		{% if page.use_math %}
+		{% include mathjax.html %}
+		{% endif %}
+		{% for script_file_name in page.scripts %}
+		<script src="{{ '/assets/scripts/' | append: script_file_name | relative_url }}"></script>
+		{% endfor %}
+	</head>
+	<body>
+		<div id="main">
+			<a id="title" href="{{ '/' | relative_url }}" tabindex="0">Gavin Douch</a>
+			{% include nav.html %}
+			{% if page.use_math %}
+			<noscript>
+				<p>You do not have JavaScript enabled in your browser, so maths on this page will not render correctly. To
+					fix this, please adjust your settings, or update to the latest version of a modern browser.</p>
+			</noscript>
+			{% endif %}
+			{{ content }}
+		</div>
+		<p id="footer">Copyright &copy; {{ site.time | date: '%Y' }} Gavin Douch</p>
+	</body>
 </html>
