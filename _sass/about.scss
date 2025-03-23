@@ -33,20 +33,18 @@
 }
 
 #socialIcons {
-	float: left;
-	clear: both;
-	width: 15%;
-	margin-top: 10px;
+	float: right;
+	width: 13%;
 	display: flex;
 	justify-content: space-around;
-	margin-right: 20px;
-
+	top: 0;
 	a {
 		margin: 0 5px;
 		img {
 			width: 100%;
 			aspect-ratio: 1;
 			border-radius: 100%;
+			max-width: 50px;
 			-webkit-filter: invert(100%);
 			filter: invert(100%);
 		}

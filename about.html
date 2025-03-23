@@ -21,7 +21,7 @@ layout: default
 				{% assign link_relative = false %}
 			{% endif %}
 			{{ intro_item.prompt }}
-			<a href="{% if link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}" tabindex="0" {% unless link_relative %}target="_blank" {% endunless %}>{{intro_item.link_text}}
+			<a href="{% if link_relative %}{{ intro_item.link | relative_url }}{% else %}{{ intro_item.link }}{% endif %}" tabindex="0"{% unless link_relative %} target="_blank"{% endunless %}>{{intro_item.link_text}}
 				<img src="{{ 'assets/images/emoji/' | append: intro_item.emoji | append: '.png' | relative_url }}" alt="{{ intro_item.alt }}">
 			</a>
 			{% unless forloop.last %}<br>{% endunless %}

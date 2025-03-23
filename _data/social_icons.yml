@@ -4,9 +4,6 @@
 - name: LinkedIn
   url: https://www.linkedin.com/in/gavin-douch-a77259117/
   icon: linkedin.png
-- name: Twitter
-  url: https://mastodon.social/@GavinDouch
-  icon: mastodon.png
 - name: Email
   url: mailto:gavindouch@gmail.com
   icon: email.png
