@@ -43,7 +43,7 @@ layout: default
 			<div class="experienceMetaLine">
 				{{ experience_item.role }} | {{ experience_item.start }} - {% if experience_item.end == nil %}present{% else %}{{ experience_item.end }}{% endif %} | {{ experience_item.suburb }}, {{ experience_item.state }}, {{ experience_item.country }}
 			</div>
-			<p>{{ experience_item.description | markdownify }}</p>
+			{{ experience_item.description | markdownify }}
 		</a>
 	{% endfor %}
 {% endfor %}

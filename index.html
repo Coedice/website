@@ -7,7 +7,7 @@ layout: default
 		<a href="{{ project.link | relative_url }}" id="{{ project.name | remove: ' ' }}"{% if project.external %} target="_blank"{% endif %}>
 			<img class="projectImage" src="assets/images/projects/{{ project.name | slugify }}.webp" alt="{{ project.image_alt }}" tabindex="0">
 			<h2 class="project-title">{{ project.name }}</h2>
-			<p>{{ project.description | markdownify }}</p>
+			{{ project.description | markdownify }}
 			<div id="appDownloadBadges">
 				{% if project.ios_app_link %}
 					<img class="appleDownloadBadge" onclick="window.open('{{ project.ios_app_link }}'); return false;" src="assets/images/download-badges/ios-app-store.svg" alt="Download on the App Store" tabindex="0">
