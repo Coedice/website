@@ -18,6 +18,12 @@
     A simple and powerful study planner, to motivate you to study, stay concentrated, prioritise wisely, and become a better student.
   faq: projects/studystreaks-faq
   privacy_policy: projects/studystreaks-privacy-policy
+- name: Vibe of the Thing
+  link: https://coedice.github.io/vibe-of-the-thing/
+  external: true
+  image_alt: Electrisity pylon
+  description: |-
+    A collection of interactive tools for exploring Australian government data.
 - name: Code Smells
   link: https://code-smells.com
   external: true
@@ -33,12 +39,6 @@
     A news aggregator for Monash University news, including central university news, faculty news, student club news, student association news, and more.
   faq: projects/monash-zeitgeist-faq
   privacy_policy: projects/monash-zeitgeist-privacy-policy
-- name: Parliament Kanban
-  link: https://coedice.github.io/parliament-kanban
-  external: true
-  image_alt: Canberra Parliament House
-  description: |-
-    A kanban board for all bills in the current Australian federal parliament.
 - name: AnonKey
   link: projects/anonkey
   external: false
