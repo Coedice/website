@@ -1,5 +1,14 @@
 - title: Work
   experience_items:
+    - name: Knocknoc
+      role: Software Engineer
+      suburb: Melbourne
+      state: VIC
+      country: Australia
+      url: https://knocknoc.io
+      start: Feb 2025
+      description: |-
+        I develop software for Knocknoc's secure access management platform.
     - name: Planet Innovation
       role: Software Engineer
       suburb: Box Hill
@@ -7,8 +16,9 @@
       country: Australia
       url: https://planetinnovation.com
       start: Jan 2023
+      end: Feb 2025
       description: |-
-        I develop software for devices with medical/health applications, to make the world a safer, healthier, and overall better place to live.
+        At PI, I developed software for devices with medical/health applications to make the world safer, better, and healthier.
     - name: Monash University Faculty of IT
       role: Student Services Officer
       suburb: Clayton
